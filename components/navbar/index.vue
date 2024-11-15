@@ -13,8 +13,10 @@
             v-for="(item, index) in menuItems"
             :key="index"
             :to="localPath(item)"
-            class="duration-400 transform transition hover:scale-105 hover:text-green-400"
-            :class="{ 'text-green-500': isActiveLink(localPath(item)) }"
+            class="duration-400 transform transition hover:scale-105 hover:text-green-400 hover:underline"
+            :class="{
+              'text-green-500 underline': isActiveLink(localPath(item)),
+            }"
           >
             {{ item }}
           </NuxtLink>
@@ -69,12 +71,13 @@
             :key="index"
             :to="localPath(item)"
             @click="closeMenu"
-            class="font-semibold hover:text-green-400 text-2xl
-            transition-opacity duration-300 opacity-0 animate-fadeIn delay-{{
-              index * 100
-            }}
-            "
-            :class="{ 'text-green-500': isActiveLink(localPath(item)) }"
+            class="font-semibold hover:text-green-400 hover:underline text-2xl
+  transition-opacity duration-300 opacity-0 animate-fadeIn delay-{{
+    index * 100
+  }}"
+            :class="{
+              'text-green-500 underline': isActiveLink(localPath(item)),
+            }"
           >
             {{ item }}
           </NuxtLink>
