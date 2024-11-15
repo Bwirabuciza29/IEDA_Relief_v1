@@ -3,7 +3,7 @@
     <NuxtLayout>
       <NuxtLoadingIndicator />
       <NuxtRouteAnnouncer />
-      <div class="rm-wrapper bg-black text-white">
+      <div class="po-wrapper bg-black text-white">
         <Navbar @toggleMenu="toggleMenu" />
       </div>
       <transition name="page" mode="out-in">
