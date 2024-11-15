@@ -109,10 +109,9 @@ const closeMenu = () => {
 const menuItems = computed(() => [
   t("menu.home"),
   t("menu.about"),
-  t("menu.tv"),
-  t("menu.submit-video"),
-  t("menu.news"),
-  t("menu.events"),
+  t("menu.works"),
+  t("menu.pages"),
+  t("menu.contact"),
 ]);
 
 // Fonction de gestion des liens avec la langue actuelle
@@ -121,16 +120,15 @@ const localPath = (item) => {
   switch (item) {
     case t("menu.home"):
       return `${prefix}/`;
-    case t("menu.news"):
-      return `${prefix}/news`;
-    case t("menu.events"):
-      return `${prefix}/events`;
-    case t("menu.tv"):
-      return `${prefix}/tv`;
-    case t("menu.submit-video"):
-      return `${prefix}/submit-video`;
     case t("menu.about"):
       return `${prefix}/about`;
+    case t("menu.works"):
+      return `${prefix}/works`;
+    case t("menu.pages"):
+      return `${prefix}/pages`;
+    case t("menu.contact"):
+      return `${prefix}/contact`;
+
     default:
       return `${prefix}/`;
   }
