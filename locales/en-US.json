@@ -1,0 +1,10 @@
+{
+  "menu": {
+    "home": "Home",
+    "news": "News",
+    "events": "Events",
+    "tv": "TV",
+    "submit-video": "Submit video",
+    "about": "About"
+  }
+}
