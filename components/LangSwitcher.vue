@@ -80,11 +80,7 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted, onUnmounted } from "vue";
-import { useI18n } from "vue-i18n";
-
 const { locales, locale, setLocale } = useI18n();
-
 const isDropdownOpen = ref(false);
 
 const langage = computed({
@@ -116,11 +112,9 @@ const handleClickOutside = (event) => {
     isDropdownOpen.value = false;
   }
 };
-
 onMounted(() => {
   document.addEventListener("click", handleClickOutside);
 });
-
 onUnmounted(() => {
   document.removeEventListener("click", handleClickOutside);
 });
