@@ -4,7 +4,7 @@
   >
     <header class="mj-container z-50 flex w-full items-center justify-between">
       <NuxtLink to="/">
-        <img src="/img/logo.png" alt="Maajabu Logo" class="h-20 sm:h-20" />
+        <img src="/img/head.png" alt="Maajabu Logo" class="h-20 sm:h-20" />
       </NuxtLink>
       <!-- Menu Desktop -->
       <div class="flex-grow">
@@ -13,8 +13,8 @@
             v-for="(item, index) in menuItems"
             :key="index"
             :to="localPath(item)"
-            class="duration-400 transform transition hover:scale-105 hover:text-yellow-400"
-            :class="{ 'text-yellow-500': isActiveLink(localPath(item)) }"
+            class="duration-400 transform transition hover:scale-105 hover:text-green-400"
+            :class="{ 'text-green-500': isActiveLink(localPath(item)) }"
           >
             {{ item }}
           </NuxtLink>
@@ -27,7 +27,7 @@
       <!-- Bouton Toggle Menu Mobile toujours visible -->
       <button
         @click="toggleMenu"
-        class="fixed right-4 top-6 z-50 text-yellow-500 md:hidden"
+        class="fixed right-4 top-6 z-50 text-green-500 md:hidden"
       >
         <!-- SVG pour le bouton du menu -->
         <svg
@@ -69,12 +69,12 @@
             :key="index"
             :to="localPath(item)"
             @click="closeMenu"
-            class="font-semibold hover:text-yellow-400 text-2xl
+            class="font-semibold hover:text-green-400 text-2xl
             transition-opacity duration-300 opacity-0 animate-fadeIn delay-{{
               index * 100
             }}
             "
-            :class="{ 'text-yellow-500': isActiveLink(localPath(item)) }"
+            :class="{ 'text-green-500': isActiveLink(localPath(item)) }"
           >
             {{ item }}
           </NuxtLink>

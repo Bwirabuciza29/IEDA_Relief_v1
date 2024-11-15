@@ -1,7 +1,7 @@
 <template>
   <div class="relative dropdown">
     <button
-      class="flex items-center bg-black text-white px-4 py-2 rounded-lg border border-yellow-300 border-opacity-20 hover:bg-yellow-600 transition duration-200 ease-in-out"
+      class="flex items-center bg-black text-white px-4 py-2 rounded-lg border border-green-300 border-opacity-50 hover:bg-green-600 transition duration-200 ease-in-out"
       @click="toggleDropdown"
     >
       <span class="mr-2">
@@ -49,7 +49,7 @@
     <transition name="fade">
       <div
         v-if="isDropdownOpen"
-        class="absolute right-0 mt-2 w-48 bg-transparent backdrop-blur-md border border-yellow-300 border-opacity-20 rounded-lg shadow-lg py-1 z-10 transition duration-150 ease-in-out"
+        class="absolute right-0 mt-2 w-48 bg-transparent backdrop-blur-md border border-green-300 border-opacity-20 rounded-lg shadow-lg py-1 z-10 transition duration-150 ease-in-out"
         style="
           background: linear-gradient(
               to bottom,
