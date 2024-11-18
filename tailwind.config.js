@@ -14,6 +14,9 @@ export default {
       colors: {
         customLight: "#F9F9F4",
       },
+      fontFamily: {
+        sri: ["Sriracha"],
+      },
     },
   },
   plugins: [],
