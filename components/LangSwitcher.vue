@@ -91,11 +91,13 @@ const langage = computed({
 });
 
 const flags = {
-  "fr-FR": "https://flagcdn.com/w20/fr.png",
   "en-UK": "https://flagcdn.com/w20/gb.png",
-  "sw-CD": "https://flagcdn.com/w20/cd.png",
+  "fr-FR": "https://flagcdn.com/w20/fr.png",
   "es-ES": "https://flagcdn.com/w20/es.png",
-  "in-HI": "https://flagcdn.com/w20/in.png",
+  "ar-AR": "https://flagcdn.com/w20/sa.png",
+  "sw-CD": "https://flagcdn.com/w20/cd.png",
+  "pt-PT": "https://flagcdn.com/w20/pt.png",
+  "zh-ZH": "https://flagcdn.com/w20/cn.png",
 };
 
 const currentFlag = computed(() => flags[locale.value] || "");
