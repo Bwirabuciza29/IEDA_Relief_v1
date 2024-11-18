@@ -73,7 +73,9 @@
               </div>
 
               <!-- Champs du formulaire -->
-              <div class="relative w-full flex items-center border rounded">
+              <div
+                class="relative w-full flex items-center border rounded focus-within:border-green-400"
+              >
                 <!-- Signe dollar -->
                 <span class="absolute left-3 text-gray-500">$</span>
 
@@ -88,26 +90,52 @@
                 <!-- Texte USD -->
                 <span class="absolute right-3 text-gray-500">USD</span>
               </div>
+
+              <!-- Champ de texte pour le nom -->
               <input
                 type="text"
                 placeholder="Your Name"
-                class="w-full p-2 border rounded"
+                class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
               />
+
+              <!-- Champ de texte pour l'email -->
               <input
                 type="email"
                 placeholder="Your Email"
-                class="w-full p-2 border rounded"
+                class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
               />
+
+              <!-- Zone de texte pour les commentaires -->
               <textarea
                 placeholder="Comment"
-                class="w-full p-2 border rounded"
+                class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
               ></textarea>
+
+              <!-- Checkbox -->
               <div class="flex items-center gap-2">
-                <input type="checkbox" id="hide-name" />
-                <label for="hide-name" class="text-gray-600"
+                <!-- Première checkbox -->
+                <input
+                  type="checkbox"
+                  id="hide-name"
+                  class="h-4 w-4 text-green-500"
+                />
+                <label for="hide-name" class="text-gray-600 text-sm"
                   >Hide my name from the public.</label
                 >
+
+                <!-- Deuxième checkbox (avec un ID unique et un checkbox désactivé pour interdire le clic) -->
+                <input
+                  type="checkbox"
+                  id="contact-me"
+                  class="h-4 w-4 text-green-500"
+                  disabled
+                />
+                <label for="contact-me" class="text-gray-600 text-sm"
+                  >It's okay to contact me in the future.</label
+                >
               </div>
+
+              <!-- Bouton de soumission -->
               <button
                 type="submit"
                 class="w-full py-2 text-white bg-green-400 rounded-lg"
@@ -121,32 +149,44 @@
           <div v-else>
             <form class="space-y-4 p-6 bg-gray-50">
               <h3 class="text-xl font-semibold">Monthly</h3>
+
+              <!-- Champ de saisie pour le montant mensuel -->
               <input
                 v-model="amount"
                 type="number"
                 placeholder="Monthly Amount"
-                class="w-full p-2 border rounded"
+                class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
               />
+
+              <!-- Champ de texte pour le nom -->
               <input
                 type="text"
                 placeholder="Your Name"
-                class="w-full p-2 border rounded"
+                class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
               />
+
+              <!-- Champ de texte pour l'email -->
               <input
                 type="email"
                 placeholder="Your Email"
-                class="w-full p-2 border rounded"
+                class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
               />
+
+              <!-- Zone de texte pour les commentaires -->
               <textarea
                 placeholder="Comment"
-                class="w-full p-2 border rounded"
+                class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
               ></textarea>
+
+              <!-- Checkbox -->
               <div class="flex items-center gap-2">
                 <input type="checkbox" id="contact-future" />
                 <label for="contact-future" class="text-gray-600"
                   >It's okay to contact me in the future.</label
                 >
               </div>
+
+              <!-- Bouton de soumission -->
               <button
                 type="submit"
                 class="w-full py-2 text-white bg-green-400 rounded"
