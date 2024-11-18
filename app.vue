@@ -1,10 +1,10 @@
 <template>
   <div>
-    <NuxtLayout class="bg-customLight">
+    <NuxtLayout>
       <NuxtLoadingIndicator />
       <NuxtRouteAnnouncer />
       <div class="po-wrapper bg-black text-white">
-        <Navbar @toggleMenu="toggleMenu" />
+        <Navbar />
       </div>
       <transition name="page" mode="out-in">
         <NuxtPage />

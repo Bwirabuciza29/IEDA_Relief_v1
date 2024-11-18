@@ -44,7 +44,7 @@
               ]"
               @click="toggleForm('giveOnce')"
             >
-              Give Once
+              {{ btn_1 }}
             </button>
             <button
               :class="[
@@ -53,7 +53,7 @@
               ]"
               @click="toggleForm('monthly')"
             >
-              Monthly
+              {{ btn_2 }}
             </button>
           </div>
           <div v-if="isGiveOnce" class="w-full">
@@ -97,20 +97,20 @@
               <!-- Champ de texte pour le nom -->
               <input
                 type="text"
-                placeholder="Your Name"
+                :placeholder="frm_1"
                 class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
               />
 
               <!-- Champ de texte pour l'email -->
               <input
                 type="email"
-                placeholder="Your Email"
+                :placeholder="frm_2"
                 class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
               />
 
               <!-- Zone de texte pour les commentaires -->
               <textarea
-                placeholder="Comment"
+                :placeholder="frm_3"
                 class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
               ></textarea>
 
@@ -122,9 +122,9 @@
                   id="hide-name"
                   class="h-4 w-4 text-green-500"
                 />
-                <label for="hide-name" class="text-gray-600 text-sm"
-                  >Hide my name from the public.</label
-                >
+                <label for="hide-name" class="text-gray-600 text-sm">{{
+                  check_1
+                }}</label>
 
                 <!-- Deuxième checkbox (avec un ID unique et un checkbox désactivé pour interdire le clic) -->
                 <input
@@ -133,9 +133,9 @@
                   class="h-4 w-4 text-green-500"
                   disabled
                 />
-                <label for="contact-me" class="text-gray-600 text-sm"
-                  >It's okay to contact me in the future.</label
-                >
+                <label for="contact-me" class="text-gray-600 text-sm">
+                  {{ check_2 }}
+                </label>
               </div>
 
               <!-- Bouton de soumission -->
@@ -143,7 +143,7 @@
                 type="submit"
                 class="w-full py-2 text-white bg-green-400 rounded-lg"
               >
-                DONATE NOW
+                {{ btn_3 }}
               </button>
             </form>
           </div>
@@ -154,30 +154,42 @@
               <h3 class="text-xl font-semibold">Monthly</h3>
 
               <!-- Champ de saisie pour le montant mensuel -->
-              <input
-                v-model="amount"
-                type="number"
-                placeholder="Monthly Amount"
-                class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
-              />
+
+              <div
+                class="relative w-full flex items-center border rounded focus-within:border-green-400"
+              >
+                <!-- Signe dollar -->
+                <span class="absolute left-3 text-gray-500">$</span>
+
+                <!-- Champ de saisie -->
+                <input
+                  v-model="amount"
+                  type="number"
+                  placeholder="Enter Amount"
+                  class="w-full p-2 pl-8 pr-12 border-none focus:outline-none rounded"
+                />
+
+                <!-- Texte USD -->
+                <span class="absolute right-3 text-gray-500">USD</span>
+              </div>
 
               <!-- Champ de texte pour le nom -->
               <input
                 type="text"
-                placeholder="Your Name"
+                :placeholder="frm_1"
                 class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
               />
 
               <!-- Champ de texte pour l'email -->
               <input
                 type="email"
-                placeholder="Your Email"
+                :placeholder="frm_2"
                 class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
               />
 
               <!-- Zone de texte pour les commentaires -->
               <textarea
-                placeholder="Comment"
+                :placeholder="frm_3"
                 class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
               ></textarea>
               <!-- Checkbox -->
@@ -188,20 +200,19 @@
                   id="hide-name"
                   class="h-4 w-4 text-green-500"
                 />
-                <label for="hide-name" class="text-gray-600 text-sm"
-                  >Hide my name from the public.</label
-                >
+                <label for="hide-name" class="text-gray-600 text-sm">{{
+                  check_1
+                }}</label>
 
-                <!-- Deuxième checkbox (avec un ID unique et un checkbox désactivé pour interdire le clic) -->
                 <input
                   type="checkbox"
                   id="contact-me"
                   class="h-4 w-4 text-green-500"
                   disabled
                 />
-                <label for="contact-me" class="text-gray-600 text-sm"
-                  >It's okay to contact me in the future.</label
-                >
+                <label for="contact-me" class="text-gray-600 text-sm">
+                  {{ check_2 }}
+                </label>
               </div>
 
               <!-- Bouton de soumission -->
@@ -209,7 +220,7 @@
                 type="submit"
                 class="w-full py-2 text-white bg-green-400 rounded"
               >
-                DONATE NOW
+                {{ btn_3 }}
               </button>
             </form>
           </div>
@@ -224,8 +235,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
 const isGiveOnce = ref(true);
 const recentDonations = ref([
   {
@@ -267,7 +276,8 @@ const title_3 = ref(t("donation.title_3"));
 const desc = ref(t("donation.desc"));
 const sub_title = ref(t("donation.sub_title"));
 const btn_1 = ref(t("donation.btn_1"));
-const btn_2 = ref(t("donation.btn_3"));
+const btn_2 = ref(t("donation.btn_2"));
+const btn_3 = ref(t("donation.btn_3"));
 const frm_1 = ref(t("donation.frm_1"));
 const frm_2 = ref(t("donation.frm_2"));
 const frm_3 = ref(t("donation.frm_3"));

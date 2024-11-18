@@ -4,7 +4,8 @@
     "about": "About",
     "works": "Works",
     "pages": "Pages",
-    "contact": "Contacts"
+    "contact": "Contacts",
+    "donation": "Donation"
   },
   "hero": {
     "title_1": "Helping",
@@ -22,7 +23,7 @@
     "title_3": "Today",
     "desc": "When you give to Vively you trust us to steward your donation thoughtfully toward maximum positive impact.",
     "sub_title": "Recent Donation",
-    "btn_1": "Give_Once",
+    "btn_1": "Give Once",
     "btn_2": "Monthly",
     "btn_3": "Donate Now",
     "frm_1": "Your Name",
@@ -30,5 +31,8 @@
     "frm_3": "Comment",
     "check_1": "Hide my name from the public",
     "check_2": "It's okay to contact me in the future."
+  },
+  "about": {
+    "title_1": "About Us"
   }
 }

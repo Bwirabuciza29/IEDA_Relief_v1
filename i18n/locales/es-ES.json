@@ -31,5 +31,8 @@
     "frm_3": "Comentario",
     "check_1": "Ocultar mi nombre del público",
     "check_2": "Está bien contactarme en el futuro."
+  },
+  "about": {
+    "title_1": "Acerca de nosotros"
   }
 }

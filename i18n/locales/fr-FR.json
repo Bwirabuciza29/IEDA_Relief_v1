@@ -30,5 +30,9 @@
     "frm_3": "Commentaire",
     "check_1": "Ne pas afficher mon nom publiquement",
     "check_2": "Je suis d'accord pour être contacté à l'avenir."
+  },
+
+  "about": {
+    "title_1": "À propos de nous"
   }
 }

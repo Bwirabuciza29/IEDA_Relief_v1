@@ -138,6 +138,8 @@ const localPath = (item) => {
       return `${prefix}/pages`;
     case t("menu.contact"):
       return `${prefix}/contact`;
+    case t("menu.donation"):
+      return `${prefix}/donation`;
 
     default:
       return `${prefix}/`;
