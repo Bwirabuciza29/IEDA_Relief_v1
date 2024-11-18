@@ -5,9 +5,13 @@
       <div class="flex flex-col lg:flex-row gap-10">
         <!-- Colonne gauche -->
         <div class="lg:w-1/2">
-          <h1 class="text-3xl font-bold">
+          <h1 class="text-4xl font-bold">
             Your Chance to Create
-            <span class="font-sri">Opportunities</span> Today
+            <span
+              class="font-sri hover:underline transition-transform duration-300 hover:scale-105"
+              >Opportunities</span
+            >
+            Today
           </h1>
           <p class="mt-2 text-gray-600">
             When you give to Vively you trust us to steward your donation
@@ -177,11 +181,26 @@
                 placeholder="Comment"
                 class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
               ></textarea>
-
               <!-- Checkbox -->
               <div class="flex items-center gap-2">
-                <input type="checkbox" id="contact-future" />
-                <label for="contact-future" class="text-gray-600"
+                <!-- Première checkbox -->
+                <input
+                  type="checkbox"
+                  id="hide-name"
+                  class="h-4 w-4 text-green-500"
+                />
+                <label for="hide-name" class="text-gray-600 text-sm"
+                  >Hide my name from the public.</label
+                >
+
+                <!-- Deuxième checkbox (avec un ID unique et un checkbox désactivé pour interdire le clic) -->
+                <input
+                  type="checkbox"
+                  id="contact-me"
+                  class="h-4 w-4 text-green-500"
+                  disabled
+                />
+                <label for="contact-me" class="text-gray-600 text-sm"
                   >It's okay to contact me in the future.</label
                 >
               </div>
@@ -199,6 +218,7 @@
         </div>
       </div>
     </div>
+    -->
     <div class="my-16">
       <log />
     </div>
