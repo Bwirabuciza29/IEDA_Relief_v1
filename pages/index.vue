@@ -21,11 +21,6 @@
             <p class="text-gray-700 text-lg">
               {{ desc }}
             </p>
-            <!-- <button
-              class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg"
-            >
-              {{ btn }}
-            </button> -->
             <NuxtLink
               :to="localePath('donation')"
               class="group relative inline-block overflow-hidden rounded-lg border-2 border-green-100 bg-green-500 px-6 py-4 text-sm font-semibold text-white sm:px-6 sm:py-3 sm:text-base"
