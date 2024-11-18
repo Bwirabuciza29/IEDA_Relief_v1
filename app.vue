@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtLayout>
+    <NuxtLayout class="bg-customLight">
       <NuxtLoadingIndicator />
       <NuxtRouteAnnouncer />
       <div class="po-wrapper bg-black text-white">
