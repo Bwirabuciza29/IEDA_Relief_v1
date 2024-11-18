@@ -30,7 +30,12 @@ export default defineNuxtConfig({
         file: "sw-CD.json",
       },
       { code: "pt-PT", iso: "pt-PT", name: "Portugues", file: "pt-PT.json" },
-      { code: "zh-ZH", iso: "zh-ZH", name: "Mandarin", file: "zh-ZH.json" },
+      {
+        code: "zh-ZH",
+        iso: "zh-ZH",
+        name: "Mandarin 中文",
+        file: "zh-ZH.json",
+      },
     ],
     defaultLocale: "en-UK",
     vueI18n: "./i18n.config.js",
