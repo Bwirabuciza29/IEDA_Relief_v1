@@ -5,5 +5,15 @@
     "works": "Obras",
     "pages": "Páginas",
     "contact": "Contactos"
+  },
+  "hero": {
+    "title_1": "Ayudando",
+    "title_2": "a las comunidades",
+    "title_3": "a ser",
+    "title_4": "autosuficientes",
+    "desc": "Ayudar a los demás y marcar la diferencia en el mundo es lo que contribuirá a mejorar la vida de las personas y hacer del mundo un lugar mejor. Una persona a la vez, un día a la vez y un proyecto a la vez, puedes hacer una diferencia que dejará un impacto duradero en el mundo.",
+    "btn": "donar ahora",
+    "card_num": "2,2 millones",
+    "card_desc": "Personas en nuestros programas en todo el mundo"
   }
 }

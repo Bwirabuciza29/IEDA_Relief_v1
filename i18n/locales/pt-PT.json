@@ -5,5 +5,15 @@
     "works": "Trabalhos",
     "pages": "Páginas",
     "contact": "Contatos"
+  },
+  "hero": {
+    "title_1": "Ajudando",
+    "title_2": "comunidades",
+    "title_3": "a se tornarem",
+    "title_4": "autossuficientes",
+    "desc": "Ajudar os outros e fazer a diferença no mundo é o que ajudará a tornar o mundo um lugar melhor, melhorando a vida das pessoas. Uma pessoa de cada vez, um dia de cada vez, e um projeto de cada vez, você pode fazer a diferença que deixará um impacto duradouro no mundo.",
+    "btn": "doe agora",
+    "card_num": "2,2 milhões",
+    "card_desc": "Pessoas em Nossos Programas ao Redor do Mundo"
   }
 }
