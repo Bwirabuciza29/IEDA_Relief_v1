@@ -6,12 +6,17 @@
       <div class="po-wrapper bg-black text-white">
         <Navbar />
       </div>
-      <transition name="page" mode="out-in">
-        <NuxtPage />
-      </transition>
+      <div>
+        <transition name="page" mode="out-in">
+          <div>
+            <NuxtPage />
+          </div>
+        </transition>
+      </div>
     </NuxtLayout>
   </div>
 </template>
+
 
 <script setup>
 const config = useAppConfig();

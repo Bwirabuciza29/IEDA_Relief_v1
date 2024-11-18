@@ -19,7 +19,7 @@
 
           <!-- Liste des récents dons -->
           <div class="mt-6 space-y-4">
-            <h1 class="text-2xl font-semibold">{{ sub_title }}</h1>
+            <h1 class="text-2xl font-bold">{{ sub_title }}</h1>
             <div
               class="flex items-center justify-between p-4 rounded-lg shadow-sm bg-gray-50 hover:bg-white hover:border-green-500 hover:scale-105 transition-transform duration-300 ease-in-out border"
               v-for="donation in recentDonations"
@@ -56,175 +56,172 @@
               {{ btn_2 }}
             </button>
           </div>
-          <div v-if="isGiveOnce" class="w-full">
-            <form class="space-y-4 p-6 bg-gray-50">
-              <!-- Boutons de sélection des montants -->
-              <div class="flex flex-wrap gap-2 w-full">
-                <button
-                  v-for="option in options"
-                  :key="option"
-                  @click.prevent="setAmount(option)"
-                  :class="[
-                    'flex-1 py-2 text-center rounded-lg border transition duration-200',
-                    selectedAmount === option
-                      ? 'border-green-400 text-green-400'
-                      : 'bg-gray-100',
-                  ]"
+          <div>
+            <div v-if="isGiveOnce" class="w-full">
+              <form class="space-y-4 p-6 bg-gray-50">
+                <!-- Boutons de sélection des montants -->
+                <div class="flex flex-wrap gap-2 w-full">
+                  <button
+                    v-for="option in options"
+                    :key="option"
+                    @click.prevent="setAmount(option)"
+                    :class="[
+                      'flex-1 py-2 text-center rounded-lg border transition duration-200',
+                      selectedAmount === option
+                        ? 'border-green-400 text-green-400'
+                        : 'bg-gray-100',
+                    ]"
+                  >
+                    ${{ option }}
+                  </button>
+                </div>
+
+                <!-- Champs du formulaire -->
+                <div
+                  class="relative w-full flex items-center border rounded focus-within:border-green-400"
                 >
-                  ${{ option }}
+                  <!-- Signe dollar -->
+                  <span class="absolute left-3 text-gray-500">$</span>
+
+                  <!-- Champ de saisie -->
+                  <input
+                    v-model="amount"
+                    type="number"
+                    placeholder="Enter Amount"
+                    class="w-full p-2 pl-8 pr-12 border-none focus:outline-none rounded"
+                  />
+
+                  <!-- Texte USD -->
+                  <span class="absolute right-3 text-gray-500">USD</span>
+                </div>
+
+                <!-- Champ de texte pour le nom -->
+                <input
+                  type="text"
+                  :placeholder="frm_1"
+                  class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
+                />
+
+                <!-- Champ de texte pour l'email -->
+                <input
+                  type="email"
+                  :placeholder="frm_2"
+                  class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
+                />
+
+                <!-- Zone de texte pour les commentaires -->
+                <textarea
+                  :placeholder="frm_3"
+                  class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
+                ></textarea>
+
+                <!-- Checkbox -->
+                <div class="flex items-center gap-2">
+                  <!-- Première checkbox -->
+                  <input
+                    type="checkbox"
+                    id="hide-name"
+                    class="h-4 w-4 text-green-500"
+                  />
+                  <label for="hide-name" class="text-gray-600 text-sm">{{
+                    check_1
+                  }}</label>
+
+                  <input
+                    type="checkbox"
+                    id="contact-me"
+                    class="h-4 w-4 text-green-500"
+                    disabled
+                  />
+                  <label for="contact-me" class="text-gray-600 text-sm">
+                    {{ check_2 }}
+                  </label>
+                </div>
+
+                <!-- Bouton de soumission -->
+                <button
+                  type="submit"
+                  class="w-full py-2 text-white bg-green-400 rounded-lg"
+                >
+                  {{ btn_3 }}
                 </button>
-              </div>
+              </form>
+            </div>
 
-              <!-- Champs du formulaire -->
-              <div
-                class="relative w-full flex items-center border rounded focus-within:border-green-400"
-              >
-                <!-- Signe dollar -->
-                <span class="absolute left-3 text-gray-500">$</span>
+            <!-- Formulaire mensuel -->
+            <div v-else>
+              <form class="space-y-4 p-6 bg-gray-50">
+                <h3 class="text-xl font-semibold">Monthly</h3>
 
-                <!-- Champ de saisie -->
+                <!-- Champ de saisie pour le montant mensuel -->
+
+                <div
+                  class="relative w-full flex items-center border rounded focus-within:border-green-400"
+                >
+                  <!-- Signe dollar -->
+                  <span class="absolute left-3 text-gray-500">$</span>
+
+                  <!-- Champ de saisie -->
+                  <input
+                    v-model="amount"
+                    type="number"
+                    placeholder="Enter Amount"
+                    class="w-full p-2 pl-8 pr-12 border-none focus:outline-none rounded"
+                  />
+
+                  <span class="absolute right-3 text-gray-500">USD</span>
+                </div>
+
                 <input
-                  v-model="amount"
-                  type="number"
-                  placeholder="Enter Amount"
-                  class="w-full p-2 pl-8 pr-12 border-none focus:outline-none rounded"
+                  type="text"
+                  :placeholder="frm_1"
+                  class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
                 />
 
-                <!-- Texte USD -->
-                <span class="absolute right-3 text-gray-500">USD</span>
-              </div>
-
-              <!-- Champ de texte pour le nom -->
-              <input
-                type="text"
-                :placeholder="frm_1"
-                class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
-              />
-
-              <!-- Champ de texte pour l'email -->
-              <input
-                type="email"
-                :placeholder="frm_2"
-                class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
-              />
-
-              <!-- Zone de texte pour les commentaires -->
-              <textarea
-                :placeholder="frm_3"
-                class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
-              ></textarea>
-
-              <!-- Checkbox -->
-              <div class="flex items-center gap-2">
-                <!-- Première checkbox -->
                 <input
-                  type="checkbox"
-                  id="hide-name"
-                  class="h-4 w-4 text-green-500"
+                  type="email"
+                  :placeholder="frm_2"
+                  class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
                 />
-                <label for="hide-name" class="text-gray-600 text-sm">{{
-                  check_1
-                }}</label>
 
-                <!-- Deuxième checkbox (avec un ID unique et un checkbox désactivé pour interdire le clic) -->
-                <input
-                  type="checkbox"
-                  id="contact-me"
-                  class="h-4 w-4 text-green-500"
-                  disabled
-                />
-                <label for="contact-me" class="text-gray-600 text-sm">
-                  {{ check_2 }}
-                </label>
-              </div>
+                <textarea
+                  :placeholder="frm_3"
+                  class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
+                ></textarea>
+                <!-- Checkbox -->
+                <div class="flex items-center gap-2">
+                  <!-- Première checkbox -->
+                  <input
+                    type="checkbox"
+                    id="hide-name"
+                    class="h-4 w-4 text-green-500"
+                  />
+                  <label for="hide-name" class="text-gray-600 text-sm">{{
+                    check_1
+                  }}</label>
 
-              <!-- Bouton de soumission -->
-              <button
-                type="submit"
-                class="w-full py-2 text-white bg-green-400 rounded-lg"
-              >
-                {{ btn_3 }}
-              </button>
-            </form>
+                  <input
+                    type="checkbox"
+                    id="contact-me"
+                    class="h-4 w-4 text-green-500"
+                    disabled
+                  />
+                  <label for="contact-me" class="text-gray-600 text-sm">
+                    {{ check_2 }}
+                  </label>
+                </div>
+
+                <!-- Bouton de soumission -->
+                <button
+                  type="submit"
+                  class="w-full py-2 text-white bg-green-400 rounded"
+                >
+                  {{ btn_3 }}
+                </button>
+              </form>
+            </div>
+            <!-- Formulaires -->
           </div>
-
-          <!-- Formulaire mensuel -->
-          <div v-else>
-            <form class="space-y-4 p-6 bg-gray-50">
-              <h3 class="text-xl font-semibold">Monthly</h3>
-
-              <!-- Champ de saisie pour le montant mensuel -->
-
-              <div
-                class="relative w-full flex items-center border rounded focus-within:border-green-400"
-              >
-                <!-- Signe dollar -->
-                <span class="absolute left-3 text-gray-500">$</span>
-
-                <!-- Champ de saisie -->
-                <input
-                  v-model="amount"
-                  type="number"
-                  placeholder="Enter Amount"
-                  class="w-full p-2 pl-8 pr-12 border-none focus:outline-none rounded"
-                />
-
-                <!-- Texte USD -->
-                <span class="absolute right-3 text-gray-500">USD</span>
-              </div>
-
-              <!-- Champ de texte pour le nom -->
-              <input
-                type="text"
-                :placeholder="frm_1"
-                class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
-              />
-
-              <!-- Champ de texte pour l'email -->
-              <input
-                type="email"
-                :placeholder="frm_2"
-                class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
-              />
-
-              <!-- Zone de texte pour les commentaires -->
-              <textarea
-                :placeholder="frm_3"
-                class="w-full p-2 border rounded focus:outline-none focus:border-green-400"
-              ></textarea>
-              <!-- Checkbox -->
-              <div class="flex items-center gap-2">
-                <!-- Première checkbox -->
-                <input
-                  type="checkbox"
-                  id="hide-name"
-                  class="h-4 w-4 text-green-500"
-                />
-                <label for="hide-name" class="text-gray-600 text-sm">{{
-                  check_1
-                }}</label>
-
-                <input
-                  type="checkbox"
-                  id="contact-me"
-                  class="h-4 w-4 text-green-500"
-                  disabled
-                />
-                <label for="contact-me" class="text-gray-600 text-sm">
-                  {{ check_2 }}
-                </label>
-              </div>
-
-              <!-- Bouton de soumission -->
-              <button
-                type="submit"
-                class="w-full py-2 text-white bg-green-400 rounded"
-              >
-                {{ btn_3 }}
-              </button>
-            </form>
-          </div>
-          <!-- Formulaires -->
         </div>
       </div>
     </div>
@@ -285,13 +282,3 @@ const check_1 = ref(t("donation.check_1"));
 const check_2 = ref(t("donation.check_2"));
 </script>
 
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>

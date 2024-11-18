@@ -12,12 +12,12 @@
               {{ title_1 }}
               <span class="text-green-500 font-sri"> {{ title_2 }} </span>
               {{ title_3 }}
-              <span class="text-green-500 font-sri"> {{ title_4 }} </span
-              >....<img
-                src="/img/Assets_1.png"
-                class="w-8 h-8 md:w-12 md:h-12 -mt-4 inline-block ml-2"
-              />
+              <span class="text-green-500 font-sri"> {{ title_4 }} </span>....
             </h1>
+            <img
+              src="/img/hands.png"
+              class="w-8 h-8 md:w-12 md:h-12 -mt-4 inline-block ml-2"
+            />
             <p class="text-gray-700 text-lg">
               {{ desc }}
             </p>
@@ -91,7 +91,7 @@
         class="absolute right-0 top-48 transform -translate-y-1/2 opacity-90 pointer-events-none w-64 sm:w-96 md:w-[25rem] lg:w-[35rem] h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[35rem] z-0"
       />
     </div>
-
+    <!-- Fin Page d'accueil -->
     <div class="my-16">
       <log />
     </div>

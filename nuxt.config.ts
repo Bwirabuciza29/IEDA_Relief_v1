@@ -4,6 +4,74 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   app: {
     pageTransition: { name: "fade", mode: "out-in" },
+
+    head: {
+      title: "IEDA Relief",
+      htmlAttrs: {
+        lang: "en",
+      },
+      meta: [
+        { charset: "utf-16" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "description",
+          content: "Helping Communities to become Self-Sufficient ....",
+        },
+        { name: "format-detection", content: "telephone=no" },
+        { property: "og:title", content: "IEDA Relief" },
+        {
+          property: "og:description",
+          content: "Helping Communities to become Self-Sufficient ....",
+        },
+        { property: "og:url", content: "https://ieda-relief.vercel.app" },
+        {
+          property: "og:image",
+          content: "/img/logo.png",
+        },
+        { name: "twitter:title", content: "IEDA Relief" },
+        {
+          name: "twitter:description",
+          content: "Helping Communities to become Self-Sufficient ....",
+        },
+        {
+          name: "twitter:image",
+          content: "/img/logo.png",
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+
+      link: [
+        {
+          rel: "me",
+          href: "https://twitter.com/ieda_relief",
+        },
+        { rel: "icon", type: "image/x-icon", href: "/favicons/favicon.ico" },
+        {
+          rel: "apple-touch-icon",
+          sizes: "76x76",
+          href: "/favicons/apple-touch-icon.png",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "32x32",
+          href: "/favicons/favicon-32x32.png",
+        },
+        {
+          rel: "icon",
+          type: "image/png",
+          sizes: "16x16",
+          href: "/favicons/favicon-16x16.png",
+        },
+
+        {
+          rel: "mask-icon",
+          href: "/favicons/safari-pinned-tab.svg",
+          color: "#5bbad5",
+        },
+      ],
+      noscript: [{ children: "Javascript est désactivé" }],
+    },
   },
   postcss: {
     plugins: {
