@@ -15,5 +15,20 @@
     "btn": "donate now",
     "card_num": " 2.2 million",
     "card_desc": "People in Our Programs Worldwide"
+  },
+  "donation": {
+    "title_1": "Your Chance to Create",
+    "title_2": "Opportunities",
+    "title_3": "Today",
+    "desc": "When you give to Vively you trust us to steward your donation thoughtfully toward maximum positive impact.",
+    "sub_title": "Recent Donation",
+    "btn_1": "Give_Once",
+    "btn_2": "Monthly",
+    "btn_3": "Donate Now",
+    "frm_1": "Your Name",
+    "frm_2": "Your Email",
+    "frm_3": "Comment",
+    "check_1": "Hide my name from the public",
+    "check_2": "It's okay to contact me in the future."
   }
 }

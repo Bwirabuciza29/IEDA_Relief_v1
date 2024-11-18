@@ -6,21 +6,20 @@
         <!-- Colonne gauche -->
         <div class="lg:w-1/2">
           <h1 class="text-4xl font-bold">
-            Your Chance to Create
+            {{ title_1 }}
             <span
               class="font-sri hover:underline transition-transform duration-300 hover:scale-105"
-              >Opportunities</span
+              >{{ title_2 }}</span
             >
-            Today
+            {{ title_3 }}
           </h1>
           <p class="mt-2 text-gray-600">
-            When you give to Vively you trust us to steward your donation
-            thoughtfully toward maximum positive impact.
+            {{ desc }}
           </p>
 
           <!-- Liste des récents dons -->
           <div class="mt-6 space-y-4">
-            <h1 class="text-2xl font-semibold">Recent Donation</h1>
+            <h1 class="text-2xl font-semibold">{{ sub_title }}</h1>
             <div
               class="flex items-center justify-between p-4 rounded-lg shadow-sm bg-gray-50 hover:bg-white hover:border-green-500 hover:scale-105 transition-transform duration-300 ease-in-out border"
               v-for="donation in recentDonations"
@@ -262,6 +261,19 @@ const setAmount = (value) => {
   amount.value = value;
   selectedAmount.value = value;
 };
+const { t } = useI18n();
+const title_1 = ref(t("donation.title_1"));
+const title_2 = ref(t("donation.title_2"));
+const title_3 = ref(t("donation.title_3"));
+const desc = ref(t("donation.desc"));
+const sub_title = ref(t("donation.sub_title"));
+const btn_1 = ref(t("donation.btn_1"));
+const btn_2 = ref(t("donation.btn_3"));
+const frm_1 = ref(t("donation.frm_1"));
+const frm_2 = ref(t("donation.frm_2"));
+const frm_3 = ref(t("donation.frm_3"));
+const check_1 = ref(t("donation.check_1"));
+const check_2 = ref(t("donation.check_2"));
 </script>
 
 <style scoped>
