@@ -15,5 +15,21 @@
     "btn": "donar ahora",
     "card_num": "2,2 millones",
     "card_desc": "Personas en nuestros programas en todo el mundo"
+  },
+
+  "donation": {
+    "title_1": "Tu oportunidad de crear",
+    "title_2": "Oportunidades",
+    "title_3": "Hoy",
+    "desc": "Cuando donas a Vively, confías en que administraremos tu donación de manera reflexiva para maximizar su impacto positivo.",
+    "sub_title": "Donación reciente",
+    "btn_1": "Donar una vez",
+    "btn_2": "Mensual",
+    "btn_3": "Donar ahora",
+    "frm_1": "Tu nombre",
+    "frm_2": "Tu correo electrónico",
+    "frm_3": "Comentario",
+    "check_1": "Ocultar mi nombre del público",
+    "check_2": "Está bien contactarme en el futuro."
   }
 }

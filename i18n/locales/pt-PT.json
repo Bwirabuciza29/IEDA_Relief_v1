@@ -15,5 +15,20 @@
     "btn": "doe agora",
     "card_num": "2,2 milhões",
     "card_desc": "Pessoas em Nossos Programas ao Redor do Mundo"
+  },
+  "donation": {
+    "title_1": "Sua chance de criar",
+    "title_2": "Oportunidades",
+    "title_3": "Hoje",
+    "desc": "Quando você doa para a Vively, confia que administraremos sua doação de forma consciente para alcançar o máximo impacto positivo.",
+    "sub_title": "Doação recente",
+    "btn_1": "Doar uma vez",
+    "btn_2": "Mensal",
+    "btn_3": "Doar agora",
+    "frm_1": "Seu nome",
+    "frm_2": "Seu email",
+    "frm_3": "Comentário",
+    "check_1": "Ocultar meu nome do público",
+    "check_2": "Tudo bem me contatar no futuro."
   }
 }

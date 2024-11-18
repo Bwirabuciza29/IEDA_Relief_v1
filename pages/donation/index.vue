@@ -217,7 +217,6 @@
         </div>
       </div>
     </div>
-    -->
     <div class="my-16">
       <log />
     </div>

@@ -15,5 +15,20 @@
     "btn": "tolea sasa",
     "card_num": "2.2 milioni",
     "card_desc": "Watu katika Programu Zetu Ulimwenguni"
+  },
+  "donation": {
+    "title_1": "Nafasi yako ya kuunda",
+    "title_2": "Fursa",
+    "title_3": "Leo",
+    "desc": "Unapotoa mchango kwa Vively, unatuamini kutumia mchango wako kwa busara ili kuleta athari chanya kubwa.",
+    "sub_title": "Mchango wa Hivi Karibuni",
+    "btn_1": "Toa Mara Moja",
+    "btn_2": "Kila Mwezi",
+    "btn_3": "Toa Sasa",
+    "frm_1": "Jina Lako",
+    "frm_2": "Barua Pepe Yako",
+    "frm_3": "Maoni",
+    "check_1": "Ficha jina langu kwa umma",
+    "check_2": "Sawa kuwasiliana nami siku zijazo."
   }
 }
