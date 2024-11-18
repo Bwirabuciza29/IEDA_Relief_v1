@@ -185,21 +185,18 @@ const tabs = [
 ];
 const cards = [
   {
-    title: "Local Community Presence",
-    description:
-      "Our impactful initiatives actively engage the community, empowering positive change and individual growth.",
+    title: ct1,
+    description: cd1,
     image: "/img/solidarity.png",
   },
   {
-    title: "Total Transparency",
-    description:
-      "Vively maintains a steadfast commitment to total transparency through rigorous reporting and sharing.",
+    title: ct2,
+    description: cd2,
     image: "/img/compassion.png",
   },
   {
-    title: "Whole Human Focus",
-    description:
-      "Our holistic approach prioritizes wellbeing across health, education, and community support.",
+    title: ct3,
+    description: cd3,
     image: "/img/sponsorship.png",
   },
 ];
