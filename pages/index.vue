@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="relative mt-20">
+    <div class="mj-container relative mt-20">
       <!-- Contenu principal -->
       <div class="mj-container relative z-10">
         <div
@@ -27,8 +27,8 @@
               {{ btn }}
             </button> -->
             <NuxtLink
-              to="/news"
-              class="group relative inline-block overflow-hidden rounded-lg border-2 border-green-100 bg-green-500 px-auto py-2 text-sm font-semibold text-white sm:px-6 sm:py-3 sm:text-base"
+              to="/donation"
+              class="group relative inline-block overflow-hidden rounded-lg border-2 border-green-100 bg-green-500 px-6 py-4 text-sm font-semibold text-white sm:px-6 sm:py-3 sm:text-base"
             >
               <span
                 class="relative z-10 translate-x-full transform transition-all duration-300 ease-in-out group-hover:translate-x-0 group-hover:text-green-700"
