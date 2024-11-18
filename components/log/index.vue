@@ -8,7 +8,7 @@
         :key="index"
         :src="logo"
         alt="Logo"
-        class="h-12 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
+        class="h-10 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
       />
     </div>
   </div>

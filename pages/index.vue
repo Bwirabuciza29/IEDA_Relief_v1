@@ -95,6 +95,9 @@
     <div class="my-16">
       <log />
     </div>
+    <div class="my-16">
+      <mission />
+    </div>
   </div>
 </template>
 <script setup>
