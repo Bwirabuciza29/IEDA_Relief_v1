@@ -91,7 +91,7 @@ const langage = computed({
 });
 
 const flags = {
-  "en-UK": "https://flagcdn.com/w20/gb.png",
+  "en-UK": "https://flagcdn.com/w20/us.png",
   "fr-FR": "https://flagcdn.com/w20/fr.png",
   "es-ES": "https://flagcdn.com/w20/es.png",
   "ar-AR": "https://flagcdn.com/w20/sa.png",
