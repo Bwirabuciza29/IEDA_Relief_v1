@@ -1,6 +1,11 @@
 <template>
   <div
-    class="fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-center mt-2 bg-black"
+    :class="[
+      'fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-center  transition-all duration-500',
+      isScrolled
+        ? 'bg-gradient-to-r from-blue-950 to-blue-300 backdrop-blur-md'
+        : 'bg-black',
+    ]"
   >
     <header class="mj-container z-50 flex w-full items-center justify-between">
       <NuxtLink to="/">
@@ -143,4 +148,17 @@ const localPath = (item) => {
 
 // Vérification si le lien est actif
 const isActiveLink = (path) => route.path === path;
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
