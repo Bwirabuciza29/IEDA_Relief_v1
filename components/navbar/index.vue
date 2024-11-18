@@ -1,10 +1,14 @@
 <template>
   <div
-    class="fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-center bg-black"
+    class="fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-center mt-2 bg-black"
   >
     <header class="mj-container z-50 flex w-full items-center justify-between">
       <NuxtLink to="/">
-        <img src="/img/head.png" alt="Maajabu Logo" class="h-20 sm:h-20" />
+        <img
+          src="/img/logo.png"
+          alt="Maajabu Logo"
+          class="h-12 sm:h-12 py-2 my-2"
+        />
       </NuxtLink>
       <!-- Menu Desktop -->
       <div class="flex-grow">
