@@ -79,8 +79,8 @@
       />
     </div>
 
-    <div class="mj-container">
-      <home />
+    <div class="mt-14">
+      <log />
     </div>
   </div>
 </template>
