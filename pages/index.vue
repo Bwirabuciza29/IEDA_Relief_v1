@@ -21,11 +21,24 @@
             <p class="text-gray-700 text-lg">
               {{ desc }}
             </p>
-            <button
-              class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-md"
+            <!-- <button
+              class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg"
             >
               {{ btn }}
-            </button>
+            </button> -->
+            <NuxtLink
+              to="/news"
+              class="group relative inline-block overflow-hidden rounded-lg border-2 border-green-100 bg-green-500 px-auto py-2 text-sm font-semibold text-white sm:px-6 sm:py-3 sm:text-base"
+            >
+              <span
+                class="relative z-10 translate-x-full transform transition-all duration-300 ease-in-out group-hover:translate-x-0 group-hover:text-green-700"
+              >
+                {{ btn }}
+              </span>
+              <div
+                class="absolute inset-0 h-full w-full translate-x-full transform bg-blue-100 transition-transform duration-300 ease-in-out group-hover:translate-x-0"
+              ></div>
+            </NuxtLink>
           </div>
 
           <!-- Section de droite -->
@@ -41,16 +54,16 @@
               />
               <!-- Image en haut à gauche -->
               <img
-                src="/img/img_1.png"
+                src="/img/img_1.png "
                 alt="Volunteer"
-                class="absolute top-[50%] left-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
+                class="mx-2 absolute top-[50%] left-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
               />
 
               <!-- Image en haut à droite -->
               <img
                 src="/img/img_2.png"
                 alt="Child"
-                class="absolute top-[20%] right-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md transform rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
+                class="mx-2 absolute top-[20%] right-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md transform rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
               />
             </div>
 
@@ -79,7 +92,7 @@
       />
     </div>
 
-    <div class="mt-14">
+    <div class="my-16">
       <log />
     </div>
   </div>

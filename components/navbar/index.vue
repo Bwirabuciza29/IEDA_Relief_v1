@@ -2,9 +2,7 @@
   <div
     :class="[
       'fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-center  transition-all duration-500',
-      isScrolled
-        ? 'bg-gradient-to-r from-blue-950 to-blue-300 backdrop-blur-md'
-        : 'bg-black',
+      isScrolled ? 'bg-gray-800' : 'bg-black',
     ]"
   >
     <header class="mj-container z-50 flex w-full items-center justify-between">
