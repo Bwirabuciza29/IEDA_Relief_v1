@@ -34,7 +34,7 @@
         <button
           class="mt-6 px-6 py-3 text-sm bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
         >
-          View More
+          {{ $t("mission.btn", "View More") }}
         </button>
       </div>
 
@@ -56,7 +56,7 @@
 
         <!-- Image superposée -->
         <img
-          src="/img/rectori.png"
+          :src="imageSrc"
           alt="Overlay"
           class="absolute -bottom-24 w-auto h-auto sm:w-auto sm:h-auto md:w-auto md:h-auto"
         />
@@ -66,30 +66,39 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+const { t } = useI18n();
+const imageSrc = ref("/img/rectori.png");
+// Initialiser les variables avant de les utiliser
+const title_1 = ref(t("mission.title_1"));
+const title_2 = ref(t("mission.title_2"));
+const title_3 = ref(t("mission.title_3"));
+const title_4 = ref(t("mission.title_4"));
+const desc_1 = ref(t("mission.desc_1"));
+const desc_2 = ref(t("mission.desc_2"));
+const desc_3 = ref(t("mission.desc_3"));
+const desc_4 = ref(t("mission.desc_4"));
+const btn = ref(t("mission.btn"));
 
+// Ensuite, vous pouvez utiliser ces variables dans le tableau
 const tabs = [
   {
-    title: "Our Mission",
-    description:
-      "To alleviate the suffering of vulnerable people by addressing the underlying causes of poverty so that they can become self-sufficient and capable of achieving their full potential.",
+    title: title_1,
+    description: desc_1,
     image: "/img/v3.jpeg",
   },
   {
-    title: "Our Vision",
-    description:
-      "To create a stable environment with sustainable solutions that benefit people in need.",
+    title: title_2,
+    description: desc_2,
     image: "/img/vision.jpg",
   },
   {
-    title: "Our Values",
-    description:
-      "We are committed to working in the most difficult conditions and areas in order to reach the world's poorest and most vulnerable people regardless of their faith, culture, language, custom, ethnic origin or political affiliation.",
+    title: title_3,
+    description: desc_3,
     image: "/img/v2.jpeg",
   },
   {
-    title: "Latest News",
-    description: "Check Back for Latest News:  IEDA Relief ",
+    title: title_4,
+    description: desc_4,
     image: "/img/v1.jpeg",
   },
 ];
@@ -98,7 +107,6 @@ const activeTab = ref(0);
 </script>
 
 <style>
-/* Facultatif : Ajout d'une transition CSS personnalisée */
 .transition-opacity {
   transition: opacity 0.5s ease-in-out;
 }
