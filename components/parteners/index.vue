@@ -2,10 +2,10 @@
   <div class="mj-container">
     <div class="text-center my-6">
       <p class="text-custom-green uppercase tracking-widest text-xs">
-        Our mission of aid and support
+        {{ t1 }}
       </p>
       <h1 class="text-3xl font-semibold">
-        Joining Forces to Make the <span class="font-sri">World Better</span>
+        {{ t2 }} <span class="font-sri"> {{ t3 }}</span>
       </h1>
     </div>
     <div class="flex justify-center space-x-4 mb-8">
@@ -127,6 +127,9 @@ const desc_list_1 = ref(t("parteners.desc_list_1"));
 const desc_list_2 = ref(t("parteners.desc_list_2"));
 const desc_btn_1 = ref(t("parteners.desc_btn_1"));
 const desc_btn_2 = ref(t("parteners.desc_btn_2"));
+const t1 = ref(t("parteners.t1"));
+const t2 = ref(t("parteners.t2"));
+const t3 = ref(t("parteners.t3"));
 
 // Ensuite, vous pouvez utiliser ces variables dans le tableau
 const tabs = [

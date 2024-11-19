@@ -3,10 +3,10 @@
     <div class="container mx-auto px-4">
       <div class="text-center my-6">
         <p class="text-custom-green uppercase tracking-widest text-xs">
-          Co-Creating a Better World
+          {{ t1 }}
         </p>
         <h1 class="text-3xl font-semibold">
-          SOME OF OUR CURRENT AND FORMER <span class="font-sri">PARTNERS</span>
+          {{ t2 }} <span class="font-sri"> {{ t3 }}</span>
         </h1>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
@@ -26,6 +26,12 @@
   </section>
 </template>
 <script setup>
+const { t } = useI18n();
+// Initialiser les variables avant de les utiliser
+const t1 = ref(t("logo.t1"));
+const t2 = ref(t("logo.t2"));
+const t3 = ref(t("logo.t3"));
+
 const partners = [
   { id: 1, logo: "/img/hc.jpeg", alt: "Partner 1" },
   { id: 2, logo: "/img/unicef.png", alt: "Partner 2" },
