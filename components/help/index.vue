@@ -2,7 +2,7 @@
   <section class="bg-green-500 p-8 mx-4 rounded-lg">
     <!-- Titre -->
     <div class="mj-container relative z-10">
-      <h2 class="text-white text-3xl md:text-4xl font-bold text-center mb-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-left mb-8">
         Help us create a better <span class="font-sri">World</span>
       </h2>
       <!-- Watermark -->
@@ -30,7 +30,7 @@
         </div>
 
         <!-- Texte -->
-        <div class="text-white">
+        <div>
           <p class="text-lg">
             Helping others and making a difference in the world is what will
             help to make the world a better place by improving people’s lives.
