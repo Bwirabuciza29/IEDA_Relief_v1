@@ -151,25 +151,27 @@
     </div>
 
     <!-- Footer Bottom -->
-    <div class="flex items-center justify-between bg-black py-4 px-6">
-      <!-- Texte -->
-      <div class="text-sm text-white hover:text-custom-green hover:underline">
-        © 2024 IEDA Relief All rights reserved.
-      </div>
-      <!-- Liens des réseaux sociaux -->
-      <div class="flex space-x-4">
-        <a href="#" class="text-white hover:text-blue-500">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="text-white hover:text-gray-500">
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-        <a href="#" class="text-white hover:text-red-500">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" class="text-white hover:text-blue-700">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+    <div class="bg-black">
+      <div class="mj-container flex items-center justify-between py-4 px-6">
+        <!-- Texte -->
+        <div class="text-sm text-white hover:text-custom-green hover:underline">
+          © 2024 IEDA Relief All rights reserved.
+        </div>
+        <!-- Liens des réseaux sociaux -->
+        <div class="flex space-x-4">
+          <a href="#" class="text-white hover:text-blue-500">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-500">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="text-white hover:text-red-500">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white hover:text-blue-700">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>

@@ -13,7 +13,8 @@ export default {
     extend: {
       colors: {
         customLight: "#F9F9F4",
-        "custom-green": "#07AF08",
+        "custom-greens": "#07B008",
+        "custom-green": "#63F36F",
         "custom-blue": "#055FC5",
       },
       fontFamily: {

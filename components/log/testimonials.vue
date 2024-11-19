@@ -29,19 +29,19 @@
         <div class="flex items-center gap-4 mb-4">
           <div>
             <img
-              src="/img/bf.jpg"
+              src="/img/t1.png"
               class="w-14 h-14 rounded-full transform transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div>
             <img
-              src="/img/bf.jpg"
+              src="/img/t2.png"
               class="w-20 h-20 rounded-full transform transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div>
             <img
-              src="/img/bf.jpg"
+              src="/img/t1.png"
               class="w-14 h-14 rounded-full transform transition-transform duration-300 hover:scale-105"
             />
           </div>
@@ -58,7 +58,7 @@
         ></div>
         <!-- Image -->
         <img
-          src="/img/bro.png"
+          src="/img/bu.png"
           alt="Deuxième image"
           class="absolute inset-0 w-full h-full rounded-lg shadow-md object-cover z-10 transform transition-transform duration-300 hover:scale-105"
         />
