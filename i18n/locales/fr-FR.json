@@ -65,5 +65,21 @@
     "desc_2": "Organisation d'ateliers d'orientation professionnelle pour les jeunes; Fourniture de cours d'anglais gratuits pour les immigrants.",
     "card_3": "Conservation de l'Environnement",
     "desc_3": "Planter des arbres et protéger les forêts; Nettoyer les océans, les rivières et les terres publiques; Initiatives d'éducation et de plaidoyer pour l'environnement."
+  },
+  "parteners": {
+    "title_1": "Devenez notre Partenaire",
+    "title_2": "Opportunités de Carrière",
+    "title_3": "Bénévole / Stage",
+    "desc_1": "IEDA Relief est une organisation émergente engagée à adopter les approches les plus efficaces, flexibles et innovantes dans les travaux humanitaires et de développement. Nous croyons que travailler ensemble peut nous aider à obtenir de meilleurs résultats, et nous accueillons les idées gagnant-gagnant-gagnant qui ont un impact positif sur vous ou votre organisation, augmentent la capacité organisationnelle de IEDA Relief et, plus important encore, aident à obtenir des résultats optimaux pour les personnes dans le besoin. Il existe de nombreuses opportunités de collaboration entre IEDA Relief et les individus, les entreprises, les organismes gouvernementaux, les institutions académiques et d'autres organisations.",
+    "desc_2": "Merci de votre intérêt pour travailler avec IEDA Relief. Des opportunités passionnantes deviennent souvent disponibles, à la fois dans nos bureaux américains et dans nos missions internationales. Nous vous invitons à continuer à visiter notre site Web pour suivre les nouveaux développements et opportunités.",
+    "desc_3": "À l'échelle mondiale, les bénévoles et les stagiaires (dont beaucoup sont recrutés localement) jouent un rôle essentiel dans les programmes et opérations de IEDA Relief. Les bénévoles et les stagiaires provenant de divers horizons consacrent leur temps et leurs compétences à travailler directement avec les bénéficiaires des programmes, à développer les capacités organisationnelles de IEDA Relief, à aider lors des événements et collectes de fonds de IEDA Relief, et à participer aux missions de réponse d'urgence dans les jours et mois critiques suivant un conflit ou une catastrophe naturelle. IEDA Relief recrute activement des bénévoles et des stagiaires pour des postes spécifiques (voir ci-dessous) et accepte également des candidatures sur une base continue. Les stagiaires potentiels doivent être actuellement inscrits dans une institution éducative de premier ou deuxième cycle ou en être des diplômés récents; les stages sont généralement non rémunérés, sauf si des arrangements spéciaux sont pris avec votre institution académique.",
+    "desc_4": "Retournez pour les dernières nouvelles : IEDA Relief",
+    "desc_title_2": "Offres d'Emploi Actuelles",
+    "desc_desc_2": "Lorsque des opportunités d'emploi deviennent disponibles, elles seront publiées ci-dessous. Si vous êtes intéressé par une candidature, veuillez envoyer votre CV et votre lettre de motivation. De plus, veuillez inclure le titre du poste dans le champ objet de votre e-mail. Si vous êtes présélectionné pour un poste, l'un de nos spécialistes en recrutement vous contactera.",
+    "desc_list_1": "Professionnels en Développement International",
+    "desc_list_2": "Assistance Juridique & Avocat en Immigration",
+    "desc_btn_1": "En savoir plus",
+    "desc_btn_2": "Rejoindre aujourd'hui",
+    "btn": "Voir plus"
   }
 }

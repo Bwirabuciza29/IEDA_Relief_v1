@@ -64,5 +64,21 @@
     "desc_2": "Organizing workshops za mwelekeo wa kazi kwa vijana; Kutoa masomo ya bure ya Kiingereza kwa wahamiaji.",
     "card_3": "Uhifadhi wa Mazingira",
     "desc_3": "Kupanda miti na kulinda misitu; Kusafisha bahari, mto na ardhi ya umma; Elimu ya mazingira na juhudi za utetezi."
+  },
+  "parteners": {
+    "title_1": "Kuwa Mshirika wetu",
+    "title_2": "Fursa za Kazi",
+    "title_3": "Voluntary / Mafunzo ya kazini",
+    "desc_1": "IEDA Relief ni shirika linaloendelea kujiunga na mbinu bora, za kubadilika na za ubunifu katika kazi za kibinadamu na maendeleo. Tunaamini kuwa kufanya kazi pamoja kutatusaidia kufikia matokeo bora, na tunakaribisha mawazo ya kushinda-washindi ambayo yataathiri kwa njia nzuri wewe au shirika lako, kuongeza uwezo wa shirika la IEDA Relief, na muhimu zaidi, kusaidia kufikia matokeo bora kwa watu wanaohitaji. Kuna fursa nyingi za kushirikiana kati ya IEDA Relief na watu, mashirika, taasisi za serikali, taasisi za elimu na mashirika mengine.",
+    "desc_2": "Asante kwa nia yako ya kufanya kazi na IEDA Relief. Fursa za kusisimua mara nyingi zinapatikana, ikiwa ni pamoja na ofisi zetu za Marekani na misheni zetu za kimataifa. Tunakukaribisha kutembelea tovuti yetu ili kuendelea kufuatilia maendeleo na fursa mpya.",
+    "desc_3": "Duniani kote, wahudumu wa kujitolea na wanafunzi wa mafunzo ya kazi (wengi wao wakichaguliwa kitaifa) wana jukumu muhimu katika programu na shughuli za IEDA Relief. Wahudumu na wanafunzi kutoka nyanja mbalimbali hutumia muda wao na ujuzi wao kufanya kazi moja kwa moja na wahitaji wa programu, kukuza uwezo wa shirika la IEDA Relief, kusaidia na matukio na harambee za IEDA Relief, na kushiriki katika majukumu ya dharura siku na miezi ya kwanza baada ya migogoro au majanga ya asili. IEDA Relief inatafuta kwa bidii wahudumu na wanafunzi wa kazi kwa nafasi maalum (angalia hapa chini), na pia inakubali maombi kila wakati. Wanafunzi wa mafunzo wanapaswa kuwa wakiwa wanajiunga na taasisi ya elimu ya ngazi ya shahada au ya juu au kuwa wahitimu wa hivi karibuni; mafunzo mara nyingi hayalipwi isipokuwa kama mikataba maalum imekubaliana na taasisi yako ya elimu.",
+    "desc_4": "Rudi kwa habari mpya: IEDA Relief",
+    "desc_title_2": "Matangazo ya Ajira ya Sasa",
+    "desc_desc_2": "Mara tu fursa za ajira zitakapokuwa, zitachapishwa hapa chini. Ikiwa unavutiwa na maombi, tafadhali tuma wasifu wako na barua ya utangulizi. Aidha, tafadhali weka jina la nafasi kwenye sehemu ya somo la barua pepe yako. Ikiwa utaorodheshwa kwa nafasi, mmoja wa wataalamu wetu wa ajira atakupigia simu.",
+    "desc_list_1": "Wataalamu wa Maendeleo ya Kimataifa",
+    "desc_list_2": "Msaada wa Kisheria & Wakili wa Uhamiaji",
+    "desc_btn_1": "Jua Zaidi",
+    "desc_btn_2": "Jiunge leo",
+    "btn": "Tazama zaidi"
   }
 }

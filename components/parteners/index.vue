@@ -75,23 +75,27 @@
 const { t } = useI18n();
 const imageSrc = ref("/img/rectori.png");
 // Initialiser les variables avant de les utiliser
-const title_1 = ref(t("mission.title_1"));
-const title_2 = ref(t("mission.title_2"));
-const title_3 = ref(t("mission.title_3"));
-const title_4 = ref(t("mission.title_4"));
-const desc_1 = ref(t("mission.desc_1"));
-const desc_2 = ref(t("mission.desc_2"));
-const desc_3 = ref(t("mission.desc_3"));
-const desc_4 = ref(t("mission.desc_4"));
-const tit_1 = ref(t("mission.tit_1"));
-const tit_2 = ref(t("mission.tit_2"));
-const tit_3 = ref(t("mission.tit_3"));
-const ct1 = ref(t("mission.ct1"));
-const ct2 = ref(t("mission.ct2"));
-const ct3 = ref(t("mission.ct3"));
-const cd1 = ref(t("mission.cd1"));
-const cd2 = ref(t("mission.cd2"));
-const cd3 = ref(t("mission.cd3"));
+const title_1 = ref(t("parteners.title_1"));
+const title_2 = ref(t("parteners.title_2"));
+const title_3 = ref(t("parteners.title_3"));
+const title_4 = ref(t("parteners.title_4"));
+const desc_1 = ref(t("parteners.desc_1"));
+const desc_2 = ref(t("parteners.desc_2"));
+const desc_3 = ref(t("parteners.desc_3"));
+const desc_4 = ref(t("parteners.desc_4"));
+const tit_1 = ref(t("parteners.tit_1"));
+const tit_2 = ref(t("parteners.tit_2"));
+const tit_3 = ref(t("parteners.tit_3"));
+const ct1 = ref(t("parteners.ct1"));
+const ct2 = ref(t("parteners.ct2"));
+const ct3 = ref(t("parteners.ct3"));
+const cd1 = ref(t("parteners.cd1"));
+const cd2 = ref(t("parteners.cd2"));
+const cd3 = ref(t("parteners.cd3"));
+const desc_title_2 = ref(t("parteners.desc_title_2"));
+const desc_desc_2 = ref(t("parteners.desc_desc_2"));
+const desc_list_1 = ref(t("parteners.desc_list_1"));
+const desc_list_2 = ref(t("parteners.desc_list_2"));
 
 // Ensuite, vous pouvez utiliser ces variables dans le tableau
 const tabs = [
@@ -104,33 +108,17 @@ const tabs = [
     title: title_2,
     description: desc_2,
     image: "/img/vision.jpg",
+    s_title: desc_title_2,
+    s_desc: desc_desc_2,
+    desc_list_1: desc_list_1,
+    desc_list_2: desc_list_2,
   },
   {
     title: title_3,
     description: desc_3,
     image: "/img/v2.jpeg",
-  },
-  {
-    title: title_4,
-    description: desc_4,
-    image: "/img/v1.jpeg",
-  },
-];
-const cards = [
-  {
-    title: ct1,
-    description: cd1,
-    image: "/img/solidarity.png",
-  },
-  {
-    title: ct2,
-    description: cd2,
-    image: "/img/compassion.png",
-  },
-  {
-    title: ct3,
-    description: cd3,
-    image: "/img/sponsorship.png",
+    desc_btn_1: desc_btn_1,
+    desc_btn_2: desc_btn_2,
   },
 ];
 
