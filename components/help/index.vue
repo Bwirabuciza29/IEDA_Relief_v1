@@ -31,7 +31,7 @@
 
         <!-- Texte -->
         <div>
-          <p class="text-lg">
+          <p class="text-lg text-center">
             Helping others and making a difference in the world is what will
             help to make the world a better place by improving people’s lives.
             One person at a time, one day at a time, and one project at a time,
