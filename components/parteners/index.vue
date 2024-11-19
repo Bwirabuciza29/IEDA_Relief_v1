@@ -96,6 +96,8 @@ const desc_title_2 = ref(t("parteners.desc_title_2"));
 const desc_desc_2 = ref(t("parteners.desc_desc_2"));
 const desc_list_1 = ref(t("parteners.desc_list_1"));
 const desc_list_2 = ref(t("parteners.desc_list_2"));
+const desc_btn_1 = ref(t("parteners.desc_btn_1"));
+const desc_btn_2 = ref(t("parteners.desc_btn_2"));
 
 // Ensuite, vous pouvez utiliser ces variables dans le tableau
 const tabs = [
