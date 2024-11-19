@@ -21,7 +21,7 @@
           <div class="mt-6 space-y-4">
             <h1 class="text-2xl font-bold">{{ sub_title }}</h1>
             <div
-              class="flex items-center justify-between p-4 rounded-lg shadow-sm bg-gray-50 hover:bg-white hover:border-green-500 hover:scale-105 transition-transform duration-300 ease-in-out border"
+              class="flex items-center justify-between p-4 rounded-lg shadow-sm bg-gray-50 hover:bg-white hover:border-custom-green hover:scale-105 transition-transform duration-300 ease-in-out border"
               v-for="donation in recentDonations"
               :key="donation.id"
             >
@@ -40,7 +40,7 @@
             <button
               :class="[
                 'w-full px-4 py-2 text-center rounded-md transition duration-200',
-                isGiveOnce ? 'bg-green-400 text-white' : 'bg-gray-50',
+                isGiveOnce ? 'bg-custom-green text-white' : 'bg-gray-50',
               ]"
               @click="toggleForm('giveOnce')"
             >
@@ -49,7 +49,7 @@
             <button
               :class="[
                 'w-full px-4 py-2 text-center rounded-md transition duration-200',
-                isGiveOnce ? 'bg-gray-50' : 'bg-green-400 text-white',
+                isGiveOnce ? 'bg-gray-50' : 'bg-custom-green text-white',
               ]"
               @click="toggleForm('monthly')"
             >
@@ -68,7 +68,7 @@
                     :class="[
                       'flex-1 py-2 text-center rounded-lg border transition duration-200',
                       selectedAmount === option
-                        ? 'border-green-400 text-green-400'
+                        ? 'border-custom-green text-custom-green'
                         : 'bg-gray-100',
                     ]"
                   >
@@ -78,7 +78,7 @@
 
                 <!-- Champs du formulaire -->
                 <div
-                  class="relative w-full flex items-center border rounded focus-within:border-green-400"
+                  class="relative w-full flex items-center border rounded focus-within:border-custom-green"
                 >
                   <!-- Signe dollar -->
                   <span class="absolute left-3 text-gray-500">$</span>
@@ -99,20 +99,20 @@
                 <input
                   type="text"
                   :placeholder="frm_1"
-                  class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
+                  class="w-full p-2 rounded border focus:outline-none focus:border-custom-green"
                 />
 
                 <!-- Champ de texte pour l'email -->
                 <input
                   type="email"
                   :placeholder="frm_2"
-                  class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
+                  class="w-full p-2 rounded border focus:outline-none focus:border-custom-green"
                 />
 
                 <!-- Zone de texte pour les commentaires -->
                 <textarea
                   :placeholder="frm_3"
-                  class="w-full p-2 rounded border focus:outline-none focus:border-green-400"
+                  class="w-full p-2 rounded border focus:outline-none focus:border-custom-green"
                 ></textarea>
 
                 <!-- Checkbox -->
