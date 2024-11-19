@@ -80,6 +80,23 @@
     "desc_list_2": "Assistance Juridique & Avocat en Immigration",
     "desc_btn_1": "En savoir plus",
     "desc_btn_2": "Rejoindre aujourd'hui",
-    "btn": "Voir plus"
+    "btn": "Voir plus",
+    "t1": "Notre mission d'aide et de soutien",
+    "t2": "Unir nos forces pour rendre",
+    "t3": "le monde meilleur"
+  },
+  "logo": {
+    "t1": "Co-créer un monde meilleur",
+    "t2": "CERTAINS DE NOS PARTENAIRES",
+    "t3": "ACTUELS ET ANCIENS"
+  },
+  "support": {
+    "t1": "À quoi sert votre soutien",
+    "t2": "Le monde a un besoin urgent de construire un",
+    "t3": "avenir meilleur.",
+    "title_1": "Autonomiser les vies",
+    "title_2": "Surmonter les difficultés",
+    "desc_1": "Nous croyons sincèrement qu'un monde meilleur est possible lorsque nous travaillons ensemble. Rejoignez-nous. En faisant un don ou en soutenant notre travail, vous aidez les enfants et les familles du monde entier à survivre à la crise et à avoir un avenir meilleur.",
+    "desc_2": "Nous croyons sincèrement qu'un monde meilleur est possible lorsque nous travaillons ensemble. Rejoignez-nous. En faisant un don ou en soutenant notre travail, vous aidez les enfants et les familles du monde entier à survivre à la crise et à avoir un avenir meilleur."
   }
 }

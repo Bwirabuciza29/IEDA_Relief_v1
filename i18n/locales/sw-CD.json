@@ -79,6 +79,23 @@
     "desc_list_2": "Msaada wa Kisheria & Wakili wa Uhamiaji",
     "desc_btn_1": "Jua Zaidi",
     "desc_btn_2": "Jiunge leo",
-    "btn": "Tazama zaidi"
+    "btn": "Tazama zaidi",
+    "t1": "Dhamira yetu ya msaada na usaidizi",
+    "t2": "Kuungana kwa nguvu ili kufanya",
+    "t3": "Dunia iwe bora"
+  },
+  "logo": {
+    "t1": "Kushirikiana Kuunda Dunia Bora",
+    "t2": "BAADHI YA WASHIRIKA WETU",
+    "t3": "WA SASA NA WA ZAMANI"
+  },
+  "support": {
+    "t1": "Mahali Msaada Wako Unaenda",
+    "t2": "Ulimwengu unahitaji haraka kujenga",
+    "t3": "mustakabali mzuri.",
+    "title_1": "Kuwapa Watu Uwezo",
+    "title_2": "Kushinda Changamoto",
+    "desc_1": "Tunaamini kwa dhati kwamba dunia bora inawezekana tunaposhirikiana. Jiunge nasi. Kwa kutoa zawadi au kusaidia kazi yetu, unasaidia watoto na familia duniani kote kuishi katika mzozo na kuwa na mustakabali mzuri.",
+    "desc_2": "Tunaamini kwa dhati kwamba dunia bora inawezekana tunaposhirikiana. Jiunge nasi. Kwa kutoa zawadi au kusaidia kazi yetu, unasaidia watoto na familia duniani kote kuishi katika mzozo na kuwa na mustakabali mzuri."
   }
 }
