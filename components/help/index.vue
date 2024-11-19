@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-green-400 p-8 mx-4 rounded-lg">
+  <section class="bg-custom-green p-8 mx-4 rounded-lg">
     <!-- Titre -->
     <div class="mj-container relative z-10">
       <h2 class="text-3xl md:text-4xl font-bold text-left mb-8">
@@ -47,7 +47,7 @@
         <!-- Carte avec éléments -->
         <div class="bg-white rounded-lg shadow-lg p-6 space-y-4">
           <div
-            class="flex items-center space-x-4 border rounded-full border-green-500 p-2"
+            class="flex items-center space-x-4 border rounded-full border-custom-green p-2"
           >
             <img
               src="/img/food.png"
@@ -57,11 +57,11 @@
             <h3 class="font-semibold">{{ card_1 }}</h3>
           </div>
           <p class="hover:underline">
-             {{ desc_1 }}
+            {{ desc_1 }}
           </p>
 
           <div
-            class="flex items-center space-x-4 border rounded-full border-green-500 p-2"
+            class="flex items-center space-x-4 border rounded-full border-custom-green p-2"
           >
             <img
               src="/img/teach.png"
@@ -75,7 +75,7 @@
           </p>
 
           <div
-            class="flex items-center space-x-4 border rounded-full border-green-500 p-2"
+            class="flex items-center space-x-4 border rounded-full border-custom-green p-2"
           >
             <img
               src="/img/seedling.png"

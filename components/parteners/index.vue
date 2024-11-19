@@ -1,7 +1,7 @@
 <template>
   <div class="mj-container">
     <div class="text-center my-6">
-      <p class="text-green-500 uppercase tracking-widest text-xs">
+      <p class="text-custom-green uppercase tracking-widest text-xs">
         Our mission of aid and support
       </p>
       <h1 class="text-3xl font-semibold">
@@ -16,7 +16,7 @@
         :class="[
           'px-4 py-3 font-medium rounded-lg transition-colors duration-300',
           activeTab === index
-            ? 'bg-green-500 text-white'
+            ? 'bg-custom-green text-white'
             : 'bg-gray-200 text-gray-700 hover:bg-gray-300',
         ]"
       >
@@ -38,11 +38,40 @@
         <p class="text-gray-600 mt-4">
           {{ tab.description }}
         </p>
-        <button
-          class="mt-6 px-6 py-3 text-sm bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
-        >
-          {{ $t("mission.btn", "View More") }}
-        </button>
+        <h2 class="text-xl font-semibold text-custom-green mb-4">
+          {{ tab.s_title }}
+        </h2>
+
+        <!-- Description -->
+        <p class="text-gray-600 mb-4">
+          {{ tab.s_desc }}
+        </p>
+
+        <!-- Liste des postes -->
+        <ul class="list-disc pl-5 space-y-2">
+          <ul>
+            <a href="#" class="text-custom-green hover:underline">
+              {{ tab.desc_list_1 }}
+            </a>
+          </ul>
+          <ul>
+            <a href="#" class="text-custom-green hover:underline">
+              {{ tab.desc_list_2 }}
+            </a>
+          </ul>
+        </ul>
+        <div class="flex flex-col sm:flex-row gap-4 my-4">
+          <button
+            class="bg-gray-800 text-white font-semibold px-6 py-2 rounded-md hover:bg-gray-700 transition"
+          >
+            {{ tab.desc_btn_1 }}
+          </button>
+          <button
+            class="bg-custom-green text-white font-semibold px-6 py-2 rounded-md hover:bg-custom-green transition"
+          >
+            {{ tab.desc_btn_2 }}
+          </button>
+        </div>
       </div>
 
       <!-- Image à droite -->
@@ -57,7 +86,7 @@
           />
           <!-- Gradient en dessous -->
           <div
-            class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-green-500 to-transparent rounded-b-lg pointer-events-none"
+            class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-custom-green to-transparent rounded-b-lg pointer-events-none"
           ></div>
         </div>
 
@@ -104,12 +133,12 @@ const tabs = [
   {
     title: title_1,
     description: desc_1,
-    image: "/img/v3.jpeg",
+    image: "/img/part.jpg",
   },
   {
     title: title_2,
     description: desc_2,
-    image: "/img/vision.jpg",
+    image: "/img/aork.jpg",
     s_title: desc_title_2,
     s_desc: desc_desc_2,
     desc_list_1: desc_list_1,
@@ -118,7 +147,7 @@ const tabs = [
   {
     title: title_3,
     description: desc_3,
-    image: "/img/v2.jpeg",
+    image: "/img/bby.jpeg",
     desc_btn_1: desc_btn_1,
     desc_btn_2: desc_btn_2,
   },

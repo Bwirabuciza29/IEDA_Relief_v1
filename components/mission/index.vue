@@ -9,7 +9,7 @@
         :class="[
           'px-4 py-3 font-medium rounded-lg transition-colors duration-300',
           activeTab === index
-            ? 'bg-green-500 text-white'
+            ? 'bg-custom-green text-white'
             : 'bg-gray-200 text-gray-700 hover:bg-gray-300',
         ]"
       >
@@ -32,7 +32,7 @@
           {{ tab.description }}
         </p>
         <button
-          class="mt-6 px-6 py-3 text-sm bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
+          class="mt-6 px-6 py-3 text-sm bg-custom-green text-white rounded-lg hover:bg-green-600 transition"
         >
           {{ $t("mission.btn", "View More") }}
         </button>
@@ -50,7 +50,7 @@
           />
           <!-- Gradient en dessous -->
           <div
-            class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-green-500 to-transparent rounded-b-lg pointer-events-none"
+            class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-custom-greento-transparent rounded-b-lg pointer-events-none"
           ></div>
         </div>
 
@@ -92,7 +92,7 @@
             </span>
           </button>
           <button
-            class="w-10 h-10 flex items-center justify-center rounded-full bg-green-500 text-white hover:bg-green-600"
+            class="w-10 h-10 flex items-center justify-center rounded-full bg-custom-green text-white hover:bg-green-600"
           >
             <span class="sr-only">Next</span>
             <span
@@ -123,7 +123,7 @@
           :key="index"
           class="card bg-white shadow-md p-6 rounded-lg text-center transition-transform duration-300 hover:scale-105"
         >
-          <div class="w-10 h-10 mx-auto mb-4 bg-green-400 rounded-full p-2">
+          <div class="w-10 h-10 mx-auto mb-4 bg-custom-green rounded-full p-2">
             <img
               :src="card.image"
               alt="Card icon"

@@ -10,9 +10,10 @@
           <div class="md:w-1/2 space-y-6 text-center md:text-left">
             <h1 class="text-4xl md:text-5xl">
               {{ title_1 }}
-              <span class="text-green-500 font-sri"> {{ title_2 }} </span>
+              <span class="text-custom-green font-sri"> {{ title_2 }} </span>
               {{ title_3 }}
-              <span class="text-green-500 font-sri"> {{ title_4 }} </span>....
+              <span class="text-custom-green font-sri"> {{ title_4 }} </span
+              >....
             </h1>
             <img
               src="/img/hands.png"
@@ -23,7 +24,7 @@
             </p>
             <NuxtLink
               :to="localePath('donation')"
-              class="group relative inline-block overflow-hidden rounded-lg border-2 border-green-100 bg-green-500 px-6 py-4 text-sm font-semibold text-white sm:px-6 sm:py-3 sm:text-base"
+              class="group relative inline-block overflow-hidden rounded-lg border-2 border-green-100 bg-custom-green px-6 py-4 text-sm font-semibold text-white sm:px-6 sm:py-3 sm:text-base"
             >
               <span
                 class="relative z-10 translate-x-full transform transition-all duration-300 ease-in-out group-hover:translate-x-0 group-hover:text-green-700"
@@ -64,7 +65,7 @@
 
             <!-- Carte en bas (superposée) -->
             <div
-              class="bg-green-400 p-2 rounded-md flex items-center justify-center w-2/4 md:w-2/2 absolute -bottom-16 left-44 transform -translate-x-1/2 md:translate-x-0 transition hover:scale-105 mobile:bottom-8 mobile:left-1/2 mobile:transform mobile:-translate-x-1/2"
+              class="bg-custom-green p-2 rounded-md flex items-center justify-center w-2/4 md:w-2/2 absolute -bottom-16 left-44 transform -translate-x-1/2 md:translate-x-0 transition hover:scale-105 mobile:bottom-8 mobile:left-1/2 mobile:transform mobile:-translate-x-1/2"
             >
               <div class="text-center">
                 <p class="text-2xl md:text-3xl text-black font-sri">
