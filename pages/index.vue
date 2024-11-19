@@ -61,7 +61,7 @@
             >
               <div class="text-center">
                 <p class="text-2xl md:text-3xl text-black font-sri">
-                  {{ animatedCardNum }}
+                  {{ animatedCardNum }} {{ card_letter }}
                 </p>
                 <p class="text-black hover:underline">
                   {{ card_desc }}
@@ -122,6 +122,7 @@ const title_4 = ref(t("hero.title_4"));
 const desc = ref(t("hero.desc"));
 const btn = ref(t("hero.btn"));
 const card_desc = ref(t("hero.card_desc"));
+const card_letter = ref(t("hero.card_letter"));
 
 // Valeur initiale du compteur
 const animatedCardNum = ref(0);
