@@ -2,23 +2,23 @@
   <div>
     <div class="mj-container relative mt-20">
       <!-- Contenu principal -->
-      <div class="mj-container relative z-10">
+      <div class="relative z-10">
         <div
-          class="flex flex-col md:flex-row items-center md:justify-between px-6 py-10"
+          class="flex flex-col md:flex-row items-center md:justify-between py-10"
         >
           <!-- Section de gauche -->
           <div class="md:w-1/2 space-y-6 text-center md:text-left">
-            <h1 class="text-4xl md:text-5xl">
+            <h1 class="text-4xl md:text-5xl font-semibold">
               {{ title_1 }}
               <span class="text-custom-green font-sri"> {{ title_2 }} </span>
               {{ title_3 }}
               <span class="text-custom-green font-sri"> {{ title_4 }} </span
               >....
             </h1>
-            <img
+            <!-- <img
               src="/img/hands.png"
               class="w-8 h-8 md:w-12 md:h-12 -mt-4 inline-block ml-2"
-            />
+            /> -->
             <p class="text-gray-700 text-lg">
               {{ desc }}
             </p>
