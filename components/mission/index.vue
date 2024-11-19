@@ -50,7 +50,7 @@
           />
           <!-- Gradient en dessous -->
           <div
-            class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-custom-greento-transparent rounded-b-lg pointer-events-none"
+            class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-custom-green to-transparent rounded-b-lg pointer-events-none"
           ></div>
         </div>
 

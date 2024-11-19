@@ -15,10 +15,6 @@
               <span class="text-custom-green font-sri"> {{ title_4 }} </span
               >....
             </h1>
-            <!-- <img
-              src="/img/hands.png"
-              class="w-8 h-8 md:w-12 md:h-12 -mt-4 inline-block ml-2"
-            /> -->
             <p class="text-gray-700 text-lg">
               {{ desc }}
             </p>
@@ -41,21 +37,17 @@
           <div
             class="md:w-1/2 flex flex-wrap md:justify-end gap-4 mt-10 md:mt-0 relative"
           >
-            <!-- Image principale -->
             <div class="relative md:w-3/4">
               <img
                 src="/img/img_principal.png"
                 alt="Community support"
                 class="shadow-lg transform rounded-lg"
               />
-              <!-- Image en haut à gauche -->
               <img
-                src="/img/img_1.png "
+                src="/img/img_1.png"
                 alt="Volunteer"
                 class="mx-2 absolute top-[50%] left-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
               />
-
-              <!-- Image en haut à droite -->
               <img
                 src="/img/img_2.png"
                 alt="Child"
@@ -65,11 +57,11 @@
 
             <!-- Carte en bas (superposée) -->
             <div
-              class="bg-custom-green p-2 rounded-md flex items-center justify-center w-2/4 md:w-2/2 absolute -bottom-16 left-44 transform -translate-x-1/2 md:translate-x-0 transition hover:scale-105 mobile:bottom-8 mobile:left-1/2 mobile:transform mobile:-translate-x-1/2"
+              class="bg-custom-green py-6 rounded-md flex items-center justify-center w-2/4 md:w-2/2 absolute -bottom-16 left-44 transform -translate-x-1/2 md:translate-x-0 transition hover:scale-105 mobile:bottom-8 mobile:left-1/2 mobile:transform mobile:-translate-x-1/2"
             >
               <div class="text-center">
                 <p class="text-2xl md:text-3xl text-black font-sri">
-                  {{ card_num }}
+                  {{ animatedCardNum }}
                 </p>
                 <p class="text-black hover:underline">
                   {{ card_desc }}
@@ -80,7 +72,7 @@
         </div>
       </div>
 
-      <!-- Image de filigrane, positionnée derrière le contenu -->
+      <!-- Image de filigrane -->
       <img
         src="/img/Vector_1.png"
         alt="Filigrane"
@@ -117,7 +109,10 @@
     </div>
   </div>
 </template>
+
 <script setup>
+import { ref, onMounted } from "vue";
+
 const localePath = useLocalePath();
 const { t } = useI18n();
 const title_1 = ref(t("hero.title_1"));
@@ -126,6 +121,24 @@ const title_3 = ref(t("hero.title_3"));
 const title_4 = ref(t("hero.title_4"));
 const desc = ref(t("hero.desc"));
 const btn = ref(t("hero.btn"));
-const card_num = ref(t("hero.card_num"));
 const card_desc = ref(t("hero.card_desc"));
+
+// Valeur initiale du compteur
+const animatedCardNum = ref(0);
+
+// Valeur cible du compteur
+const targetCardNum = 2.2;
+
+// Animation du compteur
+onMounted(() => {
+  let currentValue = 0;
+  const interval = setInterval(() => {
+    currentValue += 0.01; // Incrémente de 0.01 pour animer
+    if (currentValue >= targetCardNum) {
+      clearInterval(interval); // Arrête l'intervalle quand la valeur cible est atteinte
+      currentValue = targetCardNum; // Assure que la valeur finale soit exacte
+    }
+    animatedCardNum.value = currentValue.toFixed(2); // Met à jour la valeur affichée
+  }, 50); // Toutes les 50ms, ce qui donne une animation fluide
+});
 </script>
