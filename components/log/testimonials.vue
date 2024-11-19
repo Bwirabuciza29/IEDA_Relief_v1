@@ -2,69 +2,99 @@
   <section class="mj-container relative z-10">
     <div class="text-center my-6">
       <p class="text-custom-green uppercase tracking-widest text-xs">
-        Inspiring Stories, Changing Lives
+        {{ t1 }}
       </p>
       <h1 class="text-3xl font-semibold">
-        <span class="font-sri"> Testimonials</span> from Our Community
+        <span class="font-sri"> {{ t2 }}</span> {{ t3 }}
       </h1>
     </div>
     <div class="grid gap-6 p-4 md:grid-cols-3">
       <!-- Premier Grid -->
-      <div class="relative">
+
+      <div class="relative w-full max-w-xs mx-auto sm:w-full sm:h-auto">
+        <div
+          :class="firstCardColor"
+          class="absolute -bottom-8 -right-10 w-full h-full rounded-lg shadow-lg z-0 transition-colors duration-1000"
+        ></div>
+        <!-- Image -->
         <img
           src="/img/filles.png"
           alt="Image principale"
-          class="w-full rounded-lg shadow-md"
+          class="absolute inset-0 w-full h-full rounded-lg shadow-md object-cover z-10 transform transition-transform duration-300 hover:scale-105"
         />
-        <div
-          class="absolute bottom-2 right-2 w-16 h-16 bg-yellow-500 rounded shadow-lg"
-        ></div>
       </div>
 
       <!-- Deuxième Grid -->
       <div class="flex flex-col items-center text-center">
         <div class="flex items-center gap-4 mb-4">
-          <img
-            src="/img/bf.jpg"
-            alt="Avatar 1"
-            class="w-16 h-16 rounded-full border-2 border-gray-300"
-          />
-          <img
-            src="/img/bf.jpg"
-            alt="Avatar 2"
-            class="w-20 h-20 rounded-full border-4 border-gray-500"
-          />
-          <img
-            src="/img/bf.jpg"
-            alt="Avatar 3"
-            class="w-16 h-16 rounded-full border-2 border-gray-300"
-          />
+          <div>
+            <img
+              src="/img/bf.jpg"
+              class="w-14 h-14 rounded-full transform transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+          <div>
+            <img
+              src="/img/bf.jpg"
+              class="w-20 h-20 rounded-full transform transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+          <div>
+            <img
+              src="/img/bf.jpg"
+              class="w-14 h-14 rounded-full transform transition-transform duration-300 hover:scale-105"
+            />
+          </div>
         </div>
-        <p class="text-gray-700">
-          “"Thanks to IEDA Relief, I am no longer at risk of forced marriages."
-          ~ Central-African refugee child, Borgop refugee site, Adamauoua
-          region, Cameroon. Beneficiary of IEDA Relief community Service”
-        </p>
+        <p class="text-gray-700 px-4">“ {{ desc }}”</p>
       </div>
 
       <!-- Troisième Grid -->
-      <div class="relative">
+      <div class="relative w-full max-w-xs mx-auto sm:w-full sm:h-auto">
+        <!-- Carte derrière l'image -->
+        <div
+          :class="secondCardColor"
+          class="absolute -top-8 -right-10 w-full h-full rounded-lg shadow-lg z-0 transition-colors duration-1000"
+        ></div>
+        <!-- Image -->
         <img
           src="/img/bro.png"
           alt="Deuxième image"
-          class="w-full rounded-lg shadow-md"
+          class="absolute inset-0 w-full h-full rounded-lg shadow-md object-cover z-10 transform transition-transform duration-300 hover:scale-105"
         />
-        <div
-          class="absolute top-2 right-2 w-16 h-16 bg-green-500 rounded shadow-lg"
-        ></div>
       </div>
     </div>
   </section>
 </template>
 <script setup>
 const { t } = useI18n();
-// Initialiser les variables avant de les utiliser
-const t1 = ref(t("logo.t1"));
-const t2 = ref(t("logo.t2"));
-const t3 = ref(t("logo.t3"));
+const t1 = ref(t("testimonial.t1"));
+const t2 = ref(t("testimonial.t2"));
+const t3 = ref(t("testimonial.t3"));
+const desc = ref(t("testimonial.desc"));
+
+const firstCardColor = ref("bg-yellow-300");
+const secondCardColor = ref("bg-green-500");
+
+// Fonction qui alterne les couleurs de la première carte
+onMounted(() => {
+  setInterval(() => {
+    firstCardColor.value =
+      firstCardColor.value === "bg-yellow-300"
+        ? "bg-blue-300"
+        : "bg-yellow-300";
+  }, 2000);
+});
+
+onMounted(() => {
+  setInterval(() => {
+    if (secondCardColor.value === "bg-green-500") {
+      secondCardColor.value = "bg-sky-500";
+    } else if (secondCardColor.value === "bg-blue-700") {
+      secondCardColor.value = "bg-black";
+    } else {
+      secondCardColor.value = "bg-custom-green";
+    }
+  }, 2000);
+});
 </script>

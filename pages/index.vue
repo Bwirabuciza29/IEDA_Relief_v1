@@ -106,6 +106,9 @@
     <div class="my-16">
       <PartenersSupport />
     </div>
+    <div class="my-16">
+      <LogTestimonials />
+    </div>
   </div>
 </template>
 <script setup>
