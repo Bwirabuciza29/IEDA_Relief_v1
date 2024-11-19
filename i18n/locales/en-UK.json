@@ -104,5 +104,15 @@
     "t2": "Testimonials",
     "t3": "from Our Community.",
     "desc": "Thanks to IEDA Relief, I am no longer at risk of forced marriages. Central-African refugee child, Borgop refugee site, Adamoua region, Cameroon. Beneficiary of IEDA Relief community Service"
+  },
+  "subscribe": {
+    "t1": "Subscribe to",
+    "t2": "IEDA Relief's",
+    "t3": "Newsletter for Impactful Updates",
+    "desc": "Stay informed about our latest projects, success stories, and upcoming events by subscribing to our newsletter.",
+    "frm_1": "First Name",
+    "frm_2": "Last Name",
+    "frm_3": "Email",
+    "btn": "Subscribe"
   }
 }

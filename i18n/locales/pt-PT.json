@@ -103,5 +103,15 @@
     "t2": "Testemunhos",
     "t3": "da Nossa Comunidade.",
     "desc": "Graças à IEDA Relief, não corro mais o risco de casamentos forçados. Criança refugiada da África Central, site de refugiados de Borgop, região de Adamawa, Camarões. Beneficiária do serviço comunitário da IEDA Relief"
+  },
+  "subscribe": {
+    "t1": "Inscreva-se na",
+    "t2": "newsletter da IEDA Relief",
+    "t3": "para atualizações impactantes",
+    "desc": "Fique por dentro dos nossos últimos projetos, histórias de sucesso e eventos futuros ao assinar nossa newsletter.",
+    "frm_1": "Primeiro Nome",
+    "frm_2": "Último Nome",
+    "frm_3": "Email",
+    "btn": "Inscreva-se"
   }
 }

@@ -103,5 +103,15 @@
     "t2": "Ushuhuda",
     "t3": "kutoka kwa Jamii Yetu.",
     "desc": "Shukrani kwa IEDA Relief, siko tena hatarini kuozeshwa kwa lazima. Mtoto mkimbizi kutoka Afrika ya Kati, kambi ya wakimbizi ya Borgop, mkoa wa Adamoua, Kameruni. Mnufaika wa huduma ya jamii ya IEDA Relief"
+  },
+  "subscribe": {
+    "t1": "Jisajili kwa",
+    "t2": "Jarida la IEDA Relief",
+    "t3": "kwa Habari za Athari",
+    "desc": "Kuwa na taarifa kuhusu miradi yetu ya hivi karibuni, hadithi za mafanikio, na matukio yajayo kwa kujisajili kwenye jarida letu.",
+    "frm_1": "Jina la Kwanza",
+    "frm_2": "Jina la Mwisho",
+    "frm_3": "Barua Pepe",
+    "btn": "Jisajili"
   }
 }
