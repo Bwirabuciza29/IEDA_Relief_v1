@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-green-500 p-8 mx-4 rounded-lg">
+  <section class="bg-green-400 p-8 mx-4 rounded-lg">
     <!-- Titre -->
     <div class="mj-container relative z-10">
       <h2 class="text-3xl md:text-4xl font-bold text-left mb-8">

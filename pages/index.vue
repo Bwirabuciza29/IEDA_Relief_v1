@@ -96,6 +96,9 @@
     <div class="my-16">
       <help />
     </div>
+    <div class="my-16">
+      <parteners />
+    </div>
   </div>
 </template>
 <script setup>
