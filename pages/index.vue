@@ -93,6 +93,9 @@
     <div class="my-16">
       <mission />
     </div>
+    <div class="my-16">
+      <help />
+    </div>
   </div>
 </template>
 <script setup>
