@@ -54,5 +54,16 @@
     "cd2": "Our impactful initiatives actively engage the community, empowering positive change and individual growth.",
     "ct3": "Local Community Presence",
     "cd3": "Our impactful initiatives actively engage the community, empowering positive change and individual growth."
+  },
+  "help": {
+    "title_1": "Help us create a better",
+    "title_2": "World",
+    "desc": "Helping others and making a difference in the world is what will help to make the world a better place by improving people’s lives. One person at a time, one day at a time, and one project at a time, you can make a difference that will leave a lasting impact on the world.",
+    "card_1": "Food Assistance",
+    "desc_1": "Providing nutritious meals to food-insecure families; Delivering groceries to homebound seniors and the homeless.",
+    "card_2": "Education Support",
+    "desc_2": "Organization of Career Orientation Workshops for Youth; Provision of Free English Language Lessons for Immigrants.",
+    "card_3": "Environmental Conservation",
+    "desc_3": "Planting trees and protecting forests; Cleaning up oceans, rivers and public lands; Environmental education and advocacy initiatives."
   }
 }

@@ -54,5 +54,16 @@
     "cd2": "Nos initiatives percutantes impliquent activement la communauté, favorisant un changement positif et la croissance individuelle.",
     "ct3": "Présence dans la Communauté Locale",
     "cd3": "Nos initiatives percutantes impliquent activement la communauté, favorisant un changement positif et la croissance individuelle."
+  },
+  "help": {
+    "title_1": "Aidez-nous à créer un monde meilleur",
+    "title_2": "Monde",
+    "desc": "Aider les autres et faire une différence dans le monde est ce qui rendra le monde meilleur en améliorant la vie des gens. Une personne à la fois, un jour à la fois, et un projet à la fois, vous pouvez faire une différence qui laissera un impact durable sur le monde.",
+    "card_1": "Aide Alimentaire",
+    "desc_1": "Fournir des repas nutritifs aux familles en insécurité alimentaire; Livrer des courses aux personnes âgées confinées chez elles et aux sans-abris.",
+    "card_2": "Soutien à l'Éducation",
+    "desc_2": "Organisation d'ateliers d'orientation professionnelle pour les jeunes; Fourniture de cours d'anglais gratuits pour les immigrants.",
+    "card_3": "Conservation de l'Environnement",
+    "desc_3": "Planter des arbres et protéger les forêts; Nettoyer les océans, les rivières et les terres publiques; Initiatives d'éducation et de plaidoyer pour l'environnement."
   }
 }

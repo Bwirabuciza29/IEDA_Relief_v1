@@ -3,7 +3,7 @@
     <!-- Titre -->
     <div class="mj-container relative z-10">
       <h2 class="text-3xl md:text-4xl font-bold text-left mb-8">
-        Help us create a better <span class="font-sri">World</span>
+        {{ title_1 }} <span class="font-sri"> {{ title_2 }}</span>
       </h2>
       <!-- Watermark -->
       <img
@@ -32,11 +32,7 @@
         <!-- Texte -->
         <div>
           <p class="text-lg text-center">
-            Helping others and making a difference in the world is what will
-            help to make the world a better place by improving people’s lives.
-            One person at a time, one day at a time, and one project at a time,
-            you can make a difference that will leave a lasting impact on the
-            world.
+            {{ desc }}
           </p>
           <!-- Carte arrondie en bas à droite -->
           <div class="relative">
@@ -58,11 +54,10 @@
               alt="Food Assistance Icon"
               class="w-4 h-4"
             />
-            <h3 class="font-semibold">Food Assistance</h3>
+            <h3 class="font-semibold">{{ card_1 }}</h3>
           </div>
           <p class="hover:underline">
-            Providing nutritious meals to food-insecure families; Delivering
-            groceries to homebound seniors and the homeless.
+             {{ desc_1 }}
           </p>
 
           <div
@@ -73,11 +68,10 @@
               alt="Education Support Icon"
               class="w-4 h-4"
             />
-            <h3 class="font-semibold">Education Support</h3>
+            <h3 class="font-semibold">{{ card_2 }}</h3>
           </div>
           <p class="hover:underline">
-            Organization of Career Orientation Workshops for Youth; Provision of
-            Free English Language Lessons for Immigrants.
+            {{ desc_2 }}
           </p>
 
           <div
@@ -88,14 +82,25 @@
               alt="Environmental Conservation Icon"
               class="w-4 h-4"
             />
-            <h3 class="font-semibold">Environmental Conservation</h3>
+            <h3 class="font-semibold">{{ card_3 }}</h3>
           </div>
           <p class="hover:underline">
-            Planting trees and protecting forests; Cleaning up oceans, rivers
-            and public lands; Environmental education and advocacy initiatives.
+            {{ desc_3 }}
           </p>
         </div>
       </div>
     </div>
   </section>
 </template>
+<script setup>
+const { t } = useI18n();
+const title_1 = ref(t("help.title_1"));
+const title_2 = ref(t("help.title_2"));
+const desc = ref(t("help.desc"));
+const card_1 = ref(t("help.card_1"));
+const card_2 = ref(t("help.card_2"));
+const card_3 = ref(t("help.card_3"));
+const desc_1 = ref(t("help.desc_1"));
+const desc_2 = ref(t("help.desc_2"));
+const desc_3 = ref(t("help.desc_3"));
+</script>

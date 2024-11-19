@@ -53,5 +53,16 @@
     "cd2": "Nossas iniciativas impactantes envolvem ativamente a comunidade, promovendo mudanças positivas e crescimento individual.",
     "ct3": "Presença na Comunidade Local",
     "cd3": "Nossas iniciativas impactantes envolvem ativamente a comunidade, promovendo mudanças positivas e crescimento individual."
+  },
+  "help": {
+    "title_1": "Ajude-nos a criar um mundo melhor",
+    "title_2": "Mundo",
+    "desc": "Ajudar os outros e fazer a diferença no mundo é o que ajudará a tornar o mundo um lugar melhor, melhorando a vida das pessoas. Uma pessoa de cada vez, um dia de cada vez e um projeto de cada vez, você pode fazer a diferença que deixará um impacto duradouro no mundo.",
+    "card_1": "Assistência Alimentar",
+    "desc_1": "Fornecendo refeições nutritivas para famílias em insegurança alimentar; Entregando mantimentos para idosos confinados em casa e pessoas sem-teto.",
+    "card_2": "Apoio à Educação",
+    "desc_2": "Organização de workshops de orientação profissional para jovens; Oferta de aulas gratuitas de inglês para imigrantes.",
+    "card_3": "Conservação Ambiental",
+    "desc_3": "Plantar árvores e proteger florestas; Limpar oceanos, rios e terras públicas; Iniciativas de educação e defesa ambiental."
   }
 }

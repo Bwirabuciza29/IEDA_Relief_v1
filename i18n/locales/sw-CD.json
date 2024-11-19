@@ -53,5 +53,16 @@
     "cd2": "Mipango yetu yenye athari inashirikisha kikamilifu jamii, ikikuza mabadiliko chanya na ukuaji binafsi.",
     "ct3": "Uwepo katika Jamii ya Mitaa",
     "cd3": "Mipango yetu yenye athari inashirikisha kikamilifu jamii, ikikuza mabadiliko chanya na ukuaji binafsi."
+  },
+  "help": {
+    "title_1": "Tusaidie kuunda dunia bora",
+    "title_2": "Dunia",
+    "desc": "Kusaidia wengine na kuleta mabadiliko duniani ndiyo yatakayosaidia kufanya dunia kuwa mahali bora kwa kuboresha maisha ya watu. Mtu mmoja kwa wakati, siku moja kwa wakati, na mradi mmoja kwa wakati, unaweza kufanya mabadiliko ambayo yataacha athari ya kudumu duniani.",
+    "card_1": "Msaada wa Chakula",
+    "desc_1": "Kutoa mlo wenye lishe kwa familia zinazokumbwa na uhaba wa chakula; Kusambaza vyakula kwa wazee waliokaa nyumbani na wasio na makazi.",
+    "card_2": "Msaada wa Elimu",
+    "desc_2": "Organizing workshops za mwelekeo wa kazi kwa vijana; Kutoa masomo ya bure ya Kiingereza kwa wahamiaji.",
+    "card_3": "Uhifadhi wa Mazingira",
+    "desc_3": "Kupanda miti na kulinda misitu; Kusafisha bahari, mto na ardhi ya umma; Elimu ya mazingira na juhudi za utetezi."
   }
 }
