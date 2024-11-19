@@ -23,7 +23,7 @@
             />
           </div>
           <div class="p-6 w-full md:w-1/2">
-            <img src="/img/Qute.png" alt="Icon" class="mb-4" />
+            <img src="/img/Quote.png" alt="Icon" class="mb-4" />
             <h3 class="text-lg font-semibold mb-2">{{ title_1 }}</h3>
             <p class="text-gray-600">
               {{ desc_1 }}
@@ -43,7 +43,7 @@
             />
           </div>
           <div class="p-6 w-full md:w-1/2">
-            <img src="/img/Qute.png" alt="Icon" class="mb-4" />
+            <img src="/img/Quote.png" alt="Icon" class="mb-4" />
             <h3 class="text-lg font-semibold mb-2">{{ title_2 }}</h3>
             <p class="text-gray-600">
               {{ desc_2 }}
