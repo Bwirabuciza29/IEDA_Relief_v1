@@ -100,6 +100,9 @@
     <div class="my-16">
       <parteners />
     </div>
+    <div class="my-16">
+      <LogOurs />
+    </div>
   </div>
 </template>
 <script setup>
