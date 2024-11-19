@@ -39,7 +39,7 @@ const partners = [
   { id: 4, logo: "/img/oim.png", alt: "Partner 4" },
   { id: 5, logo: "/img/fa.gif", alt: "Partner 5" },
   { id: 6, logo: "/img/tx.jpeg", alt: "Partner 6" },
-  { id: 7, logo: "/img/undp.gif", alt: "Partner 7" },
+  { id: 7, logo: "/img/undpi.png", alt: "Partner 7" },
   { id: 8, logo: "/img/shelter.jpg", alt: "Partner 8" },
 ];
 </script>

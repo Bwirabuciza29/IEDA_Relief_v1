@@ -16,7 +16,7 @@
 
 <script setup>
 const logos = [
-  "/img/unicef.png",
+  "/img/uni.png",
   "/img/uhncr.png",
   "/img/oim.png",
   "/img/guide-star.png",

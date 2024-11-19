@@ -13,7 +13,8 @@ export default {
     extend: {
       colors: {
         customLight: "#F9F9F4",
-        "custom-green": "#65FF6A",
+        "custom-green": "#07AF08",
+        "custom-blue": "#055FC5",
       },
       fontFamily: {
         sri: ["Sriracha"],
