@@ -62,7 +62,7 @@
         <button
           v-for="item in locales"
           :key="typeof item === 'object' ? item.code : item"
-          @click="langage = typeof item === 'object' ? item.code : item"
+          @click="changeLanguage(typeof item === 'object' ? item.code : item)"
           class="flex items-center px-4 py-2 text-gray-800 hover:bg-black w-full text-left transition duration-150 ease-in-out"
         >
           <img
@@ -107,6 +107,12 @@ const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
 };
 
+// Fonction pour changer la langue et fermer le menu
+const changeLanguage = (code) => {
+  langage.value = code;
+  isDropdownOpen.value = false;
+};
+
 // Ferme le dropdown lorsqu'on clique en dehors
 const handleClickOutside = (event) => {
   const dropdown = event.target.closest(".dropdown");
@@ -121,14 +127,3 @@ onUnmounted(() => {
   document.removeEventListener("click", handleClickOutside);
 });
 </script>
-
-<style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.15s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>

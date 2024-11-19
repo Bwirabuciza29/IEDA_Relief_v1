@@ -131,7 +131,11 @@
             />
           </div>
           <h3 class="text-lg font-medium text-gray-800">{{ card.title }}</h3>
-          <p class="text-sm text-gray-600 mt-2">{{ card.description }}</p>
+          <p
+            class="text-sm text-gray-600 mt-2 hover:underline hover:text-green-400"
+          >
+            {{ card.description }}
+          </p>
         </div>
       </div>
     </div>
@@ -155,7 +159,7 @@ const tit_2 = ref(t("mission.tit_2"));
 const tit_3 = ref(t("mission.tit_3"));
 const ct1 = ref(t("mission.ct1"));
 const ct2 = ref(t("mission.ct2"));
-const ct3 = ref(t("mission.ct_3"));
+const ct3 = ref(t("mission.ct3"));
 const cd1 = ref(t("mission.cd1"));
 const cd2 = ref(t("mission.cd2"));
 const cd3 = ref(t("mission.cd3"));
