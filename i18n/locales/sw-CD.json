@@ -3,7 +3,7 @@
     "home": "Mwanzo",
     "about": "Kuhusu",
     "works": "Kazi",
-    "pages": "Kurasa",
+    "pages": "Shughuli",
     "contact": "Mawasiliano"
   },
   "hero": {
@@ -113,5 +113,18 @@
     "frm_2": "Jina la Mwisho",
     "frm_3": "Barua Pepe",
     "btn": "Jisajili"
+  },
+  "footer": {
+    "title": "Orodha",
+    "title_1": "Orodha",
+    "desc_1": "Makao Makuu ya IEDA Relief Duniani",
+    "desc_2": "10103 Fondren Rd, Suite 435",
+    "desc_3": "Houston, Texas 77096 USA",
+    "home": "Nyumbani",
+    "about": "Kuhusu",
+    "works": "Kazi Zetu",
+    "pages": "Shughuli",
+    "contact": "Mawasiliano",
+    "mail": "Ingiza anwani yako ya barua pepe"
   }
 }

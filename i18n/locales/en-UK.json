@@ -3,7 +3,7 @@
     "home": "Home",
     "about": "About",
     "works": "Works",
-    "pages": "Pages",
+    "pages": "Operations",
     "contact": "Contacts",
     "donation": "Donation"
   },
@@ -114,5 +114,18 @@
     "frm_2": "Last Name",
     "frm_3": "Email",
     "btn": "Subscribe"
+  },
+  "footer": {
+    "title": "Menu",
+    "title_1": "Menu",
+    "desc_1": "IEDA Relief Global Headquarters",
+    "desc_2": "10103 Fondren Rd, Suite 435",
+    "desc_3": "Houston, Texas 77096 USA",
+    "home": "Home",
+    "about": "About",
+    "works": "Works",
+    "pages": "Operations",
+    "contact": "Contacts",
+    "mail": "Enter your Email adress"
   }
 }

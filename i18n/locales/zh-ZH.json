@@ -3,7 +3,7 @@
     "home": "首页",
     "about": "关于",
     "works": "作品",
-    "pages": "页面",
+    "pages": "操作",
     "contact": "联系方式"
   },
   "hero": {
@@ -113,5 +113,18 @@
     "frm_2": "姓氏",
     "frm_3": "电子邮件",
     "btn": "订阅"
+  },
+  "footer": {
+    "title": "菜单",
+    "title_1": "菜单",
+    "desc_1": "IEDA Relief 全球总部",
+    "desc_2": "10103 Fondren Rd, Suite 435",
+    "desc_3": "休斯顿，德克萨斯州 77096 美国",
+    "home": "首页",
+    "about": "关于",
+    "works": "我们的项目",
+    "pages": "操作",
+    "contact": "联系方式",
+    "mail": "请输入您的电子邮件地址"
   }
 }

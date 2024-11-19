@@ -112,6 +112,9 @@
     <div class="my-16">
       <HelpSubscribe />
     </div>
+    <div class="mt-16">
+      <laster />
+    </div>
   </div>
 </template>
 <script setup>
