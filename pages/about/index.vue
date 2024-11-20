@@ -13,11 +13,14 @@
           <div class="rounded-lg flex flex-col md:flex-row overflow-hidden">
             <!-- Texte (à gauche sur grand écran) -->
             <div class="flex-1 p-6 md:p-8">
-              <h1 class="text-4xl font-bold mb-2">About Us</h1>
+              <h1 class="text-4xl font-bold mb-2">{{ t("about.title_1") }}</h1>
               <nav class="text-sm text-black">
                 <div class="inline-block bg-white p-3 rounded-lg">
-                  <a href="/" class="hover:underline font-semibold">Home</a> /
-                  <span>About Us</span>
+                  <a href="/" class="hover:underline font-semibold">{{
+                    t("about.title_2")
+                  }}</a>
+                  /
+                  <span>{{ t("about.title_1") }}</span>
                 </div>
               </nav>
             </div>
@@ -42,12 +45,10 @@
         <div class="flex flex-col items-start p-4 border rounded-lg shadow-md">
           <div class="flex items-center mb-4">
             <img src="/img/icon_1.png" alt="Icon" class="w-10 h-10 mr-2" />
-            <h3 class="text-xl font-semibold">Vision</h3>
+            <h3 class="text-xl font-semibold">{{ t("about.card_1_title") }}</h3>
           </div>
           <p class="text-gray-600 hover:underline">
-            Our vision is to establish a stable environment with sustainable
-            solutions that benefit the population in need. We empower
-            communities...
+            {{ t("about.card_1_desc") }}
           </p>
         </div>
 
@@ -64,11 +65,10 @@
         <div class="flex flex-col items-start p-4 border rounded-lg shadow-md">
           <div class="flex items-center mb-4">
             <img src="/img/icon_2.png" alt="Icon" class="w-10 h-10 mr-2" />
-            <h3 class="text-xl font-semibold">Mission</h3>
+            <h3 class="text-xl font-semibold">{{ t("about.card_2_title") }}</h3>
           </div>
           <p class="text-gray-600 hover:underline">
-            The mission of IEDA Relief is to alleviate the suffering of
-            vulnerable people by tackling the underlying causes of poverty...
+            {{ t("about.card_2_desc") }}
           </p>
         </div>
 
@@ -85,11 +85,10 @@
         <div class="flex flex-col items-start p-4 border rounded-lg shadow-md">
           <div class="flex items-center mb-4">
             <img src="/img/icon_3.png" alt="Icon" class="w-10 h-10 mr-2" />
-            <h3 class="text-xl font-semibold">Value</h3>
+            <h3 class="text-xl font-semibold">{{ t("about.card_3_title") }}</h3>
           </div>
           <p class="text-gray-600 hover:underline">
-            We are committed to working in the most difficult conditions to
-            reach the world's poorest and most vulnerable people...
+            {{ t("about.card_3_desc") }}
           </p>
         </div>
 
@@ -129,28 +128,30 @@
           <h3 class="text-4xl font-bold font-sri text-custom-green">
             {{ count1 }}+
           </h3>
-          <p class="text-gray-600">Countries and Territories Served</p>
+          <p class="text-gray-600">{{ t("about.number_1") }}</p>
         </div>
         <!-- Élément 2 -->
         <div>
           <h3 class="text-4xl font-bold font-sri text-custom-green">
-            {{ (count2 / 1000000).toFixed(1) }} million
+            {{ (count2 / 1000000).toFixed(1) }} {{ t("about.number_text") }}
           </h3>
-          <p class="text-gray-600">People in Our Programs Worldwide</p>
+          <p class="text-gray-600">{{ t("about.number_2") }}</p>
         </div>
         <!-- Élément 3 -->
         <div>
           <h3 class="text-4xl font-bold font-sri text-custom-green">
             {{ count3 }}
           </h3>
-          <p class="text-gray-600">Year founded in Seattle, Washington</p>
+          <p class="text-gray-600">{{ t("about.number_3") }}</p>
         </div>
       </div>
     </div>
     <div class="mj-container my-16">
       <h2 class="text-3xl font-bold text-gray-800 text-center">
-        The Supporters Who Make
-        <span class="text-green-500 font-sri">It Possible</span>
+        {{ t("about.support_title_1") }}
+        <span class="text-green-500 font-sri">
+          {{ t("about.support_title_2") }}</span
+        >
       </h2>
       <div class="hidden md:grid grid-cols-3 mt-8">
         <div
@@ -203,13 +204,11 @@
           </div>
 
           <p class="text-lg font-semibold text-gray-800">
-            The purpose of life is not to be happy --
+            {{ t("about.support_motivation_1") }} <br />
             <span class="italic font-bold text-gray-800">
-              but to matter, <br />
-              to be productive, to be useful,
+              {{ t("about.support_motivation_2") }} <br />
             </span>
-            to have it make some <br />
-            difference that you lived at all.
+            {{ t("about.support_motivation_3") }}
           </p>
         </div>
       </div>
@@ -217,12 +216,14 @@
 
     <div class="mj-container my-16">
       <h2 class="text-3xl font-bold text-gray-800 text-center">
-        Your Questions <span class="text-green-500 font-sri">Answered</span>
+        {{ t("about.question_title_1") }}
+        <span class="text-green-500 font-sri">
+          {{ t("about.question_title_2") }}</span
+        >
       </h2>
       <!-- Description -->
       <p class="text-center text-gray-600 mt-2">
-        Egestas quis suspendisse ultrices gravida. Consectetur lectus. Phasellus
-        vestibulum lorem sed risus ultrices.
+        {{ t("about.question_desc") }}
       </p>
       <!-- FAQ Section -->
       <div class="mt-10 space-y-4 max-w-xl mx-auto">
@@ -285,52 +286,48 @@
 </template>
 
 <script setup>
+const { t } = useI18n();
 const teamMembers = [
   {
     image: "/img/s.png",
-    alt: "Volunteer Coordinator",
+    alt: t("about.support_desc_1"),
     title: "unknown name",
-    role: "Volunteer Coordinator",
+    role: t("about.support_desc_1"),
   },
   {
     image: "/img/ss.png",
-    alt: "Outreach Specialist",
+    alt: t("about.support_desc_2"),
     title: "unknown name",
-    role: "Outreach Specialist",
+    role: t("about.support_desc_2"),
   },
   {
     image: "/img/sss.png",
-    alt: "Project Lead",
+    alt: t("about.support_desc_3"),
     title: "unknown name",
-    role: "Project Lead",
+    role: t("about.support_desc_3"),
   },
 ];
 // Data for FAQs
 const faqs = ref([
   {
-    question: "How are the donated funds utilized?",
-    answer:
-      "Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Sed nisi lacus sed viverra tellus in hac habitasse platea.",
+    question: t("about.question_1"),
+    answer: t("about.question_1_answer"),
   },
   {
-    question: "What percentage of donations goes directly to aid programs?",
-    answer:
-      "Nulla facilisi etiam dignissim diam quis. Scelerisque in dictum non consectetur a erat nam at lectus.",
+    question: t("about.question_2"),
+    answer: t("about.question_2_answer"),
   },
   {
-    question: "Can I donate goods or services instead of money?",
-    answer:
-      "Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et.",
+    question: t("about.question_3"),
+    answer: t("about.question_3_answer"),
   },
   {
-    question: "How can I verify the legitimacy of your organization?",
-    answer:
-      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    question: t("about.question_4"),
+    answer: t("about.question_4_answer"),
   },
   {
-    question: "How can I become a volunteer or join your team?",
-    answer:
-      "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
+    question: t("about.question_5"),
+    answer: t("about.question_5_answer"),
   },
 ]);
 // State to track the active FAQ
