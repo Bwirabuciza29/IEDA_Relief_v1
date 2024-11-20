@@ -229,11 +229,11 @@
         <div
           v-for="(faq, index) in faqs"
           :key="index"
-          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+          class="overflow-hidden shadow-lg"
         >
           <button
             @click="toggleFAQ(index)"
-            class="w-full text-left flex justify-between items-center px-4 py-3 bg-white"
+            class="w-full text-left flex justify-between items-center px-4 py-4 bg-white hover:scale-105 transition-transform duration-300 ease-in-out"
           >
             <span
               :class="{ 'text-green-500 font-medium': activeFAQ === index }"
@@ -241,25 +241,35 @@
             >
               {{ faq.question }}
             </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              :class="{ 'rotate-180 text-green-500': activeFAQ === index }"
-              class="h-5 w-5 transform transition-transform duration-200"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
+            <span
+              class="bg-gray-200 rounded-full p-2"
+              :class="{
+                ' bg-green-100 rounded-full p-2': activeFAQ === index,
+              }"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                :class="{
+                  'rotate-180 text-green-500 bg-green-100 rounded-full':
+                    activeFAQ === index,
+                }"
+                class="h-4 w-4 text-black transform transition-transform duration-200"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </span>
           </button>
           <div
             v-if="activeFAQ === index"
-            class="px-4 py-3 text-gray-600 bg-gray-100"
+            class="px-4 py-3 text-gray-600 bg-gray-50"
           >
             {{ faq.answer }}
           </div>
