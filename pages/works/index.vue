@@ -45,24 +45,63 @@
 
       <!-- Contenu principal -->
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore harum
-        modi doloremque fugit, porro quidem maxime a iure placeat officia optio
-        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
-        doloremque fugit, porro quidem maxime a iure placeat officia optio
-        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
-        doloremque fugit, porro quidem maxime a iure placeat officia optio
-        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
-        doloremque fugit, porro quidem maxime a iure placeat officia optio
-        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
-        doloremque fugit, porro quidem maxime a iure placeat officia optio
-        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
-        doloremque fugit, porro quidem maxime a iure placeat officia optio
-        libero aperiam illo consectetur sit alias ex quibusdam repellat?
+        <!-- Boutons -->
+        <div class="flex justify-center space-x-4 mb-8">
+          <button
+            v-for="(tab, index) in tabs"
+            :key="index"
+            :class="[
+              'px-4 py-2 rounded-lg',
+              activeTab === tab
+                ? 'bg-green-500 text-white'
+                : 'bg-gray-200 text-gray-700',
+            ]"
+            @click="activeTab = tab"
+          >
+            {{ tab }}
+          </button>
+        </div>
+
+        <!-- Contenu -->
+        <div
+          v-if="activeTab === 'Where we work'"
+          class="grid grid-cols-1 md:grid-cols-3 gap-6"
+        >
+          <div
+            v-for="(card, index) in cards"
+            :key="index"
+            class="bg-white shadow-md rounded-lg overflow-hidden"
+          >
+            <div class="relative">
+              <img
+                :src="card.image"
+                alt="Card Image"
+                class="w-full h-40 object-cover"
+              />
+              <span
+                class="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-md"
+              >
+                {{ card.tag }}
+              </span>
+            </div>
+            <div class="p-4">
+              <h2 class="font-bold text-lg mb-2">{{ card.title }}</h2>
+              <p class="text-gray-600 mb-4">{{ card.description }}</p>
+              <button
+                class="bg-green-500 text-white px-4 py-2 rounded-md"
+                @click="goToDetails(card.id)"
+              >
+                More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div v-else class="text-center">
+          <p class="text-gray-600">
+            Content for {{ activeTab }} is not available yet.
+          </p>
+        </div>
       </div>
 
       <!-- Image filigranne au coin inférieur à droite -->
@@ -78,4 +117,39 @@
 </template>
 <script setup>
 const { t } = useI18n();
+const tabs = ["Where we work", "Vision to work", "Partners"];
+const activeTab = ref("Where we work");
+
+const cards = [
+  {
+    id: 1,
+    image: "/img/w1.png",
+    tag: "Where we work",
+    title: "Burkina Faso",
+    description:
+      "Empowering communities with essential knowledge and practices to promote health and prevent ...",
+  },
+  {
+    id: 2,
+    image: "/img/w2.png",
+    tag: "Where we work",
+    title: "Cameroun",
+    description:
+      "Providing Harper with the freedom and independence to navigate the world with ease ...",
+  },
+  {
+    id: 3,
+    image: "/img/w3.png",
+    tag: "Where we work",
+    title: "Central Africa Republic",
+    description:
+      "Join us in providing compassionate support and resources for Daniel as he embarks on his ...",
+  },
+];
+
+const router = useRouter();
+
+const goToDetails = (id) => {
+  router.push(`/works/${id}`);
+};
 </script>
