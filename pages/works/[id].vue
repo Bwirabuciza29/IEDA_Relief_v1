@@ -1,11 +1,8 @@
 <template>
-  <div class="container mx-auto p-4">
-    <button
-      class="mb-4 bg-gray-200 px-4 py-2 rounded-lg"
-      @click="router.push('/works')"
-    >
+  <div class="container mx-auto my-24 p-4">
+    <NuxtLink to="/works" class="mb-8 bg-gray-200 px-4 py-2 rounded-lg">
       Back
-    </button>
+    </NuxtLink>
 
     <!-- Vérification que card existe -->
     <div v-if="card" class="bg-white shadow-md rounded-lg overflow-hidden">
@@ -44,7 +41,7 @@ const cards = [
     tag: "Where we work",
     title: "Burkina Faso",
     description:
-      "Empowering communities with essential knowledge and practices to promote health and prevent ...",
+      "Empowering communities with essential knowledge and practices to promote health and prevent",
   },
   {
     id: 2,
@@ -52,7 +49,7 @@ const cards = [
     tag: "Where we work",
     title: "Cameroun",
     description:
-      "Providing Harper with the freedom and independence to navigate the world with ease ...",
+      "Providing Harper with the freedom and independence to navigate the world with ease",
   },
   {
     id: 3,
@@ -60,7 +57,55 @@ const cards = [
     tag: "Where we work",
     title: "Central Africa Republic",
     description:
-      "Join us in providing compassionate support and resources for Daniel as he embarks on his ...",
+      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+  },
+  {
+    id: 4,
+    image: "/img/w4.png",
+    tag: "Where we work",
+    title: "Mali",
+    description:
+      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+  },
+  {
+    id: 5,
+    image: "/img/w5.png",
+    tag: "Where we work",
+    title: "Niger",
+    description:
+      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+  },
+  {
+    id: 6,
+    image: "/img/w6.png",
+    tag: "Where we work",
+    title: "Philippines",
+    description:
+      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+  },
+  {
+    id: 7,
+    image: "/img/w7.png",
+    tag: "Where we work",
+    title: "Haiti",
+    description:
+      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+  },
+  {
+    id: 8,
+    image: "/img/w8.png",
+    tag: "Where we work",
+    title: "Democratic Rep. of the Congo",
+    description:
+      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+  },
+  {
+    id: 9,
+    image: "/img/w9.png",
+    tag: "Where we work",
+    title: "Get Involved",
+    description:
+      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
   },
 ];
 
