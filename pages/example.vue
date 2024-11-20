@@ -36,7 +36,6 @@
     <!-- contenu de l'about -->
   </section>
 </template>
-
 <script setup>
 const { t } = useI18n();
 const title_1 = ref(t("about.title_1"));
