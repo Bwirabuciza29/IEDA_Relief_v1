@@ -23,7 +23,7 @@
             </div>
 
             <!-- Image (à droite sur grand écran) -->
-            <div class="flex-1">
+            <div class="flex-1 hidden md:flex">
               <img
                 src="/img/cha.png"
                 alt="About Us Section"
@@ -147,12 +147,178 @@
         </div>
       </div>
     </div>
+    <div class="mj-container my-16">
+      <h2 class="text-3xl font-bold text-gray-800 text-center">
+        The Supporters Who Make
+        <span class="text-green-500 font-sri">It Possible</span>
+      </h2>
+      <div class="hidden md:grid grid-cols-3 mt-8">
+        <div
+          v-for="(member, index) in teamMembers"
+          :key="index"
+          class="flex flex-col items-center text-center"
+        >
+          <img
+            :src="member.image"
+            :alt="member.alt"
+            class="rounded-lg shadow-md w-56 transition-all duration-300 hover:z-10 hover:scale-105"
+          />
+          <h3 class="mt-4 text-lg font-medium">{{ member.title }}</h3>
+          <p class="text-sm text-gray-600">{{ member.role }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="mj-container my-16">
+      <div
+        class="relative bg-gray-50 h-64 rounded-lg overflow-hidden p-6 shadow-lg"
+      >
+        <div class="absolute top-0 left-0 opacity-50">
+          <img
+            src="/img/f.png"
+            alt="Filigrane haut gauche"
+            class="w-72 h-auto filter grayscale"
+          />
+        </div>
+        <div class="absolute bottom-0 right-0 opacity-50">
+          <img
+            src="/img/ff.png"
+            alt="Filigrane bas droite"
+            class="w-72 h-auto filter grayscale"
+          />
+        </div>
+        <div
+          class="relative z-10 mj-container text-center flex flex-col items-center justify-center"
+        >
+          <div class="mx-auto mb-4">
+            <img
+              src="/img/icon.png"
+              alt="Icône"
+              class="w-12 h-12 transition-all duration-300 hover:z-10 hover:scale-110"
+            />
+          </div>
+
+          <p class="text-lg font-semibold text-gray-800">
+            The purpose of life is not to be happy --
+            <span class="italic font-bold text-gray-800"
+              >but to matter, <br />
+              to be productive, to be useful,</span
+            >
+            to have it make some <br />
+            difference that you lived at all.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mj-container my-16">
+      <h2 class="text-3xl font-bold text-gray-800 text-center">
+        Your Questions <span class="text-green-500 font-sri">Answered</span>
+      </h2>
+      <!-- Description -->
+      <p class="text-center text-gray-600 mt-2">
+        Egestas quis suspendisse ultrices gravida. Consectetur lectus. Phasellus
+        vestibulum lorem sed risus ultrices.
+      </p>
+      <!-- FAQ Section -->
+      <div class="mt-10 space-y-4">
+        <div
+          v-for="(faq, index) in faqs"
+          :key="index"
+          class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+        >
+          <button
+            @click="toggleFAQ(index)"
+            class="w-full text-left flex justify-between items-center px-4 py-3 bg-white"
+          >
+            <span
+              :class="{ 'text-green-500 font-medium': activeFAQ === index }"
+              class="text-gray-800 text-lg"
+            >
+              {{ faq.question }}
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              :class="{ 'rotate-180 text-green-500': activeFAQ === index }"
+              class="h-5 w-5 transform transition-transform duration-200"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            v-if="activeFAQ === index"
+            class="px-4 py-3 text-gray-600 bg-gray-100"
+          >
+            {{ faq.answer }}
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+const teamMembers = [
+  {
+    image: "/img/s.png",
+    alt: "Volunteer Coordinator",
+    title: "unknown name",
+    role: "Volunteer Coordinator",
+  },
+  {
+    image: "/img/ss.png",
+    alt: "Outreach Specialist",
+    title: "unknown name",
+    role: "Outreach Specialist",
+  },
+  {
+    image: "/img/sss.png",
+    alt: "Project Lead",
+    title: "unknown name",
+    role: "Project Lead",
+  },
+];
+// Data for FAQs
+const faqs = ref([
+  {
+    question: "How are the donated funds utilized?",
+    answer:
+      "Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Sed nisi lacus sed viverra tellus in hac habitasse platea.",
+  },
+  {
+    question: "What percentage of donations goes directly to aid programs?",
+    answer:
+      "Nulla facilisi etiam dignissim diam quis. Scelerisque in dictum non consectetur a erat nam at lectus.",
+  },
+  {
+    question: "Can I donate goods or services instead of money?",
+    answer:
+      "Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et.",
+  },
+  {
+    question: "How can I verify the legitimacy of your organization?",
+    answer:
+      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  },
+  {
+    question: "How can I become a volunteer or join your team?",
+    answer:
+      "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
+  },
+]);
+// State to track the active FAQ
+const activeFAQ = ref(null);
 
+// Toggle function
+const toggleFAQ = (index) => {
+  activeFAQ.value = activeFAQ.value === index ? null : index;
+};
 // Fonction d'animation des chiffres
 function animateValue(target, start, end, duration) {
   const range = end - start;
