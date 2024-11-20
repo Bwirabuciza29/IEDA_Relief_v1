@@ -133,7 +133,7 @@
       </div>
       <hr class="my-4" />
       <div
-        class="flex flex-col sm:flex-row items-start sm:items-center py-4 justify-between"
+        class="flex flex-cols-3 sm:flex-row items-start sm:items-center py-4 justify-between"
       >
         <div
           class="font-semibold text-gray-600 hover:underline hover:text-custom-green text-sm"
@@ -142,9 +142,16 @@
         </div>
         <div>
           <p
-            class="text-xs sm:text-sm text-gray-600 mt-2 sm:mt-0 font-semibold hover:underline hover:text-custom-green"
+            class="text-xs sm:text-sm text-gray-600 sm:mt-0 font-semibold hover:underline hover:text-custom-green"
           >
-            Tel: +1 713 774 2522 Fax: +1 713 774 2529
+            Tel: +1 713 774 2522
+          </p>
+        </div>
+        <div>
+          <p
+            class="text-xs sm:text-sm text-gray-600 sm:mt-0 font-semibold hover:underline hover:text-custom-green"
+          >
+            Fax: +1 713 774 2529
           </p>
         </div>
       </div>

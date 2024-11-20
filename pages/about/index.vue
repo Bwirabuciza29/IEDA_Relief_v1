@@ -172,20 +172,25 @@
       <div
         class="relative bg-gray-50 h-64 rounded-lg overflow-hidden p-6 shadow-lg"
       >
+        <!-- Filigrane haut gauche -->
         <div class="absolute top-0 left-0 opacity-50">
           <img
             src="/img/f.png"
             alt="Filigrane haut gauche"
-            class="w-72 h-auto filter grayscale"
+            class="w-32 h-auto sm:w-48 md:w-56 lg:w-72 xl:w-80 filter grayscale"
           />
         </div>
+
+        <!-- Filigrane bas droite -->
         <div class="absolute bottom-0 right-0 opacity-50">
           <img
             src="/img/ff.png"
             alt="Filigrane bas droite"
-            class="w-72 h-auto filter grayscale"
+            class="w-32 h-auto sm:w-48 md:w-56 lg:w-72 xl:w-80 filter grayscale"
           />
         </div>
+
+        <!-- Contenu principal -->
         <div
           class="relative z-10 mj-container text-center flex flex-col items-center justify-center"
         >
@@ -199,16 +204,17 @@
 
           <p class="text-lg font-semibold text-gray-800">
             The purpose of life is not to be happy --
-            <span class="italic font-bold text-gray-800"
-              >but to matter, <br />
-              to be productive, to be useful,</span
-            >
+            <span class="italic font-bold text-gray-800">
+              but to matter, <br />
+              to be productive, to be useful,
+            </span>
             to have it make some <br />
             difference that you lived at all.
           </p>
         </div>
       </div>
     </div>
+
     <div class="mj-container my-16">
       <h2 class="text-3xl font-bold text-gray-800 text-center">
         Your Questions <span class="text-green-500 font-sri">Answered</span>
@@ -259,6 +265,11 @@
           </div>
         </div>
       </div>
+      <hr class="my-4" />
+    </div>
+    <!-- Footer -->
+    <div class="mt-16">
+      <laster />
     </div>
   </section>
 </template>
