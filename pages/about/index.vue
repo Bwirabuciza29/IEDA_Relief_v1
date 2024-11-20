@@ -37,14 +37,14 @@
     </div>
     <!-- Fin Top Title -->
     <div class="mj-container my-16">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <!-- Card 1 -->
         <div class="flex flex-col items-start p-4 border rounded-lg shadow-md">
           <div class="flex items-center mb-4">
             <img src="/img/icon_1.png" alt="Icon" class="w-10 h-10 mr-2" />
             <h3 class="text-xl font-semibold">Vision</h3>
           </div>
-          <p class="text-gray-600">
+          <p class="text-gray-600 hover:underline">
             Our vision is to establish a stable environment with sustainable
             solutions that benefit the population in need. We empower
             communities...
@@ -56,7 +56,7 @@
           <img
             src="/img/c1.png"
             alt="Image 1"
-            class="w-full h-full object-cover transition-all duration-300 hover:z-10 hover:scale-105"
+            class="w-full h-48 object-cover transition-all duration-300 hover:z-10 hover:scale-105"
           />
         </div>
 
@@ -66,7 +66,7 @@
             <img src="/img/icon_2.png" alt="Icon" class="w-10 h-10 mr-2" />
             <h3 class="text-xl font-semibold">Mission</h3>
           </div>
-          <p class="text-gray-600">
+          <p class="text-gray-600 hover:underline">
             The mission of IEDA Relief is to alleviate the suffering of
             vulnerable people by tackling the underlying causes of poverty...
           </p>
@@ -77,7 +77,7 @@
           <img
             src="/img/c2.png"
             alt="Image 2"
-            class="w-full h-full object-cover transition-all duration-300 hover:z-10 hover:scale-105"
+            class="w-full h-48 object-cover transition-all duration-300 hover:z-10 hover:scale-105"
           />
         </div>
 
@@ -87,7 +87,7 @@
             <img src="/img/icon_3.png" alt="Icon" class="w-10 h-10 mr-2" />
             <h3 class="text-xl font-semibold">Value</h3>
           </div>
-          <p class="text-gray-600">
+          <p class="text-gray-600 hover:underline">
             We are committed to working in the most difficult conditions to
             reach the world's poorest and most vulnerable people...
           </p>
@@ -98,7 +98,7 @@
           <img
             src="/img/c3.png"
             alt="Image 3"
-            class="w-full h-full object-cover transition-all duration-300 hover:z-10 hover:scale-105"
+            class="w-full h-48 object-cover transition-all duration-300 hover:z-10 hover:scale-105"
           />
         </div>
       </div>
@@ -116,7 +116,7 @@
             <img
               src="/img/Play.png"
               alt="Play"
-              class="w-20 h-20 transition-all duration-300 hover:z-10 hover:scale-105"
+              class="w-20 h-20 transition-all duration-300 hover:z-10 hover:scale-110"
             />
           </button>
         </div>
@@ -126,19 +126,23 @@
       <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
         <!-- Élément 1 -->
         <div>
-          <h3 class="text-4xl font-bold text-custom-green">{{ count1 }}+</h3>
+          <h3 class="text-4xl font-bold font-sri text-custom-green">
+            {{ count1 }}+
+          </h3>
           <p class="text-gray-600">Countries and Territories Served</p>
         </div>
         <!-- Élément 2 -->
         <div>
-          <h3 class="text-4xl font-bold text-custom-green">
+          <h3 class="text-4xl font-bold font-sri text-custom-green">
             {{ (count2 / 1000000).toFixed(1) }} million
           </h3>
           <p class="text-gray-600">People in Our Programs Worldwide</p>
         </div>
         <!-- Élément 3 -->
         <div>
-          <h3 class="text-4xl font-bold text-custom-green">{{ count3 }}</h3>
+          <h3 class="text-4xl font-bold font-sri text-custom-green">
+            {{ count3 }}
+          </h3>
           <p class="text-gray-600">Year founded in Seattle, Washington</p>
         </div>
       </div>
