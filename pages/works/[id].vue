@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="mj-container my-8">
+      <div class="mj-container mt-8">
         <div
           class="flex flex-col md:flex-row p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8"
         >
@@ -54,7 +54,7 @@
           </div>
 
           <!-- Section Droite -->
-          <div class="w-full md:w-1/3 bg-white rounded-lg shadow-md p-4">
+          <div class="w-full md:w-1/3 bg-gray-100 rounded-lg p-2">
             <ul class="space-y-4">
               <!-- Item 1 -->
               <li class="flex items-center space-x-3">
@@ -101,14 +101,14 @@
               Potential: $500 - $5,000
             </p>
             <button
-              class="mt-6 w-full bg-custom-green text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
+              class="mt-2 w-full bg-custom-green text-white py-2 px-4 rounded-lg hover:bg-green-600 transition"
             >
               REGISTER NOW
             </button>
           </div>
         </div>
       </div>
-      <div class="mj-container my-8">
+      <div class="mj-container mb-8">
         <div
           class="flex flex-col md:flex-row p-6 rounded-lg space-y-6 md:space-y-0 md:space-x-8"
         >
@@ -124,7 +124,11 @@
                 class="absolute inset-0 flex items-center justify-center"
                 aria-label="Play Video"
               >
-                <img src="/img/Play.png" alt="Play" class="w-20 h-20" />
+                <img
+                  src="/img/Play.png"
+                  alt="Play"
+                  class="w-20 h-20 transition-all duration-300 hover:z-10 hover:scale-105"
+                />
               </div>
             </div>
 
@@ -248,8 +252,10 @@
           </div>
 
           <!-- Section Droite -->
-          <div class="w-full h-48 md:w-1/3 bg-white rounded-lg shadow-md p-4">
-            <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">
+          <div
+            class="w-full h-48 md:w-1/3 bg-gray-100 rounded-lg p-4 transition-all duration-300 hover:z-10 hover:scale-105"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">
               Have Additional Questions?
             </h3>
             <ul class="space-y-3">
@@ -257,19 +263,25 @@
                 <i
                   class="fas fa-envelope text-white text-xs mr-3 rounded-full p-2 bg-custom-green"
                 ></i>
-                <span class="text-gray-600">achillebondy@gmail.com</span>
+                <span class="text-gray-600 hover:underline"
+                  >achillebondy@gmail.com</span
+                >
               </li>
               <li class="flex items-center">
                 <i
                   class="fas fa-phone-alt text-white text-xs mr-3 rounded-full p-2 bg-custom-green"
                 ></i>
-                <span class="text-gray-600">+243 999 249</span>
+                <span class="text-gray-600 hover:underline"
+                  >+243 999 249 863</span
+                >
               </li>
               <li class="flex items-center">
                 <i
                   class="fas fa-map-marker-alt text-white text-xs mr-3 rounded-full p-2 bg-custom-green"
                 ></i>
-                <span class="text-gray-600">123 Main Street, Burkina Faso</span>
+                <span class="text-gray-600 hover:underline"
+                  >123 Main Street, Burkina Faso</span
+                >
               </li>
             </ul>
           </div>
