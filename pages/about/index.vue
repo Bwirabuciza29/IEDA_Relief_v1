@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!--  Top Title -->
     <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20">
       <!-- Image vectorielle (positionnée au-dessus du conteneur) -->
       <img
@@ -34,6 +35,7 @@
         <!-- contenu de l'about -->
       </div>
     </div>
+    <!-- Fin Top Title -->
     <div class="mj-container my-16">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
