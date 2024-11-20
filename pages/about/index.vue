@@ -40,10 +40,10 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="flex flex-col items-start p-4 border rounded-lg shadow-md">
-          <div class="mb-4">
-            <img src="/img/icon_1.png" alt="Icon" class="w-10 h-10" />
+          <div class="flex items-center mb-4">
+            <img src="/img/icon_1.png" alt="Icon" class="w-10 h-10 mr-2" />
+            <h3 class="text-xl font-semibold">Vision</h3>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Vision</h3>
           <p class="text-gray-600">
             Our vision is to establish a stable environment with sustainable
             solutions that benefit the population in need. We empower
@@ -56,16 +56,16 @@
           <img
             src="/img/c1.png"
             alt="Image 1"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover transition-all duration-300 hover:z-10 hover:scale-105"
           />
         </div>
 
         <!-- Card 3 -->
         <div class="flex flex-col items-start p-4 border rounded-lg shadow-md">
-          <div class="mb-4">
-            <img src="/img/icon_2.png" alt="Icon" class="w-10 h-10" />
+          <div class="flex items-center mb-4">
+            <img src="/img/icon_2.png" alt="Icon" class="w-10 h-10 mr-2" />
+            <h3 class="text-xl font-semibold">Mission</h3>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Mission</h3>
           <p class="text-gray-600">
             The mission of IEDA Relief is to alleviate the suffering of
             vulnerable people by tackling the underlying causes of poverty...
@@ -77,16 +77,16 @@
           <img
             src="/img/c2.png"
             alt="Image 2"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover transition-all duration-300 hover:z-10 hover:scale-105"
           />
         </div>
 
         <!-- Card 5 -->
         <div class="flex flex-col items-start p-4 border rounded-lg shadow-md">
-          <div class="mb-4">
-            <img src="/img/icon_3.png" alt="Icon" class="w-10 h-10" />
+          <div class="flex items-center mb-4">
+            <img src="/img/icon_3.png" alt="Icon" class="w-10 h-10 mr-2" />
+            <h3 class="text-xl font-semibold">Value</h3>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Value</h3>
           <p class="text-gray-600">
             We are committed to working in the most difficult conditions to
             reach the world's poorest and most vulnerable people...
@@ -98,8 +98,48 @@
           <img
             src="/img/c3.png"
             alt="Image 3"
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover transition-all duration-300 hover:z-10 hover:scale-105"
           />
+        </div>
+      </div>
+    </div>
+    <div class="mj-container my-16">
+      <!-- Image principale avec le texte en arrière-plan -->
+      <div class="relative">
+        <img
+          src="/img/vid.png"
+          alt="Groupe de personnes"
+          class="w-full rounded-lg shadow-lg"
+        />
+        <div class="absolute inset-0 flex items-center justify-center">
+          <button class="text-white">
+            <img
+              src="/img/Play.png"
+              alt="Play"
+              class="w-20 h-20 transition-all duration-300 hover:z-10 hover:scale-105"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- Section d'informations -->
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+        <!-- Élément 1 -->
+        <div>
+          <h3 class="text-4xl font-bold text-custom-green">{{ count1 }}+</h3>
+          <p class="text-gray-600">Countries and Territories Served</p>
+        </div>
+        <!-- Élément 2 -->
+        <div>
+          <h3 class="text-4xl font-bold text-custom-green">
+            {{ (count2 / 1000000).toFixed(1) }} million
+          </h3>
+          <p class="text-gray-600">People in Our Programs Worldwide</p>
+        </div>
+        <!-- Élément 3 -->
+        <div>
+          <h3 class="text-4xl font-bold text-custom-green">{{ count3 }}</h3>
+          <p class="text-gray-600">Year founded in Seattle, Washington</p>
         </div>
       </div>
     </div>
@@ -107,6 +147,37 @@
 </template>
 
 <script setup>
-const { t } = useI18n();
-const title_1 = ref(t("about.title_1"));
+import { ref, onMounted } from "vue";
+
+// Fonction d'animation des chiffres
+function animateValue(target, start, end, duration) {
+  const range = end - start;
+  let current = start;
+  const increment = range / (duration / 10);
+  const interval = setInterval(() => {
+    current += increment;
+    if (
+      (increment > 0 && current >= end) ||
+      (increment < 0 && current <= end)
+    ) {
+      current = end;
+      clearInterval(interval);
+    }
+    target.value = Math.round(current);
+  }, 10);
+}
+
+// Déclaration des données
+const count1 = ref(0);
+const count2 = ref(0);
+const count3 = ref(0);
+
+onMounted(() => {
+  // Durée de 2s
+  animateValue(count1, 0, 72, 2000);
+  // Durée de 3s
+  animateValue(count2, 0, 2200000, 3000);
+  // Durée de 1.5s
+  animateValue(count3, 0, 1999, 1500);
+});
 </script>
