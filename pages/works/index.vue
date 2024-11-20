@@ -21,7 +21,7 @@
                 </div>
               </nav>
             </div>
-            <div class="flex-1">
+            <div class="flex-1 hidden md:flex">
               <img
                 src="/img/w1.jpg"
                 alt="About Us Section"
@@ -33,10 +33,46 @@
       </div>
     </div>
     <!-- contenu du work -->
-    <div class="mj-container my-16">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore harum
-      modi doloremque fugit, porro quidem maxime a iure placeat officia optio
-      libero aperiam illo consectetur sit alias ex quibusdam repellat?
+    <div class="mj-container my-16 relative">
+      <!-- Image filigranne au coin supérieur à gauche -->
+      <div class="absolute -top-8 -left-24 w-28 h-28 hidden sm:block">
+        <img
+          src="/img/Titik-titik.png"
+          alt="Filigrane haut gauche"
+          class="w-full h-full object-contain opacity-50"
+        />
+      </div>
+
+      <!-- Contenu principal -->
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore harum
+        modi doloremque fugit, porro quidem maxime a iure placeat officia optio
+        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
+        doloremque fugit, porro quidem maxime a iure placeat officia optio
+        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
+        doloremque fugit, porro quidem maxime a iure placeat officia optio
+        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
+        doloremque fugit, porro quidem maxime a iure placeat officia optio
+        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
+        doloremque fugit, porro quidem maxime a iure placeat officia optio
+        libero aperiam illo consectetur sit alias ex quibusdam repellat? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Inventore harum modi
+        doloremque fugit, porro quidem maxime a iure placeat officia optio
+        libero aperiam illo consectetur sit alias ex quibusdam repellat?
+      </div>
+
+      <!-- Image filigranne au coin inférieur à droite -->
+      <div class="absolute -bottom-8 -right-24 w-28 h-28 hidden sm:block">
+        <img
+          src="/img/Titik-titik.png"
+          alt="Filigrane bas droite"
+          class="w-full h-full object-contain opacity-50"
+        />
+      </div>
     </div>
   </section>
 </template>

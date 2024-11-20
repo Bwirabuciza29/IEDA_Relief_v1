@@ -22,7 +22,7 @@
             </div>
 
             <!-- Image (à droite sur grand écran) -->
-            <div class="flex-1">
+            <div class="flex-1 hidden md:flex">
               <img
                 src="/img/cha.png"
                 alt="About Us Section"
