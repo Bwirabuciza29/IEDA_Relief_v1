@@ -219,7 +219,7 @@
         vestibulum lorem sed risus ultrices.
       </p>
       <!-- FAQ Section -->
-      <div class="mt-10 space-y-4">
+      <div class="mt-10 space-y-4 max-w-xl mx-auto">
         <div
           v-for="(faq, index) in faqs"
           :key="index"
