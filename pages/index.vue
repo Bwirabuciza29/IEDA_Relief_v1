@@ -46,12 +46,12 @@
               <img
                 src="/img/img_1.png"
                 alt="Volunteer"
-                class="mx-2 absolute top-[50%] left-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
+                class="hidden md:block mx-2 absolute top-[50%] left-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
               />
               <img
                 src="/img/img_2.png"
                 alt="Child"
-                class="mx-2 absolute top-[20%] right-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md transform rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
+                class="hidden md:block mx-2 absolute top-[20%] right-[-40px] w-20 h-20 md:w-28 md:h-28 shadow-md transform rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
               />
             </div>
 
