@@ -55,19 +55,13 @@ export default defineNuxtConfig({
           rel: "icon",
           type: "image/png",
           sizes: "32x32",
-          href: "/favicons/favicon-32x32.png",
+          href: "/favicons/favicon-96x96.png",
         },
         {
           rel: "icon",
           type: "image/png",
           sizes: "16x16",
-          href: "/favicons/favicon-16x16.png",
-        },
-
-        {
-          rel: "mask-icon",
-          href: "/favicons/safari-pinned-tab.svg",
-          color: "#5bbad5",
+          href: "/favicons/favicon-96x96.png",
         },
       ],
       noscript: [{ children: "Javascript est désactivé" }],
