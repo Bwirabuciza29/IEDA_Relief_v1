@@ -78,7 +78,9 @@
                 >
                   <i class="fa-solid fa-city"></i>
                 </span>
-                <p class="text-gray-800 text-sm font-medium">Ouagadougou</p>
+                <p class="text-gray-800 text-sm font-medium">
+                  {{ card.capital }}
+                </p>
               </li>
 
               <!-- Item 3 -->
@@ -268,24 +270,24 @@
                 <i
                   class="fas fa-envelope text-white text-xs mr-3 rounded-full p-2 bg-custom-green"
                 ></i>
-                <span class="text-gray-600 hover:underline"
-                  >achillebondy@gmail.com</span
-                >
+                <span class="text-gray-600 hover:underline">{{
+                  card.email
+                }}</span>
               </li>
               <li class="flex items-center">
                 <i
                   class="fas fa-phone-alt text-white text-xs mr-3 rounded-full p-2 bg-custom-green"
                 ></i>
-                <span class="text-gray-600 hover:underline"
-                  >+243 999 249 863</span
-                >
+                <span class="text-gray-600 hover:underline">{{
+                  card.phone
+                }}</span>
               </li>
               <li class="flex items-center">
                 <i
                   class="fas fa-map-marker-alt text-white text-xs mr-3 rounded-full p-2 bg-custom-green"
                 ></i>
                 <span class="text-gray-600 hover:underline"
-                  >123 Main Street, Burkina Faso</span
+                  >{{ card.li_2 }} {{ card.capital }}</span
                 >
               </li>
             </ul>
@@ -316,74 +318,113 @@ const cards = [
   {
     id: 1,
     image: "/img/w1.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Burkina Faso",
+    capital: "Ouagadougou",
+    mean: "Burkina Faso, which means land of honest men",
+    email: "name@domain.com",
+    phone: "+226 000 000 000",
+    li_2: "123 Main Street, town name",
     description:
       "Empowering communities with essential knowledge and practices to promote health and prevent",
   },
   {
     id: 2,
     image: "/img/w2.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Cameroun",
+    capital: "Younde",
     description:
       "Providing Harper with the freedom and independence to navigate the world with ease",
+    email: "name@domain.com",
+    phone: "+237 000 000 000",
+    li_2: "123 Main Street, town name",
   },
   {
     id: 3,
     image: "/img/w3.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Central Africa Republic",
+    capital: "Bangui",
     description:
       "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+    email: "name@domain.com",
+    phone: "+236 000 000 000",
+    li_2: "123 Main Street, town name",
   },
   {
     id: 4,
     image: "/img/w4.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Mali",
+    capital: "Bamako",
     description:
-      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+      "Cancer Battle Fund provides critical financial support for Olivia's medical treatment, offering hope and …",
+
+    email: "name@domain.com",
+    phone: "+223 000 000 000",
+    li_2: "123 Main Street, town name",
   },
   {
     id: 5,
     image: "/img/w5.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Niger",
+    capital: "Niamey",
     description:
-      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+      "Response teams delivering lifesaving aid for children impacted by any major humanitarian ..",
+
+    email: "name@domain.com",
+    phone: "+227 000 000 000",
+    li_2: "123 Main Street, town name",
   },
   {
     id: 6,
     image: "/img/w6.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Philippines",
+    capital: "Manille",
     description:
-      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+      "Safe havens where children receive nurturing care, education, and support for their holistic …",
+
+    email: "name@domain.com",
+    phone: "+65 000 000 000",
+    li_2: "123 Main Street, town name",
   },
   {
     id: 7,
     image: "/img/w7.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Haiti",
+    capital: "Port-au-Prince",
     description:
-      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+      "Supporting access to schooling, tutoring and educational resources for children …",
+    email: "name@domain.com",
+    phone: "+509 000 000 000",
+    li_2: "123 Main Street, town name",
   },
   {
     id: 8,
     image: "/img/w8.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Democratic Rep. of the Congo",
+    capital: "Kinshasa",
     description:
-      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+      "Providing specialized medical care and rehabilitation to children affected by war, offering hope and …",
+    email: "name@domain.com",
+    phone: "+243 000 000 000",
+    li_2: "123 Main Street, town name",
   },
   {
     id: 9,
     image: "/img/w9.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Get Involved",
     description:
-      "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+      "Bringing essential healthcare services directly to underserved communities, ensuring access …",
+    email: "name@domain.com",
+    phone: "000 000 000",
+    li_2: "123 Main Street, town name",
   },
 ];
 

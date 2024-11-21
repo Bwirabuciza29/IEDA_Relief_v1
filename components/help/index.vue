@@ -25,7 +25,7 @@
           <img
             src="/img/bf.jpg"
             alt="Overlay Image"
-            class="absolute -bottom-3 -right-8 w-40 h-40 rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
+            class="absolute bottom-4 -right-16 w-40 h-40 rounded-lg transition-all duration-300 hover:z-10 hover:scale-110"
           />
         </div>
 
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Carte avec éléments -->
-        <div class="bg-white rounded-lg shadow-lg p-6 space-y-4">
+        <div class="bg-white rounded-lg shadow-lg p-6 space-y-5">
           <div
             class="flex items-center space-x-4 border rounded-full border-custom-green p-2"
           >
@@ -54,9 +54,9 @@
               alt="Food Assistance Icon"
               class="w-4 h-4"
             />
-            <h3 class="font-semibold">{{ card_1 }}</h3>
+            <h3 class="font-semibold text-xs">{{ card_1 }}</h3>
           </div>
-          <p class="hover:underline">
+          <p class="hover:underline text-xs">
             {{ desc_1 }}
           </p>
 
@@ -68,9 +68,9 @@
               alt="Education Support Icon"
               class="w-4 h-4"
             />
-            <h3 class="font-semibold">{{ card_2 }}</h3>
+            <h3 class="font-semibold text-xs">{{ card_2 }}</h3>
           </div>
-          <p class="hover:underline">
+          <p class="hover:underline text-xs">
             {{ desc_2 }}
           </p>
 
@@ -82,9 +82,9 @@
               alt="Environmental Conservation Icon"
               class="w-4 h-4"
             />
-            <h3 class="font-semibold">{{ card_3 }}</h3>
+            <h3 class="font-semibold text-xs">{{ card_3 }}</h3>
           </div>
-          <p class="hover:underline">
+          <p class="hover:underline text-xs">
             {{ desc_3 }}
           </p>
         </div>

@@ -1,10 +1,10 @@
 <template>
   <section>
-    <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20">
+    <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20 z-10">
       <img
         src="/img/Vectoria.png"
         alt="Decorative Vector"
-        class="absolute top-0 left-64 h-full w-auto z-10 hidden sm:block"
+        class="absolute top-0 left-64 h-full w-auto hidden sm:block"
       />
       <div class="mj-container">
         <div class="relative">
@@ -141,6 +141,15 @@ const cards = [
     image: "/img/w1.png",
     tag: t("works.title"),
     title: "Burkina Faso",
+    capital: "Ouagadougou",
+    mean: "Burkina Faso, which means land of honest men",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "+226 000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
     description:
       "Empowering communities with essential knowledge and practices to promote health and prevent",
   },
@@ -149,56 +158,113 @@ const cards = [
     image: "/img/w2.png",
     tag: t("works.title"),
     title: "Cameroun",
+    capital: "Younde",
     description:
       "Providing Harper with the freedom and independence to navigate the world with ease",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "+237 000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
   },
   {
     id: 3,
     image: "/img/w3.png",
     tag: t("works.title"),
     title: "Central Africa Republic",
+    capital: "Bangui",
     description:
       "Join us in providing compassionate support and resources for Daniel as he embarks on his",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "+236 000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
   },
+
   {
     id: 4,
     image: "/img/w4.png",
     tag: t("works.title"),
     title: "Mali",
+    capital: "Bamako",
     description:
       "Cancer Battle Fund provides critical financial support for Olivia's medical treatment, offering hope and …",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "+223 000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
   },
   {
     id: 5,
     image: "/img/w5.png",
     tag: t("works.title"),
     title: "Niger",
+    capital: "Niamey",
     description:
       "Response teams delivering lifesaving aid for children impacted by any major humanitarian ..",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "+227 000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
   },
   {
     id: 6,
     image: "/img/w6.png",
     tag: t("works.title"),
     title: "Philippines",
+    capital: "Manille",
     description:
       "Safe havens where children receive nurturing care, education, and support for their holistic …",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "+65 000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
   },
   {
     id: 7,
     image: "/img/w7.png",
     tag: t("works.title"),
     title: "Haiti",
+    capital: "Port-au-Prince",
     description:
       "Supporting access to schooling, tutoring and educational resources for children …",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "+509 000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
   },
   {
     id: 8,
     image: "/img/w8.png",
     tag: t("works.title"),
     title: "Democratic Rep. of the Congo",
+    capital: "Kinshasa",
     description:
       "Providing specialized medical care and rehabilitation to children affected by war, offering hope and …",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "+243 000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
   },
   {
     id: 9,
@@ -207,6 +273,13 @@ const cards = [
     title: "Get Involved",
     description:
       "Bringing essential healthcare services directly to underserved communities, ensuring access …",
+    contacts: [
+      {
+        email: "name@domain.com",
+        phone: "000 000 000",
+        li_2: "123 Main Street, town name",
+      },
+    ],
   },
 ];
 
