@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-green-50">
     <div class="mj-container relative mt-20">
       <!-- Contenu principal -->
       <div class="relative z-10">
@@ -60,10 +60,10 @@
               class="bg-custom-green py-6 rounded-md flex items-center justify-center w-2/4 md:w-2/2 absolute -bottom-16 left-44 transform -translate-x-1/2 md:translate-x-0 transition hover:scale-105 mobile:bottom-8 mobile:left-1/2 mobile:transform mobile:-translate-x-1/2"
             >
               <div class="text-center">
-                <p class="text-2xl md:text-3xl text-black font-sri">
+                <p class="text-2xl md:text-3xl text-white font-sri">
                   {{ animatedCardNum }} {{ card_letter }}
                 </p>
-                <p class="text-black hover:underline">
+                <p class="text-white hover:underline">
                   {{ card_desc }}
                 </p>
               </div>
@@ -77,6 +77,11 @@
         src="/img/Vector_1.png"
         alt="Filigrane"
         class="absolute right-0 top-48 transform -translate-y-1/2 opacity-90 pointer-events-none w-64 sm:w-96 md:w-[25rem] lg:w-[35rem] h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[35rem] z-0"
+      />
+      <img
+        src="/img/Vector_1.png"
+        alt="Filigrane"
+        class="absolute left-0 -bottom-48 transform -translate-x-1/2 opacity-50 pointer-events-none w-64 sm:w-96 md:w-[25rem] lg:w-[35rem] h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[35rem] z-0"
       />
     </div>
     <!-- Fin Page d'accueil -->

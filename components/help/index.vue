@@ -2,8 +2,9 @@
   <section class="bg-custom-green p-8 mx-4 rounded-lg">
     <!-- Titre -->
     <div class="mj-container relative z-10">
-      <h2 class="text-3xl md:text-4xl font-bold text-left mb-8">
-        {{ title_1 }} <span class="font-sri"> {{ title_2 }}</span>
+      <h2 class="text-3xl text-white md:text-4xl font-bold text-left mb-8">
+        {{ title_1 }}
+        <span class="font-sri text-green-100"> {{ title_2 }}</span>
       </h2>
       <!-- Watermark -->
       <img
@@ -31,7 +32,7 @@
 
         <!-- Texte -->
         <div>
-          <p class="text-lg text-center">
+          <p class="text-lg text-center text-white">
             {{ desc }}
           </p>
           <!-- Carte arrondie en bas à droite -->

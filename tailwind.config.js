@@ -14,7 +14,7 @@ export default {
       colors: {
         customLight: "#F9F9F4",
         "custom-greens": "#07B008",
-        "custom-green": "#63F36F",
+        "custom-green": "#02AB4B",
         "custom-blue": "#055FC5",
       },
       fontFamily: {
