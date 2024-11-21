@@ -46,14 +46,14 @@
       <!-- Contenu principal -->
       <div>
         <!-- Boutons -->
-        <div class="flex justify-center space-x-4 mb-8">
+        <div class="flex justify-center font-semibold space-x-4 mb-8">
           <button
             v-for="(tab, index) in tabs"
             :key="index"
             :class="[
               'px-4 py-2 rounded-lg',
               activeTab === tab
-                ? 'bg-custom-green text-white'
+                ? 'bg-custom-green  text-white font-semibold'
                 : 'bg-gray-200 text-gray-700',
             ]"
             @click="activeTab = tab"
