@@ -1,10 +1,12 @@
 <template>
   <section class="bg-green-50">
-    <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20">
+    <div
+      class="relative bg-[url('/img/bby.png')] bg-cover bg-center bg-no-repeat py-8 mx-4 md:mx-8 lg:mx-16 rounded-lg mt-20 shadow-lg"
+    >
       <img
         src="/img/Vectoria.png"
         alt="Decorative Vector"
-        class="absolute top-0 left-64 h-full w-auto hidden sm:block z-10"
+        class="absolute top-0 left-40 h-full w-auto hidden sm:block z-10"
       />
       <div class="mj-container">
         <div class="relative">
@@ -13,84 +15,56 @@
               <h1 class="text-4xl text-white font-bold mb-2">Our Operations</h1>
               <nav class="text-sm text-black">
                 <div class="inline-block bg-white p-3 rounded-lg">
-                  <a href="/" class="hover:underline font-semibold">Home/ </a>
-                  <span>Our Operations</span>
+                  <a href="/" class="hover:underline font-semibold"
+                    >Our Operations/
+                  </a>
+                  <span>Details</span>
                 </div>
               </nav>
             </div>
             <div class="flex-1 hidden md:flex">
-              <img
+              <!-- <img
                 src="/img/o2.jpg"
                 class="w-full h-48 object-cover rounded-lg transition-all duration-300 hover:scale-105"
-              />
+              /> -->
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="mj-container my-10">
-      <div class="text-center">
-        <p class="text-custom-green uppercase tracking-widest text-xs">
-          OPERATIONS
-        </p>
-        <h1 class="text-3xl font-semibold">
-          SOME OF OUR <span class="font-sri"> OPERATIONS</span>
-        </h1>
-      </div>
-      <!-- cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
-        <div
-          v-for="(card, index) in cards"
-          :key="index"
-          class="flex items-center bg-white shadow-md rounded-lg p-4 space-x-4"
-        >
-          <div class="w-32 h-32">
-            <img
-              :src="card.image"
-              alt="card image"
-              class="rounded-lg w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold text-gray-800">
-              {{ card.title }}
-            </h3>
-            <p class="text-sm text-gray-600 mb-4">{{ card.description }}</p>
+    <div class="container mx-auto my-24 p-4">
+      <NuxtLink to="/pages" class="mb-8 bg-gray-200 px-4 py-2 rounded-lg">
+        Back
+      </NuxtLink>
 
-            <!-- Progress bar with animation -->
-            <div
-              class="relative w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-2"
-            >
-              <div
-                class="absolute h-full bg-custom-green transition-all duration-500 ease-in-out"
-                :style="{ width: card.progress + '%' }"
-              ></div>
-            </div>
-
-            <!-- Read more -->
-            <nuxt-link
-              :to="`/pages/${card.id}`"
-              class="text-custom-green text-sm font-medium hover:underline"
-            >
-              Read more
-            </nuxt-link>
-          </div>
+      <!-- Vérification que card existe -->
+      <div v-if="card" class="bg-white shadow-md rounded-lg overflow-hidden">
+        <img
+          :src="card.image"
+          alt="Card Image"
+          class="w-full h-60 object-cover"
+        />
+        <div class="p-6">
+          <h1 class="text-2xl font-bold mb-4">{{ card.title }}</h1>
+          <p class="text-gray-600 mb-4">{{ card.description }}</p>
+          <p class="text-gray-500">
+            Additional details about {{ card.title }}...
+          </p>
         </div>
       </div>
-      <!-- end -->
-    </div>
-    <hr class="mj-container" />
-    <!-- Parteners -->
-    <div class="my-16">
-      <LogOurs />
-    </div>
-    <!-- Footer -->
-    <div class="mt-16">
-      <laster />
+
+      <!-- Afficher un message de chargement si card est null -->
+      <div v-else class="text-center">
+        <p class="text-gray-600">Loading...</p>
+      </div>
     </div>
   </section>
 </template>
+
 <script setup>
+const route = useRoute();
+const card = ref(null);
+
 const cards = [
   {
     id: 1,
@@ -143,4 +117,18 @@ const cards = [
     progress: 30,
   },
 ];
+onMounted(() => {
+  const id = parseInt(route.params.id);
+  card.value = cards.find((c) => c.id === id);
+
+  if (!card.value) {
+    console.error("Card not found");
+  }
+});
 </script>
+
+<style scoped>
+.container {
+  max-width: 800px;
+}
+</style>
