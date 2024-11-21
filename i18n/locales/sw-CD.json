@@ -159,5 +159,13 @@
     "pages": "Shughuli",
     "contact": "Mawasiliano",
     "mail": "Ingiza anwani yako ya barua pepe"
+  },
+  "works": {
+    "title": "Tunapofanya Kazi",
+    "sub_title": "Nyumbani",
+    "btn_1_title": "Tunapofanya Kazi",
+    "btn_2_title": "Maono ya Kazi",
+    "btn_3_title": "Wadau",
+    "btn": "Zaidi"
   }
 }

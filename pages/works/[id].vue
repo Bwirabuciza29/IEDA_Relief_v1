@@ -2,6 +2,11 @@
   <section>
     <div v-if="card">
       <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20">
+        <img
+          src="/img/Vectoria.png"
+          alt="Decorative Vector"
+          class="absolute top-0 left-64 h-full w-auto z-10 hidden sm:block"
+        />
         <div class="mj-container">
           <div class="relative">
             <div class="rounded-lg flex flex-col md:flex-row overflow-hidden">
@@ -12,9 +17,9 @@
 
                 <nav class="text-sm text-black">
                   <div class="inline-block bg-white p-3 rounded-lg">
-                    <a href="/works" class="hover:underline font-semibold"
-                      >Works</a
-                    >
+                    <a href="/works" class="hover:underline font-semibold">{{
+                      t("works.title")
+                    }}</a>
                     /
                     <span>{{ card.title }}</span>
                   </div>
@@ -303,6 +308,7 @@
 </template>
 
 <script setup>
+const { t } = useI18n();
 const route = useRoute();
 const card = ref(null);
 

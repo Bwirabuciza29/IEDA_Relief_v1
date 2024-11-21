@@ -160,5 +160,13 @@
     "pages": "Operaciones",
     "contact": "Contactos",
     "mail": "Ingresa tu dirección de correo electrónico"
+  },
+  "works": {
+    "title": "Dónde trabajamos",
+    "sub_title": "Inicio",
+    "btn_1_title": "Dónde trabajamos",
+    "btn_2_title": "Visión para trabajar",
+    "btn_3_title": "Socios",
+    "btn": "Más"
   }
 }

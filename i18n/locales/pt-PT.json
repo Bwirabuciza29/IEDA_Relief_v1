@@ -159,5 +159,13 @@
     "pages": "Operações",
     "contact": "Contatos",
     "mail": "Digite seu endereço de e-mail"
+  },
+  "works": {
+    "title": "Onde Trabalhamos",
+    "sub_title": "Início",
+    "btn_1_title": "Onde Trabalhamos",
+    "btn_2_title": "Visão para Trabalhar",
+    "btn_3_title": "Parceiros",
+    "btn": "Mais"
   }
 }

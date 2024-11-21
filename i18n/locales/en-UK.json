@@ -160,5 +160,13 @@
     "pages": "Operations",
     "contact": "Contacts",
     "mail": "Enter your Email adress"
+  },
+  "works": {
+    "title": "Where we work",
+    "sub_title": "Home",
+    "btn_1_title": "Where we work",
+    "btn_2_title": "Vision to work",
+    "btn_3_title": "Parteners",
+    "btn": "More"
   }
 }

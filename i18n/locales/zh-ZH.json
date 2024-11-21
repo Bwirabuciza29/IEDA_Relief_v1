@@ -159,5 +159,13 @@
     "pages": "操作",
     "contact": "联系方式",
     "mail": "请输入您的电子邮件地址"
+  },
+  "works": {
+    "title": "我们的工作地点",
+    "sub_title": "首页",
+    "btn_1_title": "我们的工作地点",
+    "btn_2_title": "工作的愿景",
+    "btn_3_title": "合作伙伴",
+    "btn": "更多"
   }
 }

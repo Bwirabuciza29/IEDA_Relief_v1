@@ -10,11 +10,14 @@
         <div class="relative">
           <div class="rounded-lg flex flex-col md:flex-row overflow-hidden">
             <div class="flex-1 p-6 md:p-8">
-              <h1 class="text-4xl font-bold mb-2">Where we work</h1>
+              <h1 class="text-4xl font-bold mb-2">{{ t("works.title") }}</h1>
               <nav class="text-sm text-black">
                 <div class="inline-block bg-white p-3 rounded-lg">
-                  <a href="/" class="hover:underline font-semibold">Home</a> /
-                  <span>Where we work</span>
+                  <a href="/" class="hover:underline font-semibold">{{
+                    t("works.sub_title")
+                  }}</a>
+                  /
+                  <span>{{ t("works.title") }}</span>
                 </div>
               </nav>
             </div>
@@ -61,7 +64,7 @@
 
         <!-- Contenu -->
         <div
-          v-if="activeTab === 'Where we work'"
+          v-if="activeTab === t('works.btn_1_title')"
           class="grid grid-cols-1 md:grid-cols-3 gap-4"
         >
           <div
@@ -90,7 +93,7 @@
                 class="bg-custom-green text-white px-6 py-2 rounded-lg hover:underline"
                 @click="goToDetails(card.id)"
               >
-                More
+                {{ t("works.btn") }}
               </button>
             </div>
           </div>
@@ -125,14 +128,18 @@
 </template>
 <script setup>
 const { t } = useI18n();
-const tabs = ["Where we work", "Vision to work", "Partners"];
-const activeTab = ref("Where we work");
+const tabs = [
+  t("works.btn_1_title"),
+  t("works.btn_2_title"),
+  t("works.btn_3_title"),
+];
+const activeTab = ref(t("works.btn_1_title"));
 
 const cards = [
   {
     id: 1,
     image: "/img/w1.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Burkina Faso",
     description:
       "Empowering communities with essential knowledge and practices to promote health and prevent",
@@ -140,7 +147,7 @@ const cards = [
   {
     id: 2,
     image: "/img/w2.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Cameroun",
     description:
       "Providing Harper with the freedom and independence to navigate the world with ease",
@@ -148,7 +155,7 @@ const cards = [
   {
     id: 3,
     image: "/img/w3.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Central Africa Republic",
     description:
       "Join us in providing compassionate support and resources for Daniel as he embarks on his",
@@ -156,7 +163,7 @@ const cards = [
   {
     id: 4,
     image: "/img/w4.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Mali",
     description:
       "Cancer Battle Fund provides critical financial support for Olivia's medical treatment, offering hope and …",
@@ -164,7 +171,7 @@ const cards = [
   {
     id: 5,
     image: "/img/w5.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Niger",
     description:
       "Response teams delivering lifesaving aid for children impacted by any major humanitarian ..",
@@ -172,7 +179,7 @@ const cards = [
   {
     id: 6,
     image: "/img/w6.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Philippines",
     description:
       "Safe havens where children receive nurturing care, education, and support for their holistic …",
@@ -180,7 +187,7 @@ const cards = [
   {
     id: 7,
     image: "/img/w7.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Haiti",
     description:
       "Supporting access to schooling, tutoring and educational resources for children …",
@@ -188,7 +195,7 @@ const cards = [
   {
     id: 8,
     image: "/img/w8.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Democratic Rep. of the Congo",
     description:
       "Providing specialized medical care and rehabilitation to children affected by war, offering hope and …",
@@ -196,7 +203,7 @@ const cards = [
   {
     id: 9,
     image: "/img/w9.png",
-    tag: "Where we work",
+    tag: t("works.title"),
     title: "Get Involved",
     description:
       "Bringing essential healthcare services directly to underserved communities, ensuring access …",
