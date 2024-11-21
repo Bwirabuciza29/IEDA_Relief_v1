@@ -53,12 +53,12 @@
       <div class="relative w-full max-w-xs mx-auto sm:w-full sm:h-auto">
         <!-- Carte derrière l'image -->
         <div
-          :class="secondCardColor"
+          :class="firstCardColors"
           class="absolute -top-8 -right-10 w-full h-full rounded-lg shadow-lg z-0 transition-colors duration-1000"
         ></div>
         <!-- Image -->
         <img
-          src="/img/bu.png"
+          src="/img/t2.jpg"
           alt="Deuxième image"
           class="absolute inset-0 w-full h-full rounded-lg shadow-md object-cover z-10 transform transition-transform duration-300 hover:scale-105"
         />
@@ -74,7 +74,7 @@ const t3 = ref(t("testimonial.t3"));
 const desc = ref(t("testimonial.desc"));
 
 const firstCardColor = ref("bg-yellow-300");
-const secondCardColor = ref("bg-green-500");
+const firstCardColors = ref("bg-custom-green");
 
 // Fonction qui alterne les couleurs de la première carte
 onMounted(() => {
@@ -85,16 +85,12 @@ onMounted(() => {
         : "bg-yellow-300";
   }, 2000);
 });
-
 onMounted(() => {
   setInterval(() => {
-    if (secondCardColor.value === "bg-green-500") {
-      secondCardColor.value = "bg-sky-500";
-    } else if (secondCardColor.value === "bg-blue-700") {
-      secondCardColor.value = "bg-black";
-    } else {
-      secondCardColor.value = "bg-custom-green";
-    }
+    firstCardColors.value =
+      firstCardColors.value === "bg-custom-green"
+        ? "bg-custom-blue"
+        : "bg-yellow-100";
   }, 2000);
 });
 </script>

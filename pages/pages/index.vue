@@ -1,10 +1,10 @@
 <template>
-  <section>
-    <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20 z-10">
+  <section class="bg-green-50">
+    <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20">
       <img
         src="/img/Vectoria.png"
         alt="Decorative Vector"
-        class="absolute top-0 left-64 h-full w-auto hidden sm:block"
+        class="absolute top-0 left-64 h-full w-auto hidden sm:block z-10"
       />
       <div class="mj-container">
         <div class="relative">
@@ -20,8 +20,8 @@
             </div>
             <div class="flex-1 hidden md:flex">
               <img
-                src="/img/o.png"
-                class="w-full h-48 object-cover rounded-lg transition-all duration-300 hover:z-10 hover:scale-105"
+                src="/img/o2.jpg"
+                class="w-full h-48 object-cover rounded-lg transition-all duration-300 hover:scale-105"
               />
             </div>
           </div>

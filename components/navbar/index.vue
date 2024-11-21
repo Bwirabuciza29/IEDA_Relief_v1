@@ -33,7 +33,7 @@
       <!-- Bouton Toggle Menu Mobile toujours visible -->
       <button
         @click="toggleMenu"
-        class="fixed right-4 top-6 z-50 text-green-500 md:hidden"
+        class="fixed right-4 top-6 z-50 text-green-500 md:hidden p-2 -mt-4 bg-green-100"
       >
         <!-- SVG pour le bouton du menu -->
         <svg
@@ -68,14 +68,14 @@
       <transition name="fade">
         <nav
           v-if="menuOpen"
-          class="fixed inset-0 z-40 m-4 flex flex-grow flex-col items-center space-y-6 rounded-lg border border-gray-700 bg-gradient-to-b from-black via-black/70 to-black/40 p-8 backdrop-blur-lg transition-transform duration-300 ease-out"
+          class="fixed h-96 inset-0 z-40 m-4 flex flex-grow flex-col items-center space-y-6 rounded-lg border border-gray-300 bg-gradient-to-b from-white via-white/70 to-white/40 p-8 backdrop-blur-md transition-transform duration-300 ease-out"
         >
           <NuxtLink
             v-for="(item, index) in menuItems"
             :key="index"
             :to="localPath(item)"
             @click="closeMenu"
-            class="font-semibold hover:text-green-400 hover:underline text-2xl
+            class="font-semibold text-green-400 hover:text-green-400 hover:underline text-2xl
   transition-opacity duration-300 opacity-0 animate-fadeIn delay-{{
     index * 100
   }}"

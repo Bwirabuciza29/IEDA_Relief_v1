@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="bg-green-50">
     <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20 z-10">
       <img
         src="/img/Vectoria.png"
@@ -24,9 +24,9 @@
             </div>
             <div class="flex-1 hidden md:flex">
               <img
-                src="/img/w1.jpg"
+                src="/img/w10.jpg"
                 alt="About Us Section"
-                class="w-full h-48 object-cover rounded-lg transition-all duration-300 hover:z-10 hover:scale-105"
+                class="w-full h-48 object-cover rounded-lg transition-all duration-300 hover:scale-105"
               />
             </div>
           </div>

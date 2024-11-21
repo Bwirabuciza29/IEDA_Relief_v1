@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="bg-green-50">
     <!--  Top Title -->
     <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20">
       <!-- Image vectorielle (positionnée au-dessus du conteneur) -->
@@ -32,7 +32,7 @@
               <img
                 src="/img/cha.png"
                 alt="About Us Section"
-                class="w-full h-full object-cover rounded-lg transition-all duration-300 hover:z-10 hover:scale-105"
+                class="w-full h-full object-cover rounded-lg transition-all duration-300 hover:scale-105"
               />
             </div>
           </div>
