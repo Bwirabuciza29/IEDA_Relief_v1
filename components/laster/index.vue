@@ -45,7 +45,7 @@
             </li>
             <li>
               <nuxtLink
-                to="/operations"
+                to="/pages"
                 class="text-gray-600 hover:text-custom-green font-semibold text-sm"
               >
                 {{ pages }}
@@ -91,7 +91,7 @@
             </li>
             <li>
               <nuxtLink
-                to="/operations"
+                to="/pages"
                 class="text-gray-600 hover:text-custom-green font-semibold text-sm"
               >
                 {{ pages }}
