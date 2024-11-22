@@ -350,7 +350,7 @@ const cards = [
     id: 3,
     title: "Health and community services",
     description:
-      "EDA Relief aims to ensure that people have access to adequate and appropriate health care and nutrition that allows them to live healthy lives as refugees and asylum seekers integrate into the Houston community.",
+      "IEDA Relief aims to ensure that people have access to adequate and appropriate health care and nutrition that allows them to live healthy lives as refugees and asylum seekers integrate into the Houston community.",
     descriptions:
       "Overseas, displaced populations and refugees are often vulnerable to an array of health risk factors while living in camps or residing in host communities.  IEDA Relief works to mitigate these vulnerabilities by offering a variety of services to prevent and treat illness and disease, combat malnutrition, facilitate access to health services, and mobilize the community to promote healthy and hygienic behaviors.",
     image: "/img/o5.png",
