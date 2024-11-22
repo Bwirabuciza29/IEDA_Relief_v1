@@ -179,9 +179,9 @@ const cards = [
     description:
       "Overseas, IEDA Relief often leads programs focusing on literacy and skills training for youth and adults within displaced populations and their host communities. This training allows beneficiaries to access livelihoods opportunities that would otherwise be unavailable to them, and succeed in sustaining and expanding their own income-generating activities. Additionally, IEDA Relief often facilitates access to education as a camp management agency, working with responsible humanitarian actors to negotiate access to local schools for children residing in camps or to build schools inside camp premises.",
     image: "/img/o9.png",
-    image_2: "/img/jpg1.jpg",
-    image_3: "/img/jpg2.jpg",
-    image_4: "/img/jpg3.jpg",
+    image_2: "/img/ed1.jpg",
+    image_3: "/img/ed2.jpg",
+    image_4: "/img/ed3.jpg",
     progress: 30,
   },
 ];
