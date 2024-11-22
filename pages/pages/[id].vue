@@ -276,11 +276,13 @@
         <div class="mt-8 flex justify-center">
           <div class="w-full max-w-md">
             <!-- Réduit la largeur et centre le contenu -->
-            <h2 class="text-4xl font-bold mb-4 text-center">Leave a Reply</h2>
+            <h2 class="text-4xl font-bold mb-4 text-center">
+              {{ t("operation.frm_title") }}
+            </h2>
             <form class="space-y-2">
               <!-- Champ Message -->
               <textarea
-                placeholder="Please type your message here..."
+                :placeholder="frm_t"
                 class="w-full p-2 rounded-lg resize-none"
                 rows="5"
               ></textarea>
@@ -289,12 +291,12 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  :placeholder="frm_name"
                   class="p-2 rounded-lg"
                 />
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  :placeholder="frm_email"
                   class="p-2 rounded-lg"
                 />
               </div>
@@ -304,7 +306,7 @@
                 type="submit"
                 class="mt-4 px-4 py-2 w-full bg-green-500 text-white font-medium rounded-lg"
               >
-                SEND A MESSAGE
+                {{ t("operation.btner") }}
               </button>
             </form>
           </div>
@@ -329,6 +331,9 @@
 const { t } = useI18n();
 const route = useRoute();
 const card = ref(null);
+const frm_name = ref(t("operation.frm_name"));
+const frm_email = ref(t("operation.frm_email"));
+const frm_t = ref(t("operation.frm_t"));
 
 const cards = [
   {

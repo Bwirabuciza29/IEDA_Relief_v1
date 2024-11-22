@@ -79,7 +79,9 @@
               :to="`/pages/${card.id}`"
               class="relative text-custom-green text-sm font-medium overflow-hidden group"
             >
-              <span class="relative z-10 hover:underline">Read more</span>
+              <span class="relative z-10 hover:underline">
+                {{ t("operation.btn") }}</span
+              >
               <span
                 class="absolute bottom-0 left-0 right-0 h-0 bg-green-200 group-hover:h-full transition-all duration-300"
               ></span>
@@ -138,7 +140,7 @@ const cards = [
   },
   {
     id: 4,
-    title: t("operation.c1_4"),
+    title: t("operation.c4_t"),
     description: t("operation.c4_de"),
     descriptions: t("operation.c4_des"),
     image: "/img/o6.png",
