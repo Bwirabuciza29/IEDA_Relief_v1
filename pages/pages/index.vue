@@ -72,9 +72,12 @@
             <!-- Read more -->
             <nuxt-link
               :to="`/pages/${card.id}`"
-              class="text-custom-green text-sm font-medium hover:underline"
+              class="relative text-custom-green text-sm font-medium overflow-hidden group"
             >
-              Read more
+              <span class="relative z-10 hover:underline">Read more</span>
+              <span
+                class="absolute bottom-0 left-0 right-0 h-0 bg-green-200 group-hover:h-full transition-all duration-300"
+              ></span>
             </nuxt-link>
           </div>
         </div>
