@@ -1,6 +1,6 @@
 <template>
   <section class="bg-green-50">
-    <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-20">
+    <div class="relative bg-custom-green p-8 mx-4 rounded-lg mt-16">
       <img
         src="/img/Vectoria.png"
         alt="Decorative Vector"
@@ -30,40 +30,52 @@
         </div>
       </div>
     </div>
-    <div class="mj-container my-10">
+    <div class="mj-container">
       <div
-        class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between p-8 lg:p-16 space-y-8 lg:space-y-0"
+        class="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between p-8 lg:p-16 space-y-8 space-x-8 lg:space-y-0"
       >
         <!-- Section gauche -->
         <div class="lg:w-1/2 space-y-6">
           <h1 class="text-3xl lg:text-4xl font-bold">
             Your Chance to Create
-            <span class="italic text-green-600">Opportunities</span> Today
+            <span class="font-sri text-green-600">Opportunities</span> Today
           </h1>
           <p class="text-gray-600">
             Hi, please complete the form below to let us know how we can help
             you, or check the Frequently Asked Questions first to see if your
             question has already been answered.
           </p>
-          <div class="space-y-4">
+          <div class="space-y-4 p-4 bg-white rounded-lg">
             <p class="flex items-center space-x-3">
-              <span class="text-green-600">&#9993;</span>
-              <span>merkulove@template.com</span>
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600"
+              >
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>name@domain.com</span>
             </p>
             <p class="flex items-center space-x-3">
-              <span class="text-green-600">&#9743;</span>
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600"
+              >
+                <i class="fas fa-phone-alt"></i>
+              </span>
               <span>+123 45 67 123</span>
             </p>
             <p class="flex items-center space-x-3">
-              <span class="text-green-600">&#127970;</span>
+              <span
+                class="flex items-center justify-center w-8 h-8 rounded-full bg-green-100 text-green-600"
+              >
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
               <span>123 Main Street, Anytown, USA</span>
             </p>
           </div>
         </div>
 
         <!-- Formulaire -->
-        <div class="lg:w-1/2 bg-gray-50 p-8 rounded-lg shadow-lg w-full">
-          <form class="space-y-6">
+        <div class="lg:w-1/2 p-8 w-full">
+          <form class="space-y-2">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
                 type="text"
@@ -122,84 +134,75 @@
       </div>
 
       <!-- Section des images et citation -->
-      <div class="mt-12 bg-gray-100 py-8 px-4 lg:px-16">
+      <div class="mj-container mt-24">
         <div
           class="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0"
         >
-          <!-- Images alignées à gauche -->
-          <div class="grid grid-cols-3 gap-2 lg:gap-4 lg:w-1/3">
+          <!-- Section gauche -->
+          <div class="grid grid-cols-2 gap-4 lg:w-1/3 relative">
+            <div class="space-y-4 absolute left-20 -top-40 hidden lg:block">
+              <img
+                src="/img/co1.png"
+                alt="Image 1"
+                class="w-24 rounded-lg object-cover"
+              />
+              <img
+                src="/img/co3.png"
+                alt="Image 2"
+                class="w-16 rounded-lg object-cover"
+              />
+            </div>
             <img
-              src="/img/co1.png"
-              alt="Image 1"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
-              alt="Image 2"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
+              src="/img/co2.png"
               alt="Image 3"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
-              alt="Image 4"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
-              alt="Image 5"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
-              alt="Image 6"
-              class="w-full rounded-lg object-cover"
+              class="absolute -top-32 left-48 w-24 rounded-lg object-cover hidden lg:block"
             />
           </div>
 
-          <!-- Citation au centre -->
+          <!-- Section centre -->
           <div class="lg:w-1/3 text-center">
-            <p class="text-gray-800 italic text-lg">
+            <div class="flex justify-center space-x-4 lg:flex">
+              <img
+                src="/img/co4.png"
+                alt="Image 4"
+                class="w-12 h-12 lg:w-10 lg:h-10 rounded-full object-cover"
+              />
+              <img
+                src="/img/co5.png"
+                alt="Image 5"
+                class="w-16 h-16 lg:w-16 lg:h-16 rounded-full object-cover"
+              />
+              <img
+                src="/img/co6.png"
+                alt="Image 6"
+                class="w-12 h-12 lg:w-10 lg:h-10 rounded-full object-cover"
+              />
+            </div>
+            <p class="text-gray-800 font-sri text-lg mt-4 w-full">
               "Vively doesn't just talk about making a difference - they live it
               every day, profoundly changing lives with their initiatives."
             </p>
             <p class="mt-4 text-gray-600 font-bold">Borely Bavis</p>
           </div>
 
-          <!-- Images alignées à droite -->
-          <div class="grid grid-cols-3 gap-2 lg:gap-4 lg:w-1/3">
+          <!-- Section droite -->
+          <div class="lg:w-1/3 relative">
+            <div class="space-y-4 absolute right-36 -top-40 hidden lg:block">
+              <img
+                src="/img/co7.png"
+                alt="Image 7"
+                class="w-24 rounded-lg object-cover"
+              />
+              <img
+                src="/img/co8.png"
+                alt="Image 8"
+                class="w-24 rounded-lg object-cover"
+              />
+            </div>
             <img
-              src="/img/co1.png"
-              alt="Image 7"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
-              alt="Image 8"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
+              src="/img/co9.png"
               alt="Image 9"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
-              alt="Image 10"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
-              alt="Image 11"
-              class="w-full rounded-lg object-cover"
-            />
-            <img
-              src="/img/co1.png"
-              alt="Image 12"
-              class="w-full rounded-lg object-cover"
+              class="absolute -top-16 -right-18 w-20 rounded-lg object-cover hidden lg:block"
             />
           </div>
         </div>
