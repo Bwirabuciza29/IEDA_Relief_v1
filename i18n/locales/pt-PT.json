@@ -198,5 +198,27 @@
     "frm_email": "Seu Email",
     "frm_t": "Por favor, digite sua mensagem aqui...",
     "btner": "Deixe um Comentário"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "sub_title": "Início",
+    "title_first": "Contatos",
+    "t1": "Sua Chance de Criar",
+    "t2": "Oportunidades",
+    "t3": "Hoje",
+    "t4": "Olá, por favor preencha o formulário abaixo para nos informar como podemos ajudar, ou confira as Perguntas Frequentes primeiro para ver se sua dúvida já foi respondida.",
+    "f1": "Nome",
+    "f2": "Sobrenome",
+    "f3": "Email",
+    "f4": "Número de Telefone",
+    "f5": {
+      "t1": "Escolha um motivo para contato",
+      "o1": "Suporte",
+      "o2": "Feedback",
+      "o3": "Outro"
+    },
+    "f6": "Mensagem",
+    "btn": "Enviar",
+    "motiv": "A Vively não se limita a falar sobre fazer a diferença - eles vivem isso todos os dias, mudando vidas profundamente com suas iniciativas."
   }
 }

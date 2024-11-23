@@ -198,5 +198,27 @@
     "frm_email": "Barua Pepe Yako",
     "frm_t": "Tafadhali andika ujumbe wako hapa...",
     "btner": "Acha Maoni"
+  },
+  "contact": {
+    "title": "Wasiliana Nasi",
+    "sub_title": "Nyumbani",
+    "title_first": "Mawasiliano",
+    "t1": "Fursa Yako ya Kuunda",
+    "t2": "Fursa",
+    "t3": "Leo",
+    "t4": "Habari, tafadhali jaza fomu hapa chini kutuambia jinsi tunavyoweza kusaidia, au angalia Maswali Yanayoulizwa Mara kwa Mara kwanza ili kuona kama swali lako tayari limejibiwa.",
+    "f1": "Jina la Kwanza",
+    "f2": "Jina la Mwisho",
+    "f3": "Barua Pepe",
+    "f4": "Namba ya Simu",
+    "f5": {
+      "t1": "Chagua sababu ya kuwasiliana",
+      "o1": "Msaada",
+      "o2": "Maoni",
+      "o3": "Nyingine"
+    },
+    "f6": "Ujumbe",
+    "btn": "Tuma",
+    "motiv": "Vively haizungumzi tu kuhusu kufanya mabadiliko - wanaishi nayo kila siku, wakibadilisha maisha kwa kina kupitia mipango yao."
   }
 }

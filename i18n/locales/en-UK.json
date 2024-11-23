@@ -200,5 +200,27 @@
     "frm_emai": "Your Email",
     "frm_t": "Please type your message here...",
     "btner": "Leave a Reply"
+  },
+  "contact": {
+    "title": "Let's Get in Touch",
+    "sub_title": "Home",
+    "title_first": "Contacts",
+    "t1": "Your Chance to Create",
+    "t2": "Opportunities",
+    "t3": "Today",
+    "t4": " Hi, please complete the form below to let us know how we can hel you, or check the Frequently Asked Questions first to see if your  question has already been answered.",
+    "f1": "First Name",
+    "f2": "Last Name",
+    "f3": "Email",
+    "f4": "phone number",
+    "f5": {
+      "t1": "Choose a contact reason",
+      "o1": "Support",
+      "o2": "Feedback",
+      "o3": "other"
+    },
+    "f6": "Message",
+    "btn": "submit",
+    "motiv": "Vively doesn't just talk about making a difference - they live it every day, profoundly changing lives with their initiatives."
   }
 }

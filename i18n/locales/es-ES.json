@@ -199,5 +199,27 @@
     "frm_email": "Tu Correo Electrónico",
     "frm_t": "Por favor, escribe tu mensaje aquí...",
     "btner": "Deja un comentario"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "sub_title": "Inicio",
+    "title_first": "Contactos",
+    "t1": "Tu Oportunidad de Crear",
+    "t2": "Oportunidades",
+    "t3": "Hoy",
+    "t4": "Hola, por favor completa el formulario a continuación para hacernos saber cómo podemos ayudarte, o consulta las Preguntas Frecuentes primero para ver si tu pregunta ya tiene respuesta.",
+    "f1": "Nombre",
+    "f2": "Apellido",
+    "f3": "Correo Electrónico",
+    "f4": "Número de Teléfono",
+    "f5": {
+      "t1": "Elige un motivo de contacto",
+      "o1": "Soporte",
+      "o2": "Comentarios",
+      "o3": "Otro"
+    },
+    "f6": "Mensaje",
+    "btn": "Enviar",
+    "motiv": "Vively no solo habla de hacer la diferencia, la vive cada día, transformando vidas profundamente con sus iniciativas."
   }
 }

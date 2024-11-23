@@ -11,12 +11,14 @@
           <div class="rounded-lg flex flex-col md:flex-row overflow-hidden">
             <div class="flex-1 p-6 md:p-8">
               <h1 class="text-4xl text-white font-bold mb-2">
-                Let's Get in Touch
+                {{ t("contact.title") }}
               </h1>
               <nav class="text-sm text-black">
                 <div class="inline-block bg-white p-3 rounded-lg">
-                  <a href="/" class="hover:underline font-semibold">Home/ </a>
-                  <span>Contacts</span>
+                  <a href="/" class="hover:underline font-semibold">
+                    {{ t("contact.sub_title") }}/
+                  </a>
+                  <span> {{ t("contact.title_first") }}</span>
                 </div>
               </nav>
             </div>
@@ -37,13 +39,12 @@
         <!-- Section gauche -->
         <div class="lg:w-1/2 space-y-6">
           <h1 class="text-3xl lg:text-4xl font-bold">
-            Your Chance to Create
-            <span class="font-sri text-green-600">Opportunities</span> Today
+            {{ t("contact.t1") }}
+            <span class="font-sri text-green-600"> {{ t("contact.t2") }}</span>
+            {{ t("contact.t3") }}
           </h1>
           <p class="text-gray-600">
-            Hi, please complete the form below to let us know how we can help
-            you, or check the Frequently Asked Questions first to see if your
-            question has already been answered.
+            {{ t("contact.t4") }}
           </p>
           <div class="space-y-4 p-4 bg-white rounded-lg">
             <p class="flex items-center space-x-3">
@@ -79,32 +80,32 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
                 type="text"
-                placeholder="First Name"
+                :placeholder="f1"
                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
               />
               <input
                 type="text"
-                placeholder="Last Name"
+                :placeholder="f2"
                 class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
               />
             </div>
             <input
               type="email"
-              placeholder="Email"
+              :placeholder="f3"
               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
             />
             <input
               type="tel"
-              placeholder="Phone Number (optional)"
+              :placeholder="f4"
               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
             />
             <select
               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600"
             >
-              <option>Choose a Contact Reason</option>
-              <option>Support</option>
-              <option>Feedback</option>
-              <option>Other</option>
+              <option>{{ t("contact.f5.t1") }}</option>
+              <option>{{ t("contact.f5.o1") }}</option>
+              <option>{{ t("contact.f5.o2") }}</option>
+              <option>{{ t("contact.f5.o3") }}</option>
             </select>
             <textarea
               rows="4"
@@ -115,7 +116,7 @@
               type="submit"
               class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition"
             >
-              SUBMIT
+              {{ t("contact.btn") }}
             </button>
           </form>
         </div>
@@ -131,6 +132,68 @@
           allowfullscreen=""
           loading="lazy"
         ></iframe>
+      </div>
+      <div class="mj-container mt-16">
+        <h2 class="text-3xl font-bold text-gray-800 text-center">
+          {{ t("about.question_title_1") }}
+          <span class="text-green-500 font-sri">
+            {{ t("about.question_title_2") }}</span
+          >
+        </h2>
+        <!-- Description -->
+        <p class="text-center text-gray-600 mt-2">
+          {{ t("about.question_desc") }}
+        </p>
+        <div class="mt-10 space-y-4 max-w-xl mx-auto">
+          <div
+            v-for="(faq, index) in faqs"
+            :key="index"
+            class="overflow-hidden shadow-lg"
+          >
+            <button
+              @click="toggleFAQ(index)"
+              class="w-full text-left flex justify-between items-center px-4 py-4 bg-white hover:scale-105 transition-transform duration-300 ease-in-out"
+            >
+              <span
+                :class="{ 'text-green-500 font-medium': activeFAQ === index }"
+                class="text-gray-800 text-lg"
+              >
+                {{ faq.question }}
+              </span>
+              <span
+                class="bg-gray-200 rounded-full p-2"
+                :class="{
+                  ' bg-green-100 rounded-full p-2': activeFAQ === index,
+                }"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  :class="{
+                    'rotate-180 text-green-500 bg-green-100 rounded-full':
+                      activeFAQ === index,
+                  }"
+                  class="h-4 w-4 text-black transform transition-transform duration-200"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </span>
+            </button>
+            <div
+              v-if="activeFAQ === index"
+              class="px-4 py-3 text-gray-600 bg-gray-50"
+            >
+              {{ faq.answer }}
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Section des images et citation -->
@@ -220,4 +283,40 @@
   </section>
 </template>
 <script setup>
+const { t } = useI18n();
+const f1 = ref(t("contact.f1"));
+const f2 = ref(t("contact.f2"));
+const f3 = ref(t("contact.f3"));
+const f4 = ref(t("contact.f4"));
+
+// Data for FAQs
+const faqs = ref([
+  {
+    question: t("about.question_1"),
+    answer: t("about.question_1_answer"),
+  },
+  {
+    question: t("about.question_2"),
+    answer: t("about.question_2_answer"),
+  },
+  {
+    question: t("about.question_3"),
+    answer: t("about.question_3_answer"),
+  },
+  {
+    question: t("about.question_4"),
+    answer: t("about.question_4_answer"),
+  },
+  {
+    question: t("about.question_5"),
+    answer: t("about.question_5_answer"),
+  },
+]);
+// State to track the active FAQ
+const activeFAQ = ref(null);
+
+// Toggle function
+const toggleFAQ = (index) => {
+  activeFAQ.value = activeFAQ.value === index ? null : index;
+};
 </script>
