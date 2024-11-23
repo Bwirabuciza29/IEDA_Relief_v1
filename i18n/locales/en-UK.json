@@ -68,10 +68,10 @@
     "question_4_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
     "question_5": "How can I become a volunteer or join your team?",
     "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
-    "ab_1":"International Emergency and Development Aid",
-    "ab_2":"IEDA",
-     "ab_3":"Relief",
-     "ab_4":"  IEDA Relief is an international organization that works to establish a stable environment and implements sustainable solutions that help people in need to become self-sufficient. Since 2008, we have been working in areas affected by conflict, disaster or poverty to help communities become self-reliant through behavior change policies that are culturally  acceptable and activities that take into account existing efforts and  good practices."
+    "ab_1": "International Emergency and Development Aid",
+    "ab_2": "IEDA",
+    "ab_3": "Relief",
+    "ab_4": "  IEDA Relief is an international organization that works to establish a stable environment and implements sustainable solutions that help people in need to become self-sufficient. Since 2008, we have been working in areas affected by conflict, disaster or poverty to help communities become self-reliant through behavior change policies that are culturally  acceptable and activities that take into account existing efforts and  good practices."
   },
   "mission": {
     "title_1": "Our Mission",
@@ -227,5 +227,9 @@
     "f6": "Message",
     "btn": "Submit",
     "motiv": "Vively doesn't just talk about making a difference - they live it every day, profoundly changing lives with their initiatives."
+  },
+  "team": {
+    "title_1": "Team",
+    "title_2": "Home"
   }
 }
