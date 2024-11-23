@@ -42,7 +42,17 @@
     </div>
     <!-- Fin Top Title -->
     <div class="mj-container my-16">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h2 class="text-3xl text-black md:text-4xl font-bold text-left mb-4">
+        <span class=""> {{ t("about.ab_1") }} </span>
+        <span class="text-custom-green">({{ t("about.ab_2") }} </span>
+        <span class="text-custom-blue">{{ t("about.ab_3") }})</span>
+      </h2>
+      <div class="my-16 p-4 bg-white rounded-lg">
+        {{ t("about.ab_4") }}
+      </div>
+      <div
+        class="grid grid-cols-1 bg-white sm:grid-cols-2 lg:grid-cols-3 gap-4"
+      >
         <!-- Card 1 -->
         <div class="flex flex-col items-start p-4 border rounded-lg shadow-md">
           <div class="flex items-center mb-4">

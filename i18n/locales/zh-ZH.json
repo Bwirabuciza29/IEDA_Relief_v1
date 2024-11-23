@@ -4,6 +4,7 @@
     "about": "关于",
     "works": "作品",
     "pages": "操作",
+    "team": "团队",
     "contact": "联系方式"
   },
   "hero": {
@@ -65,7 +66,11 @@
     "question_4": "我如何验证您组织的合法性？",
     "question_4_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
     "question_5": "我如何成为志愿者或加入您的团队？",
-    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat."
+    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
+    "ab_1": "国际紧急救援与发展援助",
+    "ab_2": "IEDA",
+    "ab_3": "救援",
+    "ab_4": "IEDA救援是一个国际组织，致力于建立稳定的环境并实施可持续解决方案，帮助有需要的人实现自给自足。自2008年以来，我们一直在冲突、灾难或贫困影响的地区工作，帮助社区通过文化上可接受的行为变化政策和考虑现有努力及良好实践的活动，实现自力更生。"
   },
   "mission": {
     "title_1": "我们的使命",

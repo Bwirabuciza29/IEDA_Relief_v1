@@ -4,6 +4,7 @@
     "about": "Acerca de",
     "works": "Obras",
     "pages": "Operaciones",
+    "team": "Equipo",
     "contact": "Contactos"
   },
   "hero": {
@@ -66,7 +67,11 @@
     "question_4": "¿Cómo puedo verificar la legitimidad de su organización?",
     "question_4_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
     "question_5": "¿Cómo puedo convertirme en voluntario o unirme a su equipo?",
-    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat."
+    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
+    "ab_1": "Ayuda Internacional de Emergencia y Desarrollo",
+    "ab_2": "IEDA",
+    "ab_3": "Ayuda",
+    "ab_4": "IEDA Ayuda es una organización internacional que trabaja para establecer un entorno estable e implementar soluciones sostenibles que ayuden a las personas necesitadas a volverse autosuficientes. Desde 2008, hemos estado trabajando en áreas afectadas por conflictos, desastres o pobreza para ayudar a las comunidades a volverse autosuficientes a través de políticas de cambio de comportamiento culturalmente aceptables y actividades que tienen en cuenta los esfuerzos existentes y las buenas prácticas."
   },
   "mission": {
     "title_1": "Nuestra Misión",

@@ -4,6 +4,7 @@
     "about": "Sobre",
     "works": "Trabalhos",
     "pages": "Operações",
+    "team": "Equipe",
     "contact": "Contatos"
   },
   "hero": {
@@ -65,7 +66,11 @@
     "question_4": "Como posso verificar a legitimidade da sua organização?",
     "question_4_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
     "question_5": "Como posso me tornar voluntário ou ingressar na equipe?",
-    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat."
+    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
+    "ab_1": "Ajuda Internacional de Emergência e Desenvolvimento",
+    "ab_2": "IEDA",
+    "ab_3": "Relief",
+    "ab_4": "IEDA Relief é uma organização internacional que trabalha para estabelecer um ambiente estável e implementar soluções sustentáveis que ajudem as pessoas necessitadas a se tornarem autossuficientes. Desde 2008, temos trabalhado em áreas afetadas por conflitos, desastres ou pobreza para ajudar as comunidades a se tornarem autossuficientes por meio de políticas de mudança de comportamento culturalmente aceitáveis e atividades que consideram os esforços existentes e boas práticas."
   },
   "mission": {
     "title_1": "Nossa Missão",

@@ -4,6 +4,7 @@
     "about": "À propos",
     "works": "Travaux",
     "pages": "Opérations",
+    "team": "Équipe",
     "contact": "Contacts"
   },
   "hero": {
@@ -65,7 +66,11 @@
     "question_4": "Comment puis-je vérifier la légitimité de votre organisation ?",
     "question_4_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
     "question_5": "Comment puis-je devenir bénévole ou rejoindre votre équipe ?",
-    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat."
+    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
+    "ab_1": "Aide Internationale d'Urgence et de Développement",
+    "ab_2": "IEDA",
+    "ab_3": "Relief",
+    "ab_4": "IEDA Relief est une organisation internationale qui travaille à établir un environnement stable et met en œuvre des solutions durables pour aider les personnes dans le besoin à devenir autonomes. Depuis 2008, nous travaillons dans des zones affectées par des conflits, des catastrophes ou la pauvreté pour aider les communautés à devenir indépendantes grâce à des politiques de changement de comportement culturellement acceptables et des activités qui tiennent compte des efforts existants et des bonnes pratiques."
   },
   "mission": {
     "title_1": "Notre Mission",

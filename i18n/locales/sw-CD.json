@@ -4,6 +4,7 @@
     "about": "Kuhusu",
     "works": "Kazi",
     "pages": "Shughuli",
+    "team": "Timu",
     "contact": "Mawasiliano"
   },
   "hero": {
@@ -65,7 +66,11 @@
     "question_4": "Je, ninawezaje kuthibitisha uhalali wa shirika lenu?",
     "question_4_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
     "question_5": "Je, ninawezaje kuwa mwanakikundi au kujitolea?",
-    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat."
+    "question_5_answer": "Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquam sem et tortor consequat.",
+    "ab_1": "Msaada wa Dharura wa Kimataifa na Maendeleo",
+    "ab_2": "IEDA",
+    "ab_3": "Relief",
+    "ab_4": "IEDA Relief ni shirika la kimataifa linalofanya kazi kuanzisha mazingira thabiti na kutekeleza suluhisho endelevu ambazo zinawasaidia watu wanaohitaji kuwa na uwezo wa kujitegemea. Tangu 2008, tumekuwa tukifanya kazi katika maeneo yaliyokumbwa na mizozo, majanga au umasikini kusaidia jamii kuwa na uwezo wa kujitegemea kupitia sera za kubadilisha tabia zinazokubalika kimatamaduni na shughuli zinazozingatia juhudi zilizopo na mifano bora."
   },
   "mission": {
     "title_1": "Dhamira Yetu",
