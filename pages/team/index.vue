@@ -23,12 +23,14 @@
           <div class="rounded-lg flex flex-col md:flex-row overflow-hidden">
             <!-- Texte (à gauche sur grand écran) -->
             <div class="flex-1 p-6 md:p-8">
-              <h1 class="text-4xl text-white font-bold mb-2">Team</h1>
+              <h1 class="text-4xl text-white font-bold mb-2">
+                {{ t("team.title_1") }}
+              </h1>
               <nav class="text-sm text-black">
                 <div class="inline-block bg-white p-3 rounded-lg">
                   <a href="/" class="hover:underline font-semibold">Home </a>
                   /
-                  <span>Team</span>
+                  <span>{{ t("team.title_1") }}</span>
                 </div>
               </nav>
             </div>
@@ -47,16 +49,17 @@
     </div>
     <!-- Images de fond (filigrane) -->
 
-    <!-- contenu de l'about -->
+    <!-- contenu de l'equipe -->
     <div class="mj-container my-4">
       <div class="py-8 px-4">
         <!-- Titre Principal -->
         <div class="text-center my-6">
           <p class="text-custom-green uppercase tracking-widest text-xs">
-            Team
+            {{ t("team.title_1") }}
           </p>
           <h1 class="text-3xl font-semibold">
-            Notre <span class="font-sri"> Equipe</span>
+            {{ t("team.title_2") }}
+            <span class="font-sri"> {{ t("team.title_3") }}</span>
           </h1>
         </div>
 
@@ -79,7 +82,7 @@
 
         <!-- Section : Management -->
         <div
-          v-show="activeCategory === 'Leadership Staff'"
+          v-show="activeCategory === t('team.btn_1')"
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           <div
@@ -133,7 +136,7 @@
 
         <!-- Section : Board of Direction -->
         <div
-          v-show="activeCategory === 'Board of Direction'"
+          v-show="activeCategory === t('team.btn_2')"
           class="text-center text-gray-600"
         >
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -189,18 +192,15 @@
 
         <!-- Section : Financial Repport -->
         <div
-          v-show="activeCategory === 'Financial Repport'"
+          v-show="activeCategory === t('team.btn_3')"
           class="text-center text-gray-600"
         >
           <div class="mj-container">
             <h2 class="text-2xl font-bold text-center mb-8">
-              Nous croyons en un avenir meilleur
+              {{ t("team.txt_1") }}
             </h2>
             <p class="text-center text-gray-600 mb-12">
-              Nous donnons aux communautés les moyens de devenir autonomes et de
-              décider comment améliorer et sauver des vies tout en apportant un
-              changement culturellement acceptable et basé sur les efforts et
-              réussites existants.
+              {{ t("team.txt_2") }}
             </p>
 
             <div
@@ -212,8 +212,7 @@
               >
                 <i class="fas fa-history text-blue-500 text-3xl mb-4"></i>
                 <p class="font-medium text-xs mb-2">
-                  De 2010 à 2017, nous avons aidé des réfugiés à se relocaliser
-                  et à construire une vie meilleure pour eux et leurs enfants.
+                  {{ t("team.fr_1") }}
                 </p>
               </div>
               <!-- Carte 2 -->
@@ -221,10 +220,9 @@
                 class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center text-center"
               >
                 <i class="fas fa-file-alt text-green-500 text-3xl mb-4"></i>
-                <h3 class="font-semibold text-xs mb-2">Rapport Annuel 2017</h3>
+                <h3 class="font-semibold text-xs mb-2">{{ t("team.fr_2") }}</h3>
                 <p class="text-gray-600 text-xs">
-                  Consultez notre rapport annuel pour plus de détails sur nos
-                  actions.
+                  {{ t("team.fr_2d") }}
                 </p>
               </div>
               <!-- Carte 3 -->
@@ -235,11 +233,10 @@
                   class="fas fa-globe-americas text-yellow-500 text-3xl mb-4"
                 ></i>
                 <h3 class="font-semibold text-xs mb-2">
-                  International Emergency and Development Aid
+                  {{ t("team.fr_3") }}
                 </h3>
                 <p class="text-gray-600 text-xs">
-                  IEDA Relief Inc. est une organisation exonérée d'impôts
-                  501(c)(3). Votre don est déductible des impôts aux États-Unis.
+                  {{ t("team.fr_3d") }}
                 </p>
               </div>
               <!-- Carte 4 -->
@@ -250,10 +247,10 @@
                   class="fas fa-file-contract text-indigo-500 text-3xl mb-4"
                 ></i>
                 <h3 class="font-semibold text-xs mb-2">
-                  États Financiers Audités
+                  {{ t("team.fr_4") }}
                 </h3>
                 <p class="text-gray-600 text-xs">
-                  Années fiscales disponibles : 2017, 2016, 2015, 2014.
+                  {{ t("team.fr_4d") }}
                 </p>
               </div>
               <!-- Carte 5 -->
@@ -261,9 +258,9 @@
                 class="bg-white shadow-md rounded-lg p-4 flex flex-col items-center text-center"
               >
                 <i class="fas fa-file-invoice text-red-500 text-3xl mb-4"></i>
-                <h3 class="font-semibold text-xs mb-2">Formulaire IRS 990</h3>
+                <h3 class="font-semibold text-xs mb-2">{{ t("team.fr_5") }}</h3>
                 <p class="text-gray-600 text-xs">
-                  Années fiscales disponibles : 2017, 2016, 2015, 2014.
+                  {{ t("team.fr_5d") }}
                 </p>
               </div>
               <!-- Carte 6 -->
@@ -272,10 +269,10 @@
               >
                 <i class="fas fa-archive text-purple-500 text-3xl mb-4"></i>
                 <h3 class="font-semibold text-xs mb-2">
-                  Rapports Annuels Passés
+                  {{ t("team.fr_6") }}
                 </h3>
                 <p class="text-gray-600 text-xs">
-                  Années disponibles : 2016, 2015, 2014, 2013, 2012, 2011, 2010.
+                  {{ t("team.fr_6d") }}
                 </p>
               </div>
               <!-- Carte 7 -->
@@ -286,10 +283,10 @@
                   class="fas fa-hand-holding-heart text-teal-500 text-3xl mb-4"
                 ></i>
                 <h3 class="font-semibold text-xs mb-2">
-                  Soutenez Notre Travail
+                  {{ t("team.fr_7") }}
                 </h3>
                 <p class="text-gray-600 text-xs">
-                  Aidez-nous à continuer d'impacter des vies à travers le monde.
+                  {{ t("team.fr_7d") }}
                 </p>
               </div>
             </div>
@@ -302,7 +299,7 @@
         <!-- Liste des drapeaux -->
         <div class="col-span-1 bg-white p-4 rounded-lg">
           <h2 class="text-lg font-bold text-center mb-4">
-            Sélectionnez un pays
+            {{ t("team.p_2") }}
           </h2>
           <ul class="space-y-2">
             <li
@@ -351,7 +348,9 @@
               class="w-full h-auto object-cover rounded-lg"
             />
           </div>
-          <h2 class="text-lg font-bold text-center mb-4">Ou Nous trouver</h2>
+          <h2 class="text-lg font-bold text-center mb-4">
+            {{ t("team.p_3") }}
+          </h2>
           <!-- Détails de contact -->
           <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
             <!-- Adresse -->
@@ -413,18 +412,14 @@
 <script setup>
 const { t } = useI18n();
 // Les catégories
-const categories = [
-  "Leadership Staff",
-  "Board of Direction",
-  "Financial Repport",
-];
+const categories = [t("team.btn_1"), t("team.btn_2"), t("team.btn_3")];
 
 // Catégorie active
-const activeCategory = ref("Leadership Staff");
+const activeCategory = ref(t("team.btn_1"));
 const team = [
   {
     name: "Phil MAANULWA",
-    role: "Founder, President & CEO",
+    role: t("team.lead_1"),
     image: "/img/av1.jpg",
     social: {
       linkedin: "https://linkedin.com/in/johndoe",
@@ -434,7 +429,7 @@ const team = [
   },
   {
     name: "Christine MAMBO",
-    role: "Director of Operations",
+    role: t("team.lead_2"),
     image: "/img/av2.jpg",
     social: {
       linkedin: "https://linkedin.com/in/emmarussel",
@@ -444,7 +439,7 @@ const team = [
   },
   {
     name: "Timothy MUKULE",
-    role: "Marketing and Media Associate",
+    role: t("team.lead_3"),
     image: "/img/av3.jpg",
     social: {
       linkedin: "https://linkedin.com/in/alexberil",
@@ -454,7 +449,7 @@ const team = [
   },
   {
     name: "Another ONE",
-    role: "Don't know",
+    role: t("team.lead_4"),
     image: "/img/av4.jpg",
     social: {
       linkedin: "https://linkedin.com/in/shafinaadjani",
@@ -466,7 +461,7 @@ const team = [
 const board = [
   {
     name: "Alex Anderson",
-    role: "CHAIRMAN OF BOARD",
+    role: t("team.lead_5"),
     image: "/img/avatar6.jpg",
     social: {
       linkedin: "https://linkedin.com/in/johndoe",
@@ -476,7 +471,7 @@ const board = [
   },
   {
     name: "Floresa S. Hervey ",
-    role: "DIRECTOR",
+    role: t("team.lead_6"),
     image: "/img/avatar5.jpg",
     social: {
       linkedin: "https://linkedin.com/in/emmarussel",
@@ -486,7 +481,7 @@ const board = [
   },
   {
     name: "Blaise B. Lolika",
-    role: "BOARD MEMBER",
+    role: t("team.lead_7"),
     image: "/img/avatar3.jpg",
     social: {
       linkedin: "https://linkedin.com/in/alexberil",
@@ -496,7 +491,7 @@ const board = [
   },
   {
     name: "Phil Maanulwa",
-    role: "PRESIDENT",
+    role: t("team.lead_8"),
     image: "/img/avatar4.jpg",
     social: {
       linkedin: "https://linkedin.com/in/shafinaadjani",
@@ -506,7 +501,7 @@ const board = [
   },
   {
     name: "Richard Ngombe",
-    role: "SECRETARY OF THE BOARD",
+    role: t("team.lead_9"),
     image: "/img/avatar9.jpg",
     social: {
       linkedin: "https://linkedin.com/in/shafinaadjani",
@@ -516,7 +511,7 @@ const board = [
   },
   {
     name: "Dr. Edouard Kabazimya",
-    role: "DM DIRECTOR",
+    role: t("team.lead_10"),
     image: "/img/avatar2.jpg",
     social: {
       linkedin: "https://linkedin.com/in/shafinaadjani",
