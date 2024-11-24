@@ -64,7 +64,9 @@
         </div>
 
         <!-- Navigation des catégories -->
-        <div class="flex justify-center space-x-4 mb-8">
+        <div
+          class="flex justify-center space-x-4 mb-8 flex-wrap md:flex-nowrap"
+        >
           <button
             v-for="(category, index) in categories"
             :key="index"
@@ -73,6 +75,8 @@
               activeCategory === category
                 ? 'border-custom-green text-custom-green'
                 : 'border-transparent text-gray-600 hover:text-gray-800',
+              // Taille et espacement adaptatifs
+              'sm:text-base sm:px-3 sm:py-1 md:text-lg md:px-4 md:py-2',
             ]"
             @click="setActiveCategory(category)"
           >
