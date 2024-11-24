@@ -243,6 +243,12 @@
     "lead_8": "RAIS",
     "lead_9": "Katibu wa Bodi",
     "lead_10": "Mkurugenzi wa DM",
+    "txt_1": "Tunamini katika mustakabali bora",
+    "txt_2": "Tunawapa jamii nguvu ya kuwa na uwezo wa kujitegemea na kuamua jinsi ya kuboresha na kuokoa maisha huku tukileta mabadiliko yanayokubalika kibi الثقافة اعتمادًا على juhudi zilizopo na mafanikio.",
+    "p_2": "Chagua nchi",
+    "p_3": "Au Tufuate"
+  },
+  "all": {
     "fr_1": "Kuanzia 2010 hadi 2017, tulisaidia wakimbizi kuhamia na kujenga maisha bora kwao na watoto wao.",
     "fr2": "Ripoti ya Mwaka ya 2017",
     "fr_2d": "Tazama ripoti yetu ya mwaka kwa maelezo zaidi kuhusu shughuli zetu.",
@@ -255,10 +261,6 @@
     "fr6": "Ripoti za Mwaka za Zamani",
     "fr_6d": "Miaka inapatikana: 2016, 2015, 2014, 2013, 2012, 2011, 2010.",
     "fr7": "Tunga Kazi Yetu",
-    "fr_7d": "Tusaidie kuendelea kugusa maisha duniani kote.",
-    "txt_1": "Tunamini katika mustakabali bora",
-    "txt_2": "Tunawapa jamii nguvu ya kuwa na uwezo wa kujitegemea na kuamua jinsi ya kuboresha na kuokoa maisha huku tukileta mabadiliko yanayokubalika kibi الثقافة اعتمادًا على juhudi zilizopo na mafanikio.",
-    "p_2": "Chagua nchi",
-    "p_3": "Au Tufuate"
+    "fr_7d": "Tusaidie kuendelea kugusa maisha duniani kote."
   }
 }

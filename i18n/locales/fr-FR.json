@@ -243,6 +243,13 @@
     "lead_8": "PRÉSIDENT",
     "lead_9": "SECRÉTAIRE DU CONSEIL",
     "lead_10": "DIRECTEUR DM",
+    "txt_1": "Nous croyons en un avenir meilleur",
+    "txt_2": "Nous donnons aux communautés les moyens de devenir autonomes et de décider comment améliorer et sauver des vies tout en apportant un changement culturellement acceptable et basé sur les efforts et réussites existants.",
+    "p_1": "",
+    "p_2": "Sélectionnez un pays",
+    "p_3": "Ou Nous trouver"
+  },
+  "all": {
     "fr_1": "De 2010 à 2017, nous avons aidé des réfugiés à se relocaliser et à construire une vie meilleure pour eux et leurs enfants.",
     "fr2": "Rapport Annuel 2017",
     "fr_2d": "Consultez notre rapport annuel pour plus de détails sur nos actions.",
@@ -255,11 +262,6 @@
     "fr6": "Rapports Annuels Passés",
     "fr_6d": "Années disponibles : 2016, 2015, 2014, 2013, 2012, 2011, 2010.",
     "fr7": "Soutenez Notre Travail",
-    "fr_7d": "Aidez-nous à continuer d'impacter des vies à travers le monde.",
-    "txt_1": "Nous croyons en un avenir meilleur",
-    "txt_2": "Nous donnons aux communautés les moyens de devenir autonomes et de décider comment améliorer et sauver des vies tout en apportant un changement culturellement acceptable et basé sur les efforts et réussites existants.",
-    "p_1": "",
-    "p_2": "Sélectionnez un pays",
-    "p_3": "Ou Nous trouver"
+    "fr_7d": "Aidez-nous à continuer d'impacter des vies à travers le monde."
   }
 }

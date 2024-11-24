@@ -243,6 +243,12 @@
     "lead_8": "PRESIDENTE",
     "lead_9": "SECRETÁRIO DO CONSELHO",
     "lead_10": "DIRETOR DM",
+    "txt_1": "Acreditamos em um futuro melhor",
+    "txt_2": "Empoderamos as comunidades para que se tornem autossuficientes e decidam como melhorar e salvar vidas, enquanto trazemos mudanças culturalmente aceitáveis com base nos esforços e sucessos existentes.",
+    "p_2": "Selecione um país",
+    "p_3": "Ou Encontre-nos"
+  },
+  "all": {
     "fr_1": "De 2010 a 2017, ajudamos refugiados a se reorientar e construir uma vida melhor para eles e seus filhos.",
     "fr2": "Relatório Anual 2017",
     "fr_2d": "Consulte nosso relatório anual para mais detalhes sobre nossas ações.",
@@ -255,10 +261,6 @@
     "fr6": "Relatórios Anuais Passados",
     "fr_6d": "Anos disponíveis: 2016, 2015, 2014, 2013, 2012, 2011, 2010.",
     "fr7": "Apoie o Nosso Trabalho",
-    "fr_7d": "Ajude-nos a continuar impactando vidas ao redor do mundo.",
-    "txt_1": "Acreditamos em um futuro melhor",
-    "txt_2": "Empoderamos as comunidades para que se tornem autossuficientes e decidam como melhorar e salvar vidas, enquanto trazemos mudanças culturalmente aceitáveis com base nos esforços e sucessos existentes.",
-    "p_2": "Selecione um país",
-    "p_3": "Ou Encontre-nos"
+    "fr_7d": "Ajude-nos a continuar impactando vidas ao redor do mundo."
   }
 }
